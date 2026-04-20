@@ -80,12 +80,19 @@ P2 payload 预览（同学对接用）：
 python scripts/export_p2_contract_preview.py --limit 2
 ```
 
-P5 benchmark JSONL 导出：
+P5 benchmark JSONL 导出（支持 fnc1 / averitec / P3 retrieval_json 三种输入）：
 ```bash
+# FNC-1
 python scripts/export_p5_benchmark.py \
   --dataset fnc1 \
   --input data/processed/fnc1_train.jsonl \
   --output data/processed/p5_benchmark_fnc1.jsonl
+
+# P3 retrieval JSON（单条 dict 或数组都支持）
+python scripts/export_p5_benchmark.py \
+  --dataset retrieval_json \
+  --input path/to/p3_to_p1.json \
+  --output outputs/p5_from_p3.jsonl
 ```
 
 更多脚本输出示例见 `DEMO_RUN_SUMMARY.md`。

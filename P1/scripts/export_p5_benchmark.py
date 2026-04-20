@@ -14,12 +14,13 @@ if str(SRC) not in sys.path:
 from p1.benchmark import pipeline_output_to_benchmark_record
 from p1.data.averitec import averitec_record_to_retrieval_input, load_averitec_records
 from p1.data.fnc1 import read_jsonl, sample_to_retrieval_input
+from p1.data.retrieval import read_retrieval_inputs
 from p1.pipeline import build_pipeline
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Export benchmark-ready P1 outputs for P5.")
-    parser.add_argument("--dataset", choices=["averitec", "fnc1"], required=True)
+    parser.add_argument("--dataset", choices=["averitec", "fnc1", "retrieval_json"], required=True)
     parser.add_argument("--input", required=True)
     parser.add_argument("--limit", type=int, default=100)
     parser.add_argument("--body-mode", default="top2_span", choices=["full", "best_sentence", "top2_span", "top3_span"])
@@ -44,6 +45,8 @@ def main() -> None:
             )
             for record in records
         ]
+    elif args.dataset == "retrieval_json":
+        retrieval_inputs = read_retrieval_inputs(args.input, limit=args.limit)
     else:
         raw_records = read_jsonl(args.input)[: args.limit]
         retrieval_inputs = [
