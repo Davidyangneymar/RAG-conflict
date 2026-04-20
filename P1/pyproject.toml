@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "conflict-aware-rag-p1"
+version = "0.1.0"
+description = "P1 MVP for claim extraction and contradiction detection"
+readme = "README.md"
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+data = [
+  "pandas>=2.2,<3",
+]
+model = [
+  "torch>=2.2",
+  "transformers>=4.40",
+  "sentence-transformers>=3.0",
+]
+ner = [
+  "spacy>=3.7,<4",
+]
+dev = [
+  "pytest>=8.0",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
