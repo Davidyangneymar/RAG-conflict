@@ -1,0 +1,30 @@
+[
+  {
+    "sample_id": "s001",
+    "claims": [
+      {
+        "claim_id": "q1",
+        "text": "Scientists report rising sea levels",
+        "source_metadata": {"role": "query"}
+      },
+      {
+        "claim_id": "e1",
+        "text": "A new climate report says global sea levels increased over the last decade. The report attributes this trend to glacier melt and thermal expansion. Researchers warn that coastal flooding risk will rise.",
+        "source_metadata": {"role": "retrieved_evidence"}
+      },
+      {
+        "claim_id": "e2",
+        "text": "An op-ed argued that sea level measurements have not changed meaningfully in the past ten years. The author disputes the methodology of recent climate reports.",
+        "source_metadata": {"role": "retrieved_evidence"}
+      }
+    ],
+    "candidate_pairs": [
+      {"claim_a_id": "q1", "claim_b_id": "e1"},
+      {"claim_a_id": "q1", "claim_b_id": "e2"}
+    ],
+    "nli_results": [
+      {"claim_a_id": "q1", "claim_b_id": "e1", "label": "entailment"},
+      {"claim_a_id": "q1", "claim_b_id": "e2", "label": "contradiction"}
+    ]
+  }
+]

@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# venv
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/*
+!.vscode/settings.json.example
+
+# Large training data — regenerable from train_bodies.csv + train_stances.csv
+# via preprocess_data.py. Don't ship in P2 deliverable.
+train_processed.csv
+val_processed.csv
+
+# Temp / demo outputs that are safe to regenerate
+outputs/averitec_demo/
+outputs/p2_output_sample.json
+outputs/p2_inspection_sample_before/
+outputs/p2_inspection_sample_after/
+outputs/p2_inspection_after_opt_*/
+outputs/p2_inspection_final_*/
+
+# Training experiment artifacts (not needed for P2 runtime consumers)
+outputs/fnc1_baseline/
+outputs/fnc1_baseline_frozen/
+outputs/fnc1_error_analysis/
+outputs/
+*.safetensors
+outputs/

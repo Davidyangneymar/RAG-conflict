@@ -1,0 +1,15 @@
+# P2 runtime dependencies (stance analysis + conflict typing)
+# Minimum versions below are what was tested; newer should work.
+
+# ML / stance inference
+torch>=2.0
+transformers>=4.30
+numpy>=1.23
+pandas>=1.5
+
+# Dev / test (light)
+# — no external deps required; smoke tests are pure stdlib
+
+# Optional: only needed if you rerun FNC-1 training experiments
+# scikit-learn>=1.2
+# joblib>=1.2

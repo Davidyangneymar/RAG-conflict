@@ -1,0 +1,70 @@
+[
+  {
+    "claim": "The United States withdrew from the Paris Climate Agreement in 2017.",
+    "label": "Supported",
+    "claim_date": "2019-11-01",
+    "speaker": "news analyst",
+    "questions": [
+      {
+        "question": "When did the US formally notify withdrawal from the Paris Agreement?",
+        "answers": [
+          {"answer": "The Trump administration announced in June 2017 that the United States would withdraw from the Paris Climate Agreement.",
+           "source_url": "https://example.gov/release/2017", "source_medium": "official"},
+          {"answer": "A 2017 press statement confirmed the US intent to leave the Paris Climate Agreement.",
+           "source_url": "https://news.example.com/a", "source_medium": "news"}
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "COVID-19 vaccines cause more deaths than the virus itself.",
+    "label": "Refuted",
+    "claim_date": "2022-03-15",
+    "speaker": "social media post",
+    "questions": [
+      {
+        "question": "Do COVID-19 vaccines cause more deaths than COVID-19 itself?",
+        "answers": [
+          {"answer": "A 2022 CDC report found that COVID-19 vaccines are safe and significantly reduce the risk of death from COVID-19.",
+           "source_url": "https://cdc.example/report", "source_medium": "official"},
+          {"answer": "An anonymous blog in 2021 claimed the vaccines were deadlier than the virus, but this has been refuted by public health authorities.",
+           "source_url": "https://blog.example/x", "source_medium": "blog"}
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "Apple Inc. acquired Beats Electronics in 2014.",
+    "label": "Supported",
+    "claim_date": "2020-08-10",
+    "speaker": "tech journalist",
+    "questions": [
+      {
+        "question": "When did Apple acquire Beats?",
+        "answers": [
+          {"answer": "Apple Inc. completed its acquisition of Beats Electronics in August 2014 for approximately 3 billion dollars.",
+           "source_url": "https://news.example.com/apple-beats", "source_medium": "news"},
+          {"answer": "According to some early rumors, Apple announced the Beats deal in 2013, though the actual acquisition closed the following year.",
+           "source_url": "https://blog.example/apple", "source_medium": "blog"}
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "Michael Jordan, the basketball player, once worked as a statistician at Berkeley.",
+    "label": "Conflicting Evidence/Cherrypicking",
+    "claim_date": "2021-05-02",
+    "speaker": "casual blog",
+    "questions": [
+      {
+        "question": "Did Michael Jordan work at Berkeley?",
+        "answers": [
+          {"answer": "Michael I. Jordan, a professor of statistics and computer science at UC Berkeley, is a leading researcher in machine learning.",
+           "source_url": "https://berkeley.example.edu/faculty", "source_medium": "academic"},
+          {"answer": "Michael Jordan, the retired NBA player, has had no academic position at Berkeley.",
+           "source_url": "https://news.example.com/sports", "source_medium": "news"}
+        ]
+      }
+    ]
+  }
+]

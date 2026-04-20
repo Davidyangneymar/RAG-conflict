@@ -1,0 +1,44 @@
+[
+  {
+    "sample_id": "s001",
+    "claims": [
+      {
+        "claim_id": "c1",
+        "text": "Company X acquired Company Y in 2023.",
+        "subject": "Company X",
+        "relation": "acquired",
+        "object": "Company Y",
+        "qualifier": null,
+        "time": "2023",
+        "source_metadata": {"role": "headline", "doc_id": "d1"}
+      },
+      {
+        "claim_id": "c2",
+        "text": "Company X did not acquire Company Y.",
+        "subject": "Company X",
+        "relation": "acquired",
+        "object": "Company Y",
+        "time": "2023",
+        "source_metadata": {"role": "body"}
+      }
+    ],
+    "candidate_pairs": [
+      {"claim_a_id": "c1", "claim_b_id": "c2"}
+    ],
+    "nli_results": [
+      {"claim_a_id": "c1", "claim_b_id": "c2", "label": "contradiction"}
+    ]
+  },
+  {
+    "sample_id": "s002",
+    "claims": [
+      {
+        "claim_id": "c10",
+        "text": "The report was released on Monday.",
+        "source_metadata": {"role": "headline"}
+      }
+    ],
+    "candidate_pairs": [],
+    "nli_results": []
+  }
+]
