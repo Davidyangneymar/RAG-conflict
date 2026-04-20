@@ -1,0 +1,1209 @@
+{
+  "dataset": "retrieval_json",
+  "input": "data/examples/p3_to_p1_batch_query30.json",
+  "evaluated_records": 30,
+  "gold_distribution": {
+    "SUPPORTS": 11,
+    "REFUTES": 19
+  },
+  "predicted_distribution": {
+    "neutral": 24,
+    "entailment": 1
+  },
+  "preview": [
+    {
+      "sample_id": "137334",
+      "dataset": "fever",
+      "split": "dev",
+      "gold_label": "SUPPORTS",
+      "query": "Fox 2000 Pictures released the film Soul Food.",
+      "retrieved_chunk_count": 2,
+      "claim_count": 12,
+      "candidate_pair_count": 10,
+      "cross_source_pair_count": 5,
+      "predicted_label": "neutral",
+      "best_entailment_score": 0.1,
+      "best_contradiction_score": 0.1,
+      "best_neutral_score": 0.8,
+      "best_entailment_pair": {
+        "claim_a_id": "137334:query:sent0",
+        "claim_b_id": "137334:Soul_Food_-LRB-film-RRB-::chunk-0:sent0"
+      },
+      "best_contradiction_pair": {
+        "claim_a_id": "137334:query:sent0",
+        "claim_b_id": "137334:Soul_Food_-LRB-film-RRB-::chunk-0:sent0"
+      },
+      "best_neutral_pair": {
+        "claim_a_id": "137334:query:sent0",
+        "claim_b_id": "137334:Soul_Food_-LRB-film-RRB-::chunk-0:sent0"
+      },
+      "claims": [
+        {
+          "claim_id": "137334:query:sent0",
+          "text": "Fox 2000 Pictures released the film Soul Food.",
+          "source_chunk_id": "query",
+          "source_role": "query",
+          "subject": "Fox Pictures released the film",
+          "relation": null,
+          "object": null,
+          "qualifier": null,
+          "time": "2000"
+        },
+        {
+          "claim_id": "137334:Soul_Food_-LRB-film-RRB-::chunk-0:sent0",
+          "text": "Soul Food is a 1997 American comedy-drama film produced by Kenneth `` Babyface '' Edmonds , Tracey Edmonds and Robert Teitel and released by Fox 2000 Pictures .",
+          "source_chunk_id": "Soul_Food_-LRB-film-RRB-::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "Soul Food",
+          "relation": "is",
+          "object": "a 1997 American comedy-drama film produced by Kenneth `` Babyface '",
+          "qualifier": null,
+          "time": "1997"
+        },
+        {
+          "claim_id": "137334:Soul_Food_-LRB-film-RRB-::chunk-0:sent1",
+          "text": "Featuring an ensemble cast , the film stars Vanessa L.",
+          "source_chunk_id": "Soul_Food_-LRB-film-RRB-::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "Featuring an ensemble cast the",
+          "relation": null,
+          "object": null,
+          "qualifier": "Featuring an ensemble cast",
+          "time": null
+        },
+        {
+          "claim_id": "137334:Soul_Food_-LRB-film-RRB-::chunk-0:sent2",
+          "text": "Williams , Vivica A.",
+          "source_chunk_id": "Soul_Food_-LRB-film-RRB-::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "Williams Vivica A",
+          "relation": null,
+          "object": null,
+          "qualifier": "Williams",
+          "time": null
+        },
+        {
+          "claim_id": "137334:Soul_Food_-LRB-film-RRB-::chunk-0:sent3",
+          "text": "Fox , Nia Long , Michael Beach , Mekhi Phifer , Jeffrey D.",
+          "source_chunk_id": "Soul_Food_-LRB-film-RRB-::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "Fox Nia Long Michael Beach",
+          "relation": null,
+          "object": null,
+          "qualifier": "Fox",
+          "time": null
+        },
+        {
+          "claim_id": "137334:Soul_Food_-LRB-film-RRB-::chunk-0:sent5",
+          "text": "Hall , Gina Ravera and Brandon Hammond .",
+          "source_chunk_id": "Soul_Food_-LRB-film-RRB-::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "Hall Gina Ravera and Brandon",
+          "relation": null,
+          "object": null,
+          "qualifier": "Hall",
+          "time": null
+        },
+        {
+          "claim_id": "137334:Soul_Food_-LRB-film-RRB-::chunk-0:sent6",
+          "text": "Written and directed by George Tillman , Jr.",
+          "source_chunk_id": "Soul_Food_-LRB-film-RRB-::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "Written and directed by George",
+          "relation": null,
+          "object": null,
+          "qualifier": "Written and directed by George Tillman",
+          "time": null
+        },
+        {
+          "claim_id": "137334:Soul_Food_-LRB-film-RRB-::chunk-0:sent7",
+          "text": "-- in his major studio debut -- the film centers on the trials of an extended African-American family , held together by longstanding family traditions which begin to fade as serious problems take center stage .",
+          "source_chunk_id": "Soul_Food_-LRB-film-RRB-::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "in his major studio debut",
+          "relation": null,
+          "object": null,
+          "qualifier": null,
+          "time": null
+        },
+        {
+          "claim_id": "137334:Soul_Food_-LRB-film-RRB-::chunk-0:sent8",
+          "text": "Tillman based the family in the film on his own and Soul Food was widely acclaimed for presenting a more positive image of African-Americans than is typically seen in Hollywood films .",
+          "source_chunk_id": "Soul_Food_-LRB-film-RRB-::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "Tillman based the family",
+          "relation": "was",
+          "object": "widely acclaimed for presenting a more positive image of African-Americans than is",
+          "qualifier": null,
+          "time": null
+        },
+        {
+          "claim_id": "137334:Soul_Food_-LRB-film-RRB-::chunk-1:sent0",
+          "text": "Tillman based the family in the film on his own and Soul Food was widely acclaimed for presenting a more positive image of African-Americans than is typically seen in Hollywood films .",
+          "source_chunk_id": "Soul_Food_-LRB-film-RRB-::chunk-1",
+          "source_role": "retrieved_evidence",
+          "subject": "Tillman based the family",
+          "relation": "was",
+          "object": "widely acclaimed for presenting a more positive image of African-Americans than is",
+          "qualifier": null,
+          "time": null
+        },
+        {
+          "claim_id": "137334:Soul_Food_-LRB-film-RRB-::chunk-1:sent1",
+          "text": "In 2000 , Showtime premiered a one-hour television series based upon the film .",
+          "source_chunk_id": "Soul_Food_-LRB-film-RRB-::chunk-1",
+          "source_role": "retrieved_evidence",
+          "subject": "In Showtime premiered a one-hour",
+          "relation": null,
+          "object": null,
+          "qualifier": "In 2000",
+          "time": "2000"
+        },
+        {
+          "claim_id": "137334:Soul_Food_-LRB-film-RRB-::chunk-1:sent2",
+          "text": "In 2015 , it was announced that 20th Century Fox is planning a sequel for film called More Soul Food , written by Tillman , Jr.",
+          "source_chunk_id": "Soul_Food_-LRB-film-RRB-::chunk-1",
+          "source_role": "retrieved_evidence",
+          "subject": "In it",
+          "relation": "was",
+          "object": "announced that 20th Century Fox is planning a sequel for film called",
+          "qualifier": "In 2015",
+          "time": "2015"
+        }
+      ],
+      "cross_source_nli_results": [
+        {
+          "claim_a_id": "137334:query:sent0",
+          "claim_b_id": "137334:Soul_Food_-LRB-film-RRB-::chunk-0:sent0",
+          "label": "neutral",
+          "entailment_score": 0.1,
+          "contradiction_score": 0.1,
+          "neutral_score": 0.8
+        },
+        {
+          "claim_a_id": "137334:query:sent0",
+          "claim_b_id": "137334:Soul_Food_-LRB-film-RRB-::chunk-0:sent8",
+          "label": "neutral",
+          "entailment_score": 0.1,
+          "contradiction_score": 0.1,
+          "neutral_score": 0.8
+        },
+        {
+          "claim_a_id": "137334:query:sent0",
+          "claim_b_id": "137334:Soul_Food_-LRB-film-RRB-::chunk-1:sent0",
+          "label": "neutral",
+          "entailment_score": 0.1,
+          "contradiction_score": 0.1,
+          "neutral_score": 0.8
+        },
+        {
+          "claim_a_id": "137334:query:sent0",
+          "claim_b_id": "137334:Soul_Food_-LRB-film-RRB-::chunk-1:sent1",
+          "label": "neutral",
+          "entailment_score": 0.1,
+          "contradiction_score": 0.1,
+          "neutral_score": 0.8
+        },
+        {
+          "claim_a_id": "137334:query:sent0",
+          "claim_b_id": "137334:Soul_Food_-LRB-film-RRB-::chunk-1:sent2",
+          "label": "neutral",
+          "entailment_score": 0.1,
+          "contradiction_score": 0.1,
+          "neutral_score": 0.8
+        }
+      ]
+    },
+    {
+      "sample_id": "111897",
+      "dataset": "fever",
+      "split": "dev",
+      "gold_label": "REFUTES",
+      "query": "Telemundo is a English-language television network.",
+      "retrieved_chunk_count": 2,
+      "claim_count": 12,
+      "candidate_pair_count": 11,
+      "cross_source_pair_count": 2,
+      "predicted_label": "neutral",
+      "best_entailment_score": 0.1,
+      "best_contradiction_score": 0.1,
+      "best_neutral_score": 0.8,
+      "best_entailment_pair": {
+        "claim_a_id": "111897:query:sent0",
+        "claim_b_id": "111897:Telemundo::chunk-0:sent0"
+      },
+      "best_contradiction_pair": {
+        "claim_a_id": "111897:query:sent0",
+        "claim_b_id": "111897:Telemundo::chunk-0:sent0"
+      },
+      "best_neutral_pair": {
+        "claim_a_id": "111897:query:sent0",
+        "claim_b_id": "111897:Telemundo::chunk-0:sent0"
+      },
+      "claims": [
+        {
+          "claim_id": "111897:query:sent0",
+          "text": "Telemundo is a English-language television network.",
+          "source_chunk_id": "query",
+          "source_role": "query",
+          "subject": "Telemundo",
+          "relation": "is",
+          "object": "a English-language television network",
+          "qualifier": null,
+          "time": null
+        },
+        {
+          "claim_id": "111897:Telemundo::chunk-0:sent0",
+          "text": "Telemundo -LRB- -LSB- teleˈmundo -RSB- -RRB- is an American Spanish-language terrestrial television network owned by Comcast through the NBCUniversal division NBCUniversal Telemundo Enterprises .",
+          "source_chunk_id": "Telemundo::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "Telemundo LRB- LSB- tele mundo",
+          "relation": "is",
+          "object": "an American Spanish-language terrestrial television network owned by Comcast through the NBCUniversal",
+          "qualifier": null,
+          "time": null
+        },
+        {
+          "claim_id": "111897:Telemundo::chunk-0:sent1",
+          "text": "It is the second largest provider of Spanish content nationwide behind American competitor Univision , with programming syndicated worldwide to more than 100 countries in over 35 languages .",
+          "source_chunk_id": "Telemundo::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "It",
+          "relation": "is",
+          "object": "second largest provider of Spanish content nationwide behind American competitor Univision",
+          "qualifier": null,
+          "time": null
+        },
+        {
+          "claim_id": "111897:Telemundo::chunk-0:sent2",
+          "text": "The channel broadcasts programs and original content aimed at Hispanic and Latino American audiences in the United States and worldwide , consisting of telenovelas , sports , reality television , news programming , and films -- either imported or Spanish-dubbed .",
+          "source_chunk_id": "Telemundo::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "The channel broadcasts programs and",
+          "relation": null,
+          "object": null,
+          "qualifier": null,
+          "time": null
+        },
+        {
+          "claim_id": "111897:Telemundo::chunk-0:sent3",
+          "text": "In addition , Telemundo operates NBC Universo , a separate channel directed towards young Hispanic audiences ; Telemundo Digital Media , which distributes original programming content across mass media , the Telemundo and NBC Universo websites ; Puerto Rico telestation WKAQ-TV ; and international distribution arm Telemundo Internacional .",
+          "source_chunk_id": "Telemundo::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "In addition Telemundo operates NBC",
+          "relation": null,
+          "object": null,
+          "qualifier": "In addition",
+          "time": null
+        },
+        {
+          "claim_id": "111897:Food_Network::chunk-0:sent0",
+          "text": "Food Network -LRB- legally known as Television Food Network -RRB- is an American basic cable and satellite television channel that is owned by Television Food Network , G.P.",
+          "source_chunk_id": "Food_Network::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "Food Network LRB- legally known",
+          "relation": "is",
+          "object": "an American basic cable and satellite television channel that is owned by",
+          "qualifier": null,
+          "time": null
+        },
+        {
+          "claim_id": "111897:Food_Network::chunk-0:sent1",
+          "text": ", a joint venture between Scripps Networks Interactive -LRB- which owns 70 % of the network -RRB- and the Tribune -LRB- FN -RRB- Cable Ventures Inc.",
+          "source_chunk_id": "Food_Network::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "a joint venture between Scripps",
+          "relation": null,
+          "object": null,
+          "qualifier": "",
+          "time": null
+        },
+        {
+          "claim_id": "111897:Food_Network::chunk-0:sent2",
+          "text": "-LRB- which owns the remaining 30 % -RRB- .",
+          "source_chunk_id": "Food_Network::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "LRB- which owns the remaining",
+          "relation": null,
+          "object": null,
+          "qualifier": null,
+          "time": null
+        },
+        {
+          "claim_id": "111897:Food_Network::chunk-0:sent3",
+          "text": "Despite this ownership structure , the channel is managed as a division of Scripps Networks Interactive .",
+          "source_chunk_id": "Food_Network::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "Despite this ownership structure the",
+          "relation": "is",
+          "object": "managed as a division of Scripps Networks Interactive",
+          "qualifier": "Despite this ownership structure",
+          "time": null
+        },
+        {
+          "claim_id": "111897:Food_Network::chunk-0:sent4",
+          "text": "The channel airs both specials and regular episodic programs about food and cooking .",
+          "source_chunk_id": "Food_Network::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "The channel airs both specials",
+          "relation": null,
+          "object": null,
+          "qualifier": null,
+          "time": null
+        },
+        {
+          "claim_id": "111897:Food_Network::chunk-0:sent5",
+          "text": "In addition to its headquarters in New York City , Food Network has offices in Atlanta , Los Angeles , San Francisco , Chicago , Detroit , Jersey City , Cincinnati , and Knoxville , Tennessee .",
+          "source_chunk_id": "Food_Network::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "In addition to its headquarters",
+          "relation": "has",
+          "object": "offices in Atlanta",
+          "qualifier": null,
+          "time": null
+        },
+        {
+          "claim_id": "111897:Food_Network::chunk-0:sent6",
+          "text": "As of February 2015 , Food Network is available to approximately 96,931,000 pay television households -LRB- 83.3 % of households with television -RRB- in the United States .",
+          "source_chunk_id": "Food_Network::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "As of February Food Network",
+          "relation": "is",
+          "object": "available to approximately 96,931,000 pay television households -LRB- 83.3 % of households",
+          "qualifier": "As of February 2015",
+          "time": "2015"
+        }
+      ],
+      "cross_source_nli_results": [
+        {
+          "claim_a_id": "111897:query:sent0",
+          "claim_b_id": "111897:Telemundo::chunk-0:sent0",
+          "label": "neutral",
+          "entailment_score": 0.1,
+          "contradiction_score": 0.1,
+          "neutral_score": 0.8
+        },
+        {
+          "claim_a_id": "111897:query:sent0",
+          "claim_b_id": "111897:Food_Network::chunk-0:sent0",
+          "label": "neutral",
+          "entailment_score": 0.1,
+          "contradiction_score": 0.1,
+          "neutral_score": 0.8
+        }
+      ]
+    },
+    {
+      "sample_id": "89891",
+      "dataset": "fever",
+      "split": "dev",
+      "gold_label": "REFUTES",
+      "query": "Damon Albarn's debut album was released in 2011.",
+      "retrieved_chunk_count": 2,
+      "claim_count": 23,
+      "candidate_pair_count": 19,
+      "cross_source_pair_count": 5,
+      "predicted_label": "neutral",
+      "best_entailment_score": 0.1,
+      "best_contradiction_score": 0.1,
+      "best_neutral_score": 0.8,
+      "best_entailment_pair": {
+        "claim_a_id": "89891:query:sent0",
+        "claim_b_id": "89891:Damon_Albarn::chunk-0:sent2"
+      },
+      "best_contradiction_pair": {
+        "claim_a_id": "89891:query:sent0",
+        "claim_b_id": "89891:Damon_Albarn::chunk-0:sent2"
+      },
+      "best_neutral_pair": {
+        "claim_a_id": "89891:query:sent0",
+        "claim_b_id": "89891:Damon_Albarn::chunk-0:sent2"
+      },
+      "claims": [
+        {
+          "claim_id": "89891:query:sent0",
+          "text": "Damon Albarn's debut album was released in 2011.",
+          "source_chunk_id": "query",
+          "source_role": "query",
+          "subject": "Damon Albarn's debut album",
+          "relation": "was",
+          "object": "released in 2011",
+          "qualifier": null,
+          "time": "2011"
+        },
+        {
+          "claim_id": "89891:Damon_Albarn::chunk-0:sent0",
+          "text": "Damon Albarn , OBE -LRB- -LSB- ˈdeɪmən_ˈælbɑrn -RSB- born 23 March 1968 -RRB- is an English musician , singer , songwriter , multi-instrumentalist and record producer .",
+          "source_chunk_id": "Damon_Albarn::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "Damon Albarn OBE LRB- LSB",
+          "relation": "is",
+          "object": "an English musician",
+          "qualifier": "Damon Albarn",
+          "time": "1968"
+        },
+        {
+          "claim_id": "89891:Damon_Albarn::chunk-0:sent1",
+          "text": "He is the lead singer of the British rock band Blur and co-founder , vocalist , instrumentalist and principal songwriter of the virtual band Gorillaz .",
+          "source_chunk_id": "Damon_Albarn::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "He",
+          "relation": "is",
+          "object": "lead singer of the British rock band Blur and co-founder",
+          "qualifier": null,
+          "time": null
+        },
+        {
+          "claim_id": "89891:Damon_Albarn::chunk-0:sent2",
+          "text": "Raised in Leytonstone , East London and around Colchester , Essex , Albarn attended the Stanway School , where he met Graham Coxon and eventually formed Blur , whose debut album Leisure was released in 1991 to mixed reviews .",
+          "source_chunk_id": "Damon_Albarn::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "Raised in Leytonstone East London",
+          "relation": "was",
+          "object": "released in 1991 to mixed reviews",
+          "qualifier": "Raised in Leytonstone",
+          "time": "1991"
+        },
+        {
+          "claim_id": "89891:Damon_Albarn::chunk-0:sent3",
+          "text": "After spending long periods of time touring the US , Albarn 's songwriting became increasingly influenced by British bands from the 1960s .",
+          "source_chunk_id": "Damon_Albarn::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "After spending long periods",
+          "relation": null,
+          "object": null,
+          "qualifier": null,
+          "time": null
+        },
+        {
+          "claim_id": "89891:Damon_Albarn::chunk-0:sent4",
+          "text": "The result of these influences came in the form of Modern Life Is Rubbish -LRB- 1993 -RRB- , Parklife -LRB- 1994 -RRB- and The Great Escape -LRB- 1995 -RRB- .",
+          "source_chunk_id": "Damon_Albarn::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "The result of these influences",
+          "relation": "is",
+          "object": "Rubbish -LRB- 1993 -RRB",
+          "qualifier": null,
+          "time": "1993"
+        },
+        {
+          "claim_id": "89891:Damon_Albarn::chunk-0:sent5",
+          "text": "All three albums received critical acclaim while Blur gained mass popularity in the UK , aided by a Britpop rivalry with Oasis .",
+          "source_chunk_id": "Damon_Albarn::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "All three albums received critical",
+          "relation": null,
+          "object": null,
+          "qualifier": null,
+          "time": null
+        },
+        {
+          "claim_id": "89891:Damon_Albarn::chunk-0:sent6",
+          "text": "Subsequent albums such as Blur -LRB- 1997 -RRB- , 13 -LRB- 1999 -RRB- , Think Tank -LRB- 2003 -RRB- and The Magic Whip -LRB- 2015 -RRB- contained influences from lo-fi , electronic and hip hop music .",
+          "source_chunk_id": "Damon_Albarn::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "Subsequent albums such as Blur",
+          "relation": null,
+          "object": null,
+          "qualifier": null,
+          "time": "1997"
+        },
+        {
+          "claim_id": "89891:Damon_Albarn::chunk-0:sent7",
+          "text": "Along with Tank Girl creator Jamie Hewlett , Albarn formed the `` virtual band '' Gorillaz in 1998 .",
+          "source_chunk_id": "Damon_Albarn::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "Along with Tank Girl creator",
+          "relation": null,
+          "object": null,
+          "qualifier": null,
+          "time": "1998"
+        },
+        {
+          "claim_id": "89891:Damon_Albarn::chunk-0:sent8",
+          "text": "Drawing influences from alternative rock , trip hop , hip hop , electronica , dub , reggae and pop music , the band released their self-titled debut album in 2001 to worldwide success .",
+          "source_chunk_id": "Damon_Albarn::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "Drawing influences from alternative rock",
+          "relation": null,
+          "object": null,
+          "qualifier": "Drawing influences from alternative rock",
+          "time": "2001"
+        },
+        {
+          "claim_id": "89891:Damon_Albarn::chunk-0:sent9",
+          "text": "Although Albarn is the only permanent musical contributor , the albums feature collaborations from a wide range of artists .",
+          "source_chunk_id": "Damon_Albarn::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "Although Albarn",
+          "relation": "is",
+          "object": "only permanent musical contributor",
+          "qualifier": null,
+          "time": null
+        },
+        {
+          "claim_id": "89891:Damon_Albarn::chunk-0:sent10",
+          "text": "Gorillaz are cited by the Guinness Book of World Records as the `` Most Successful Virtual Band '' .",
+          "source_chunk_id": "Damon_Albarn::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "Gorillaz",
+          "relation": "are",
+          "object": "cited by the Guinness Book of World Records as the `` Most",
+          "qualifier": null,
+          "time": null
+        },
+        {
+          "claim_id": "89891:Drake_Bell::chunk-1:sent0",
+          "text": "Bell starred in a trilogy of The Fairly OddParents movies on Nickelodeon .",
+          "source_chunk_id": "Drake_Bell::chunk-1",
+          "source_role": "retrieved_evidence",
+          "subject": "Bell starred in a trilogy",
+          "relation": null,
+          "object": null,
+          "qualifier": null,
+          "time": null
+        },
+        {
+          "claim_id": "89891:Drake_Bell::chunk-1:sent1",
+          "text": "Bell was the voice of Peter Parker / Spider-Man in the animated series Ultimate Spider-Man on Disney XD .",
+          "source_chunk_id": "Drake_Bell::chunk-1",
+          "source_role": "retrieved_evidence",
+          "subject": "Bell",
+          "relation": "was",
+          "object": "voice of Peter Parker / Spider-Man in the animated series Ultimate Spider-Man",
+          "qualifier": null,
+          "time": null
+        },
+        {
+          "claim_id": "89891:Drake_Bell::chunk-1:sent2",
+          "text": "He appeared on ABC 's reality TV series Splash .",
+          "source_chunk_id": "Drake_Bell::chunk-1",
+          "source_role": "retrieved_evidence",
+          "subject": "He appeared on ABC s",
+          "relation": null,
+          "object": null,
+          "qualifier": null,
+          "time": null
+        },
+        {
+          "claim_id": "89891:Drake_Bell::chunk-1:sent3",
+          "text": "In addition to acting , Bell has a career in music starting in the early 2000s , at the time of his appearances on The Amanda Show , with a band named Drake 24/7 .",
+          "source_chunk_id": "Drake_Bell::chunk-1",
+          "source_role": "retrieved_evidence",
+          "subject": "In addition to acting Bell",
+          "relation": "has",
+          "object": "a career in music starting in the early 2000s",
+          "qualifier": "In addition to acting",
+          "time": null
+        },
+        {
+          "claim_id": "89891:Drake_Bell::chunk-1:sent4",
+          "text": "He also co-wrote and performed the theme song to Drake & Josh , entitled `` Found a Way .",
+          "source_chunk_id": "Drake_Bell::chunk-1",
+          "source_role": "retrieved_evidence",
+          "subject": "He also co-wrote and performed",
+          "relation": "found",
+          "object": "a Way",
+          "qualifier": null,
+          "time": null
+        },
+        {
+          "claim_id": "89891:Drake_Bell::chunk-1:sent5",
+          "text": "'' In 2005 he independently released his debut album , Telegraph , released under Bell 's own name .",
+          "source_chunk_id": "Drake_Bell::chunk-1",
+          "source_role": "retrieved_evidence",
+          "subject": "s own name",
+          "relation": null,
+          "object": null,
+          "qualifier": null,
+          "time": "2005"
+        },
+        {
+          "claim_id": "89891:Drake_Bell::chunk-1:sent6",
+          "text": "His second album , It 's Only Time , was released in 2006 after signing with Universal Motown Records and debuted at # 81 on the Billboard 200 , selling over 23,000 copies its first week of release .",
+          "source_chunk_id": "Drake_Bell::chunk-1",
+          "source_role": "retrieved_evidence",
+          "subject": "His second album It s",
+          "relation": "was",
+          "object": "released in 2006",
+          "qualifier": "His second album",
+          "time": "2006"
+        },
+        {
+          "claim_id": "89891:Drake_Bell::chunk-1:sent7",
+          "text": "It 's Only Time has sold 178,000 copies in the United States as of 2012 .",
+          "source_chunk_id": "Drake_Bell::chunk-1",
+          "source_role": "retrieved_evidence",
+          "subject": "It s Only Time",
+          "relation": "has",
+          "object": "sold 178,000 copies in the United States as of 2012",
+          "qualifier": null,
+          "time": "2012"
+        },
+        {
+          "claim_id": "89891:Drake_Bell::chunk-1:sent8",
+          "text": "His first video album , Drake Bell In Concert , was released in 2008 .",
+          "source_chunk_id": "Drake_Bell::chunk-1",
+          "source_role": "retrieved_evidence",
+          "subject": "His first video album Drake",
+          "relation": "was",
+          "object": "released in 2008",
+          "qualifier": "His first video album",
+          "time": "2008"
+        },
+        {
+          "claim_id": "89891:Drake_Bell::chunk-1:sent9",
+          "text": "It debuted at # 81 on the Top 100 Mexican Albums Chart .",
+          "source_chunk_id": "Drake_Bell::chunk-1",
+          "source_role": "retrieved_evidence",
+          "subject": "It debuted at on the",
+          "relation": null,
+          "object": null,
+          "qualifier": null,
+          "time": null
+        },
+        {
+          "claim_id": "89891:Drake_Bell::chunk-1:sent10",
+          "text": "Bell released an EP in 2011 called A Reminder independently .",
+          "source_chunk_id": "Drake_Bell::chunk-1",
+          "source_role": "retrieved_evidence",
+          "subject": "Bell released an EP",
+          "relation": null,
+          "object": null,
+          "qualifier": null,
+          "time": "2011"
+        }
+      ],
+      "cross_source_nli_results": [
+        {
+          "claim_a_id": "89891:query:sent0",
+          "claim_b_id": "89891:Damon_Albarn::chunk-0:sent2",
+          "label": "neutral",
+          "entailment_score": 0.1,
+          "contradiction_score": 0.1,
+          "neutral_score": 0.8
+        },
+        {
+          "claim_a_id": "89891:query:sent0",
+          "claim_b_id": "89891:Damon_Albarn::chunk-0:sent8",
+          "label": "neutral",
+          "entailment_score": 0.1,
+          "contradiction_score": 0.1,
+          "neutral_score": 0.8
+        },
+        {
+          "claim_a_id": "89891:query:sent0",
+          "claim_b_id": "89891:Drake_Bell::chunk-1:sent5",
+          "label": "neutral",
+          "entailment_score": 0.1,
+          "contradiction_score": 0.1,
+          "neutral_score": 0.8
+        },
+        {
+          "claim_a_id": "89891:query:sent0",
+          "claim_b_id": "89891:Drake_Bell::chunk-1:sent8",
+          "label": "neutral",
+          "entailment_score": 0.1,
+          "contradiction_score": 0.1,
+          "neutral_score": 0.8
+        },
+        {
+          "claim_a_id": "89891:query:sent0",
+          "claim_b_id": "89891:Drake_Bell::chunk-1:sent10",
+          "label": "neutral",
+          "entailment_score": 0.1,
+          "contradiction_score": 0.1,
+          "neutral_score": 0.8
+        }
+      ]
+    },
+    {
+      "sample_id": "181634",
+      "dataset": "fever",
+      "split": "dev",
+      "gold_label": "SUPPORTS",
+      "query": "There is a capital called Mogadishu.",
+      "retrieved_chunk_count": 2,
+      "claim_count": 27,
+      "candidate_pair_count": 26,
+      "cross_source_pair_count": 4,
+      "predicted_label": "neutral",
+      "best_entailment_score": 0.1,
+      "best_contradiction_score": 0.1,
+      "best_neutral_score": 0.8,
+      "best_entailment_pair": {
+        "claim_a_id": "181634:query:sent0",
+        "claim_b_id": "181634:Mogadishu::chunk-0:sent0"
+      },
+      "best_contradiction_pair": {
+        "claim_a_id": "181634:query:sent0",
+        "claim_b_id": "181634:Mogadishu::chunk-0:sent0"
+      },
+      "best_neutral_pair": {
+        "claim_a_id": "181634:query:sent0",
+        "claim_b_id": "181634:Mogadishu::chunk-0:sent0"
+      },
+      "claims": [
+        {
+          "claim_id": "181634:query:sent0",
+          "text": "There is a capital called Mogadishu.",
+          "source_chunk_id": "query",
+          "source_role": "query",
+          "subject": "There",
+          "relation": "is",
+          "object": "a capital called Mogadishu",
+          "qualifier": null,
+          "time": null
+        },
+        {
+          "claim_id": "181634:Mogadishu::chunk-0:sent0",
+          "text": "Mogadishu -LRB- -LSB- ˌmɔːɡəˈdiːʃuː -RSB- Muqdisho -LSB- mʉqdɪʃɔ -RSB- ; مقديشو -LSB- maqadiːʃuː -RSB- -RRB- , known locally as Hamar , is the capital and most populous city of Somalia .",
+          "source_chunk_id": "Mogadishu::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "Mogadishu LRB- LSB- m di",
+          "relation": "is",
+          "object": "capital and most populous city of Somalia",
+          "qualifier": null,
+          "time": null
+        },
+        {
+          "claim_id": "181634:Mogadishu::chunk-0:sent1",
+          "text": "Located in the coastal Banaadir region on the Indian Ocean , the city has served as an important port for millennia .",
+          "source_chunk_id": "Mogadishu::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "Located in the coastal Banaadir",
+          "relation": "has",
+          "object": "served as an important port for millennia",
+          "qualifier": null,
+          "time": null
+        },
+        {
+          "claim_id": "181634:Mogadishu::chunk-0:sent2",
+          "text": ", it has a population of 2,425,000 residents .",
+          "source_chunk_id": "Mogadishu::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "it",
+          "relation": "has",
+          "object": "a population of 2,425,000 residents",
+          "qualifier": "",
+          "time": null
+        },
+        {
+          "claim_id": "181634:Mogadishu::chunk-0:sent3",
+          "text": "Tradition and old records assert that southern Somalia , including the Mogadishu area , was historically inhabited by hunter-gatherers .",
+          "source_chunk_id": "Mogadishu::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "Tradition and old records assert",
+          "relation": "was",
+          "object": "historically inhabited by hunter-gatherers",
+          "qualifier": null,
+          "time": null
+        },
+        {
+          "claim_id": "181634:Mogadishu::chunk-0:sent4",
+          "text": "These were later joined by Cushitic-speaking agro-pastoralists , who would go on to establish local aristocracies .",
+          "source_chunk_id": "Mogadishu::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": null,
+          "relation": "were",
+          "object": "later joined by Cushitic-speaking agro-pastoralists",
+          "qualifier": null,
+          "time": null
+        },
+        {
+          "claim_id": "181634:Mogadishu::chunk-0:sent5",
+          "text": "During its medieval Golden Age , Mogadishu was ruled by the Muzaffar dynasty , a vassal of the Ajuran Sultanate .",
+          "source_chunk_id": "Mogadishu::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "During its medieval Golden Age",
+          "relation": "was",
+          "object": "ruled by the Muzaffar dynasty",
+          "qualifier": "During its medieval Golden Age",
+          "time": null
+        },
+        {
+          "claim_id": "181634:Mogadishu::chunk-0:sent6",
+          "text": "It subsequently fell under the control of an assortment of local Sultanates and polities , most notably the Sultanate of the Geledi .",
+          "source_chunk_id": "Mogadishu::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "It subsequently fell under the",
+          "relation": null,
+          "object": null,
+          "qualifier": null,
+          "time": null
+        },
+        {
+          "claim_id": "181634:Mogadishu::chunk-0:sent7",
+          "text": "The city later became the capital of Italian Somaliland -LRB- 1889 -- 1936 -RRB- in the colonial period .",
+          "source_chunk_id": "Mogadishu::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "The city later became the",
+          "relation": null,
+          "object": null,
+          "qualifier": null,
+          "time": "1889"
+        },
+        {
+          "claim_id": "181634:Mogadishu::chunk-0:sent8",
+          "text": "After the Somali Republic became independent in 1960 , Mogadishu became known and promoted as the White Pearl of the Indian Ocean .",
+          "source_chunk_id": "Mogadishu::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "After the Somali Republic became",
+          "relation": null,
+          "object": null,
+          "qualifier": null,
+          "time": "1960"
+        },
+        {
+          "claim_id": "181634:Mogadishu::chunk-0:sent9",
+          "text": "After the ousting of the Siad Barre regime in 1991 and the ensuing Somali Civil War , various militias fought for control of the city , later to be replaced by the Islamic Courts Union in the mid-2000s .",
+          "source_chunk_id": "Mogadishu::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "After the ousting of the",
+          "relation": null,
+          "object": null,
+          "qualifier": null,
+          "time": "1991"
+        },
+        {
+          "claim_id": "181634:Mogadishu::chunk-0:sent10",
+          "text": "The ICU thereafter splintered into more radical groups , notably al-Shabaab , which fought the Transitional Federal Government -LRB- 2004 -- 2012 -RRB- and its African Union Mission to Somalia allies .",
+          "source_chunk_id": "Mogadishu::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "The ICU thereafter splintered into",
+          "relation": null,
+          "object": null,
+          "qualifier": null,
+          "time": "2004"
+        },
+        {
+          "claim_id": "181634:Mogadishu::chunk-0:sent11",
+          "text": "With a change in administration in late 2010 , government troops and their military partners had succeeded in forcing out Al-Shabaab by August 2011 .",
+          "source_chunk_id": "Mogadishu::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "With a change in administration",
+          "relation": null,
+          "object": null,
+          "qualifier": null,
+          "time": "2010"
+        },
+        {
+          "claim_id": "181634:Mogadishu::chunk-0:sent12",
+          "text": "Mogadishu has subsequently experienced a period of intense reconstruction .",
+          "source_chunk_id": "Mogadishu::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "Mogadishu",
+          "relation": "has",
+          "object": "subsequently experienced a period of intense reconstruction",
+          "qualifier": null,
+          "time": null
+        },
+        {
+          "claim_id": "181634:Mogadishu::chunk-0:sent13",
+          "text": "As Somalia 's capital city , many important national institutions are based in Mogadishu .",
+          "source_chunk_id": "Mogadishu::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "As Somalia s capital city",
+          "relation": "are",
+          "object": "based in Mogadishu",
+          "qualifier": "As Somalia 's capital city",
+          "time": null
+        },
+        {
+          "claim_id": "181634:Mogadishu::chunk-0:sent14",
+          "text": "It is the seat of the Federal Government of Somalia established in August 2012 , with the Somalia Federal Parliament serving as the government 's legislative branch .",
+          "source_chunk_id": "Mogadishu::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "It",
+          "relation": "is",
+          "object": "seat of the Federal Government of Somalia established in August 2012",
+          "qualifier": null,
+          "time": "2012"
+        },
+        {
+          "claim_id": "181634:Mogadishu::chunk-0:sent15",
+          "text": "Thabit Abdi Mohammed has been the Mayor of Mogadishu since April 2017 .",
+          "source_chunk_id": "Mogadishu::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "Thabit Abdi Mohammed",
+          "relation": "has",
+          "object": "been the Mayor of Mogadishu since April 2017",
+          "qualifier": null,
+          "time": "2017"
+        },
+        {
+          "claim_id": "181634:Mogadishu::chunk-0:sent16",
+          "text": "Villa Somalia is the official residential palace and principal workplace of the President of Somalia , Mohamed Abdullahi Mohamed .",
+          "source_chunk_id": "Mogadishu::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "Villa Somalia",
+          "relation": "is",
+          "object": "official residential palace and principal workplace of the President of Somalia",
+          "qualifier": null,
+          "time": null
+        },
+        {
+          "claim_id": "181634:Mogadishu::chunk-0:sent17",
+          "text": "In May 2012 , the First Somali Bank was established in the capital , which organized Mogadishu 's first ever Technology , Entertainment , Design -LRB- TEDx -RRB- conference .",
+          "source_chunk_id": "Mogadishu::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "In May the First Somali",
+          "relation": "was",
+          "object": "established in the capital",
+          "qualifier": "In May 2012",
+          "time": "2012"
+        },
+        {
+          "claim_id": "181634:Mogadishu::chunk-0:sent18",
+          "text": "The establishment of a local construction yard has also galvanized the city 's real-estate sector .",
+          "source_chunk_id": "Mogadishu::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "The establishment of a local",
+          "relation": "has",
+          "object": "also galvanized the city 's real-estate sector",
+          "qualifier": null,
+          "time": null
+        },
+        {
+          "claim_id": "181634:Mogadishu::chunk-0:sent19",
+          "text": "Arba'a Rukun Mosque is one of the oldest Islamic places of worship in the capital , built circa 667 -LRB- 1268/9 AD -RRB- .",
+          "source_chunk_id": "Mogadishu::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "Arba'a Rukun Mosque",
+          "relation": "is",
+          "object": "one of the oldest Islamic places of worship in the capital",
+          "qualifier": null,
+          "time": "1268"
+        },
+        {
+          "claim_id": "181634:Mogadishu::chunk-0:sent20",
+          "text": "The Mosque of Islamic Solidarity in Mogadishu is the largest masjid in the Horn region .",
+          "source_chunk_id": "Mogadishu::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "The Mosque of Islamic Solidarity",
+          "relation": "is",
+          "object": "largest masjid in the Horn region",
+          "qualifier": null,
+          "time": null
+        },
+        {
+          "claim_id": "181634:Mogadishu::chunk-0:sent21",
+          "text": "Mogadishu Cathedral was built in 1928 by the colonial authorities in Italian Somaliland in a Norman Gothic style , and served as the traditional seat of the Roman Catholic Diocese of Mogadiscio .",
+          "source_chunk_id": "Mogadishu::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "Mogadishu Cathedral",
+          "relation": "was",
+          "object": "built in 1928 by the colonial authorities in Italian Somaliland in a",
+          "qualifier": null,
+          "time": "1928"
+        },
+        {
+          "claim_id": "181634:Mogadishu::chunk-2:sent0",
+          "text": "Mogadishu Stadium was constructed in 1978 during the Siad Barre administration , with the assistance of Chinese engineers .",
+          "source_chunk_id": "Mogadishu::chunk-2",
+          "source_role": "retrieved_evidence",
+          "subject": "Mogadishu Stadium",
+          "relation": "was",
+          "object": "constructed in 1978 during the Siad Barre administration",
+          "qualifier": null,
+          "time": "1978"
+        },
+        {
+          "claim_id": "181634:Mogadishu::chunk-2:sent1",
+          "text": "It hosts football matches with teams from the Somali First Division and the Somalia Cup .",
+          "source_chunk_id": "Mogadishu::chunk-2",
+          "source_role": "retrieved_evidence",
+          "subject": "It hosts football matches",
+          "relation": null,
+          "object": null,
+          "qualifier": null,
+          "time": null
+        },
+        {
+          "claim_id": "181634:Mogadishu::chunk-2:sent2",
+          "text": "Additionally , the Port of Mogadishu serves as a major national seaport and is the largest harbour in Somalia .",
+          "source_chunk_id": "Mogadishu::chunk-2",
+          "source_role": "retrieved_evidence",
+          "subject": "Additionally the Port of Mogadishu",
+          "relation": "is",
+          "object": "largest harbour in Somalia",
+          "qualifier": "Additionally",
+          "time": null
+        },
+        {
+          "claim_id": "181634:Mogadishu::chunk-2:sent3",
+          "text": "Mogadishu International Airport , the capital 's main airport , is the hub of the national carrier Somali Airlines .",
+          "source_chunk_id": "Mogadishu::chunk-2",
+          "source_role": "retrieved_evidence",
+          "subject": "Mogadishu International Airport the capital",
+          "relation": "is",
+          "object": "hub of the national carrier Somali Airlines",
+          "qualifier": "Mogadishu International Airport",
+          "time": null
+        }
+      ],
+      "cross_source_nli_results": [
+        {
+          "claim_a_id": "181634:query:sent0",
+          "claim_b_id": "181634:Mogadishu::chunk-0:sent0",
+          "label": "neutral",
+          "entailment_score": 0.1,
+          "contradiction_score": 0.1,
+          "neutral_score": 0.8
+        },
+        {
+          "claim_a_id": "181634:query:sent0",
+          "claim_b_id": "181634:Mogadishu::chunk-0:sent12",
+          "label": "neutral",
+          "entailment_score": 0.1,
+          "contradiction_score": 0.1,
+          "neutral_score": 0.8
+        },
+        {
+          "claim_a_id": "181634:query:sent0",
+          "claim_b_id": "181634:Mogadishu::chunk-0:sent13",
+          "label": "neutral",
+          "entailment_score": 0.1,
+          "contradiction_score": 0.1,
+          "neutral_score": 0.8
+        },
+        {
+          "claim_a_id": "181634:query:sent0",
+          "claim_b_id": "181634:Mogadishu::chunk-2:sent3",
+          "label": "neutral",
+          "entailment_score": 0.1,
+          "contradiction_score": 0.1,
+          "neutral_score": 0.8
+        }
+      ]
+    },
+    {
+      "sample_id": "219028",
+      "dataset": "fever",
+      "split": "dev",
+      "gold_label": "REFUTES",
+      "query": "Savages was exclusively a German film.",
+      "retrieved_chunk_count": 2,
+      "claim_count": 8,
+      "candidate_pair_count": 2,
+      "cross_source_pair_count": 1,
+      "predicted_label": "neutral",
+      "best_entailment_score": 0.1,
+      "best_contradiction_score": 0.1,
+      "best_neutral_score": 0.8,
+      "best_entailment_pair": {
+        "claim_a_id": "219028:query:sent0",
+        "claim_b_id": "219028:Savages_-LRB-2012_film-RRB-::chunk-0:sent0"
+      },
+      "best_contradiction_pair": {
+        "claim_a_id": "219028:query:sent0",
+        "claim_b_id": "219028:Savages_-LRB-2012_film-RRB-::chunk-0:sent0"
+      },
+      "best_neutral_pair": {
+        "claim_a_id": "219028:query:sent0",
+        "claim_b_id": "219028:Savages_-LRB-2012_film-RRB-::chunk-0:sent0"
+      },
+      "claims": [
+        {
+          "claim_id": "219028:query:sent0",
+          "text": "Savages was exclusively a German film.",
+          "source_chunk_id": "query",
+          "source_role": "query",
+          "subject": "Savages",
+          "relation": "was",
+          "object": "exclusively a German film",
+          "qualifier": null,
+          "time": null
+        },
+        {
+          "claim_id": "219028:Savages_-LRB-2012_film-RRB-::chunk-0:sent0",
+          "text": "For the 2007 film , see The Savages Savages is a 2012 American crime thriller film directed by Oliver Stone .",
+          "source_chunk_id": "Savages_-LRB-2012_film-RRB-::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "For the film see The",
+          "relation": "is",
+          "object": "a 2012 American crime thriller film directed by Oliver Stone",
+          "qualifier": "For the 2007 film",
+          "time": "2007"
+        },
+        {
+          "claim_id": "219028:Savages_-LRB-2012_film-RRB-::chunk-0:sent1",
+          "text": "It is based on the novel of the same name by Don Winslow .",
+          "source_chunk_id": "Savages_-LRB-2012_film-RRB-::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "It",
+          "relation": "is",
+          "object": "based on the novel of the same name by Don Winslow",
+          "qualifier": null,
+          "time": null
+        },
+        {
+          "claim_id": "219028:Savages_-LRB-2012_film-RRB-::chunk-0:sent2",
+          "text": "The screenplay was written by Shane Salerno , Stone , and Winslow .",
+          "source_chunk_id": "Savages_-LRB-2012_film-RRB-::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "The screenplay",
+          "relation": "was",
+          "object": "written by Shane Salerno",
+          "qualifier": null,
+          "time": null
+        },
+        {
+          "claim_id": "219028:Savages_-LRB-2012_film-RRB-::chunk-0:sent3",
+          "text": "The film was released on July 6 , 2012 , and stars Taylor Kitsch , Blake Lively , Aaron Taylor-Johnson , Demian Bichir , Benicio del Toro , Salma Hayek , John Travolta and Emile Hirsch .",
+          "source_chunk_id": "Savages_-LRB-2012_film-RRB-::chunk-0",
+          "source_role": "retrieved_evidence",
+          "subject": "The film",
+          "relation": "was",
+          "object": "released on July 6 , 2012",
+          "qualifier": null,
+          "time": "July 6"
+        },
+        {
+          "claim_id": "219028:Soul_Food_-LRB-film-RRB-::chunk-1:sent0",
+          "text": "Tillman based the family in the film on his own and Soul Food was widely acclaimed for presenting a more positive image of African-Americans than is typically seen in Hollywood films .",
+          "source_chunk_id": "Soul_Food_-LRB-film-RRB-::chunk-1",
+          "source_role": "retrieved_evidence",
+          "subject": "Tillman based the family",
+          "relation": "was",
+          "object": "widely acclaimed for presenting a more positive image of African-Americans than is",
+          "qualifier": null,
+          "time": null
+        },
+        {
+          "claim_id": "219028:Soul_Food_-LRB-film-RRB-::chunk-1:sent1",
+          "text": "In 2000 , Showtime premiered a one-hour television series based upon the film .",
+          "source_chunk_id": "Soul_Food_-LRB-film-RRB-::chunk-1",
+          "source_role": "retrieved_evidence",
+          "subject": "In Showtime premiered a one-hour",
+          "relation": null,
+          "object": null,
+          "qualifier": "In 2000",
+          "time": "2000"
+        },
+        {
+          "claim_id": "219028:Soul_Food_-LRB-film-RRB-::chunk-1:sent2",
+          "text": "In 2015 , it was announced that 20th Century Fox is planning a sequel for film called More Soul Food , written by Tillman , Jr.",
+          "source_chunk_id": "Soul_Food_-LRB-film-RRB-::chunk-1",
+          "source_role": "retrieved_evidence",
+          "subject": "In it",
+          "relation": "was",
+          "object": "announced that 20th Century Fox is planning a sequel for film called",
+          "qualifier": "In 2015",
+          "time": "2015"
+        }
+      ],
+      "cross_source_nli_results": [
+        {
+          "claim_a_id": "219028:query:sent0",
+          "claim_b_id": "219028:Savages_-LRB-2012_film-RRB-::chunk-0:sent0",
+          "label": "neutral",
+          "entailment_score": 0.1,
+          "contradiction_score": 0.1,
+          "neutral_score": 0.8
+        }
+      ]
+    }
+  ],
+  "output": "artifacts/p5_from_p3_query30.jsonl"
+}

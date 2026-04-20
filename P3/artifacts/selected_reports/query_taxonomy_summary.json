@@ -1,0 +1,200 @@
+{
+  "regression_30": {
+    "records_evaluated": 30,
+    "bucket_stats": {
+      "very_short_factoid": {
+        "records": 2,
+        "short_query_records": 2,
+        "decisive_records": 0,
+        "non_decisive_records": 2,
+        "avg_cross_source_pairs": 0.5,
+        "avg_evidence_penalty": 0.1,
+        "failure_labels": {
+          "Q_SHORT": 1,
+          "NO_CROSS_SOURCE_SIGNAL": 1
+        },
+        "short_query_rate": 1.0,
+        "decisive_rate": 0.0
+      },
+      "yes_no_claim_like": {
+        "records": 11,
+        "short_query_records": 0,
+        "decisive_records": 0,
+        "non_decisive_records": 11,
+        "avg_cross_source_pairs": 1.2727,
+        "avg_evidence_penalty": 0.1341,
+        "failure_labels": {
+          "EVIDENCE_OK_BUT_NOT_COMPARABLE": 3,
+          "Q_COLLAPSED_IN_P1": 3,
+          "Q_UNDERSPECIFIED": 2,
+          "NO_CROSS_SOURCE_SIGNAL": 2,
+          "EVIDENCE_STILL_NOISY": 1
+        },
+        "short_query_rate": 0.0,
+        "decisive_rate": 0.0
+      },
+      "entity_seeking": {
+        "records": 8,
+        "short_query_records": 1,
+        "decisive_records": 1,
+        "non_decisive_records": 7,
+        "avg_cross_source_pairs": 2.125,
+        "avg_evidence_penalty": 0.1125,
+        "failure_labels": {
+          "Q_UNDERSPECIFIED": 3,
+          "NO_CROSS_SOURCE_SIGNAL": 2,
+          "EVIDENCE_STILL_NOISY": 1,
+          "Q_SHORT": 1
+        },
+        "short_query_rate": 0.125,
+        "decisive_rate": 0.125
+      },
+      "temporal_query": {
+        "records": 6,
+        "short_query_records": 2,
+        "decisive_records": 0,
+        "non_decisive_records": 6,
+        "avg_cross_source_pairs": 3.1667,
+        "avg_evidence_penalty": 0.1,
+        "failure_labels": {
+          "Q_COLLAPSED_IN_P1": 3,
+          "EVIDENCE_OK_BUT_NOT_COMPARABLE": 2,
+          "EVIDENCE_STILL_NOISY": 1
+        },
+        "short_query_rate": 0.3333,
+        "decisive_rate": 0.0
+      },
+      "ambiguous_name_query": {
+        "records": 2,
+        "short_query_records": 2,
+        "decisive_records": 0,
+        "non_decisive_records": 2,
+        "avg_cross_source_pairs": 1.0,
+        "avg_evidence_penalty": 0.15,
+        "failure_labels": {
+          "Q_SHORT": 2
+        },
+        "short_query_rate": 1.0,
+        "decisive_rate": 0.0
+      },
+      "quoted_or_attribution_heavy": {
+        "records": 1,
+        "short_query_records": 0,
+        "decisive_records": 0,
+        "non_decisive_records": 1,
+        "avg_cross_source_pairs": 2.0,
+        "avg_evidence_penalty": 0.1,
+        "failure_labels": {
+          "EVIDENCE_OK_BUT_NOT_COMPARABLE": 1
+        },
+        "short_query_rate": 0.0,
+        "decisive_rate": 0.0
+      }
+    },
+    "failure_family_counts": {
+      "query_side": 15,
+      "retrieval_side": 8,
+      "comparison_gap": 6
+    }
+  },
+  "diagnostic_150": {
+    "records_evaluated": 150,
+    "bucket_stats": {
+      "very_short_factoid": {
+        "records": 14,
+        "short_query_records": 14,
+        "decisive_records": 0,
+        "non_decisive_records": 14,
+        "avg_cross_source_pairs": 0.5,
+        "avg_evidence_penalty": 0.1268,
+        "failure_labels": {
+          "NO_CROSS_SOURCE_SIGNAL": 7,
+          "Q_SHORT": 7
+        },
+        "short_query_rate": 1.0,
+        "decisive_rate": 0.0
+      },
+      "yes_no_claim_like": {
+        "records": 59,
+        "short_query_records": 0,
+        "decisive_records": 0,
+        "non_decisive_records": 59,
+        "avg_cross_source_pairs": 0.5763,
+        "avg_evidence_penalty": 0.1102,
+        "failure_labels": {
+          "NO_CROSS_SOURCE_SIGNAL": 36,
+          "EVIDENCE_OK_BUT_NOT_COMPARABLE": 10,
+          "Q_COLLAPSED_IN_P1": 7,
+          "Q_UNDERSPECIFIED": 4,
+          "EVIDENCE_STILL_NOISY": 2
+        },
+        "short_query_rate": 0.0,
+        "decisive_rate": 0.0
+      },
+      "entity_seeking": {
+        "records": 41,
+        "short_query_records": 9,
+        "decisive_records": 1,
+        "non_decisive_records": 40,
+        "avg_cross_source_pairs": 0.7561,
+        "avg_evidence_penalty": 0.0951,
+        "failure_labels": {
+          "NO_CROSS_SOURCE_SIGNAL": 28,
+          "Q_UNDERSPECIFIED": 7,
+          "EVIDENCE_STILL_NOISY": 4,
+          "Q_SHORT": 1
+        },
+        "short_query_rate": 0.2195,
+        "decisive_rate": 0.0244
+      },
+      "temporal_query": {
+        "records": 32,
+        "short_query_records": 3,
+        "decisive_records": 0,
+        "non_decisive_records": 32,
+        "avg_cross_source_pairs": 0.8438,
+        "avg_evidence_penalty": 0.1211,
+        "failure_labels": {
+          "NO_CROSS_SOURCE_SIGNAL": 21,
+          "EVIDENCE_OK_BUT_NOT_COMPARABLE": 6,
+          "Q_COLLAPSED_IN_P1": 4,
+          "EVIDENCE_STILL_NOISY": 1
+        },
+        "short_query_rate": 0.0938,
+        "decisive_rate": 0.0
+      },
+      "ambiguous_name_query": {
+        "records": 2,
+        "short_query_records": 2,
+        "decisive_records": 0,
+        "non_decisive_records": 2,
+        "avg_cross_source_pairs": 1.0,
+        "avg_evidence_penalty": 0.15,
+        "failure_labels": {
+          "Q_SHORT": 2
+        },
+        "short_query_rate": 1.0,
+        "decisive_rate": 0.0
+      },
+      "quoted_or_attribution_heavy": {
+        "records": 2,
+        "short_query_records": 0,
+        "decisive_records": 0,
+        "non_decisive_records": 2,
+        "avg_cross_source_pairs": 1.0,
+        "avg_evidence_penalty": 0.1,
+        "failure_labels": {
+          "NO_CROSS_SOURCE_SIGNAL": 1,
+          "EVIDENCE_OK_BUT_NOT_COMPARABLE": 1
+        },
+        "short_query_rate": 0.0,
+        "decisive_rate": 0.0
+      }
+    },
+    "failure_family_counts": {
+      "retrieval_side": 100,
+      "query_side": 32,
+      "comparison_gap": 17
+    }
+  }
+}

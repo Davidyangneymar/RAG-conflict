@@ -1,0 +1,3935 @@
+{
+  "regression_30": {
+    "records_evaluated": 30,
+    "failure_label_counts": {
+      "Q_COLLAPSED_IN_P1": 6,
+      "EVIDENCE_OK_BUT_NOT_COMPARABLE": 6,
+      "Q_UNDERSPECIFIED": 5,
+      "NO_CROSS_SOURCE_SIGNAL": 5,
+      "Q_SHORT": 4,
+      "EVIDENCE_STILL_NOISY": 3
+    },
+    "failure_family_counts": {
+      "query_side": 15,
+      "retrieval_side": 8,
+      "comparison_gap": 6
+    },
+    "records": [
+      {
+        "sample_id": "137334",
+        "query": "Fox 2000 Pictures released the film Soul Food.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 8,
+        "query_claims": [
+          "Fox 2000 Pictures released the film Soul Food."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 5,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.0,
+        "evidence_flag_counts": {},
+        "failure_label": "Q_COLLAPSED_IN_P1"
+      },
+      {
+        "sample_id": "111897",
+        "query": "Telemundo is a English-language television network.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 7,
+        "query_claims": [
+          "Telemundo is a English-language television network."
+        ],
+        "query_claim_token_counts": [
+          7
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 2,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "EVIDENCE_STILL_NOISY"
+      },
+      {
+        "sample_id": "89891",
+        "query": "Damon Albarn's debut album was released in 2011.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 9,
+        "query_claims": [
+          "Damon Albarn's debut album was released in 2011."
+        ],
+        "query_claim_token_counts": [
+          9
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 5,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "EVIDENCE_OK_BUT_NOT_COMPARABLE"
+      },
+      {
+        "sample_id": "181634",
+        "query": "There is a capital called Mogadishu.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 6,
+        "query_claims": [
+          "There is a capital called Mogadishu."
+        ],
+        "query_claim_token_counts": [
+          6
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 4,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "Q_UNDERSPECIFIED"
+      },
+      {
+        "sample_id": "219028",
+        "query": "Savages was exclusively a German film.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 6,
+        "query_claims": [
+          "Savages was exclusively a German film."
+        ],
+        "query_claim_token_counts": [
+          6
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.075,
+        "evidence_flag_counts": {
+          "attribution_or_appositive_heavy": 1
+        },
+        "failure_label": "Q_UNDERSPECIFIED"
+      },
+      {
+        "sample_id": "108281",
+        "query": "Andrew Kevin Walker is only Chinese.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 6,
+        "query_claims": [
+          "Andrew Kevin Walker is only Chinese."
+        ],
+        "query_claim_token_counts": [
+          6
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "Q_UNDERSPECIFIED"
+      },
+      {
+        "sample_id": "204361",
+        "query": "The Cretaceous ended.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 3,
+        "query_claims": [
+          "The Cretaceous ended."
+        ],
+        "query_claim_token_counts": [
+          3
+        ],
+        "short_query_claim": true,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "Q_COLLAPSED_IN_P1"
+      },
+      {
+        "sample_id": "54168",
+        "query": "Murda Beatz's real name is Marshall Mathers.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 8,
+        "query_claims": [
+          "Murda Beatz's real name is Marshall Mathers."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "105095",
+        "query": "Nicholas Brody is a character on Homeland.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 7,
+        "query_claims": [
+          "Nicholas Brody is a character on Homeland."
+        ],
+        "query_claim_token_counts": [
+          7
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 2,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.0,
+        "evidence_flag_counts": {},
+        "failure_label": "Q_UNDERSPECIFIED"
+      },
+      {
+        "sample_id": "18708",
+        "query": "Charles Manson has been proven innocent of all crimes.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 9,
+        "query_claims": [
+          "Charles Manson has been proven innocent of all crimes."
+        ],
+        "query_claim_token_counts": [
+          9
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "EVIDENCE_OK_BUT_NOT_COMPARABLE"
+      },
+      {
+        "sample_id": "90809",
+        "query": "Sean Penn is only ever a stage actor.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 8,
+        "query_claims": [
+          "Sean Penn is only ever a stage actor."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "EVIDENCE_STILL_NOISY"
+      },
+      {
+        "sample_id": "204443",
+        "query": "Brad Wilk helped co-found Rage in 1962.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 8,
+        "query_claims": [
+          "Brad Wilk helped co-found Rage in 1962."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 2,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "EVIDENCE_OK_BUT_NOT_COMPARABLE"
+      },
+      {
+        "sample_id": "192714",
+        "query": "CBS is the network that aired The Millers.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 8,
+        "query_claims": [
+          "CBS is the network that aired The Millers."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 2,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "Q_UNDERSPECIFIED"
+      },
+      {
+        "sample_id": "159706",
+        "query": "Edgar Wright is a person.",
+        "query_bucket": "ambiguous_name_query",
+        "query_token_count": 5,
+        "query_claims": [
+          "Edgar Wright is a person."
+        ],
+        "query_claim_token_counts": [
+          5
+        ],
+        "short_query_claim": true,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "Q_SHORT"
+      },
+      {
+        "sample_id": "107786",
+        "query": "Ann Richards was professionally involved in politics.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 7,
+        "query_claims": [
+          "Ann Richards was professionally involved in politics."
+        ],
+        "query_claim_token_counts": [
+          7
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "166846",
+        "query": "Drake Bell put out an EP.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 6,
+        "query_claims": [
+          "Drake Bell put out an EP."
+        ],
+        "query_claim_token_counts": [
+          6
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 4,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "Q_COLLAPSED_IN_P1"
+      },
+      {
+        "sample_id": "140764",
+        "query": "Janet Leigh was incapable of writing.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 6,
+        "query_claims": [
+          "Janet Leigh was incapable of writing."
+        ],
+        "query_claim_token_counts": [
+          6
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "197381",
+        "query": "Simón Bolívar is only known as Simón Bolívar.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 12,
+        "query_claims": [
+          "Simón Bolívar is only known as Simón Bolívar."
+        ],
+        "query_claim_token_counts": [
+          12
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "187000",
+        "query": "Bermuda Triangle is in the western part of the Himalayas.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 10,
+        "query_claims": [
+          "Bermuda Triangle is in the western part of the Himalayas."
+        ],
+        "query_claim_token_counts": [
+          10
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "EVIDENCE_OK_BUT_NOT_COMPARABLE"
+      },
+      {
+        "sample_id": "142454",
+        "query": "Advertising is a personal message.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 5,
+        "query_claims": [
+          "Advertising is a personal message."
+        ],
+        "query_claim_token_counts": [
+          5
+        ],
+        "short_query_claim": true,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 4,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.0,
+        "evidence_flag_counts": {},
+        "failure_label": "Q_SHORT"
+      },
+      {
+        "sample_id": "147411",
+        "query": "Hot Right Now is mistakenly attributed to DJ Fresh.",
+        "query_bucket": "quoted_or_attribution_heavy",
+        "query_token_count": 9,
+        "query_claims": [
+          "Hot Right Now is mistakenly attributed to DJ Fresh."
+        ],
+        "query_claim_token_counts": [
+          9
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 2,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "EVIDENCE_OK_BUT_NOT_COMPARABLE"
+      },
+      {
+        "sample_id": "227362",
+        "query": "Giada at Home was only available on DVD.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 8,
+        "query_claims": [
+          "Giada at Home was only available on DVD."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "EVIDENCE_OK_BUT_NOT_COMPARABLE"
+      },
+      {
+        "sample_id": "145512",
+        "query": "Harold Macmillan was born on February 20, 1894.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 8,
+        "query_claims": [
+          "Harold Macmillan was born on February 20, 1894."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "EVIDENCE_STILL_NOISY"
+      },
+      {
+        "sample_id": "64721",
+        "query": "Aristotle spent time in Athens.",
+        "query_bucket": "very_short_factoid",
+        "query_token_count": 5,
+        "query_claims": [
+          "Aristotle spent time in Athens."
+        ],
+        "query_claim_token_counts": [
+          5
+        ],
+        "short_query_claim": true,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "Q_SHORT"
+      },
+      {
+        "sample_id": "124667",
+        "query": "David Packouz refused to be an entrepreneur.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 7,
+        "query_claims": [
+          "David Packouz refused to be an entrepreneur."
+        ],
+        "query_claim_token_counts": [
+          7
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 2,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "Q_COLLAPSED_IN_P1"
+      },
+      {
+        "sample_id": "52175",
+        "query": "Magic Johnson did not play for the Lakers.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 8,
+        "query_claims": [
+          "Magic Johnson did not play for the Lakers."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 2,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "Q_COLLAPSED_IN_P1"
+      },
+      {
+        "sample_id": "104386",
+        "query": "Tenacious D started in 1997.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 5,
+        "query_claims": [
+          "Tenacious D started in 1997."
+        ],
+        "query_claim_token_counts": [
+          5
+        ],
+        "short_query_claim": true,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 5,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "Q_COLLAPSED_IN_P1"
+      },
+      {
+        "sample_id": "55658",
+        "query": "James VI and I was a major advocate of a single parliament for Scotland and England.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 16,
+        "query_claims": [
+          "James VI and I was a major advocate of a single parliament for Scotland and England."
+        ],
+        "query_claim_token_counts": [
+          16
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 3,
+        "decisive_cross_source_nli": true,
+        "predicted_label": "entailment",
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": null
+      },
+      {
+        "sample_id": "201090",
+        "query": "Marcus Bentley is a broadcaster.",
+        "query_bucket": "ambiguous_name_query",
+        "query_token_count": 5,
+        "query_claims": [
+          "Marcus Bentley is a broadcaster."
+        ],
+        "query_claim_token_counts": [
+          5
+        ],
+        "short_query_claim": true,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "Q_SHORT"
+      },
+      {
+        "sample_id": "129441",
+        "query": "Saxony is in Ireland.",
+        "query_bucket": "very_short_factoid",
+        "query_token_count": 4,
+        "query_claims": [
+          "Saxony is in Ireland."
+        ],
+        "query_claim_token_counts": [
+          4
+        ],
+        "short_query_claim": true,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      }
+    ]
+  },
+  "diagnostic_150": {
+    "records_evaluated": 150,
+    "failure_label_counts": {
+      "NO_CROSS_SOURCE_SIGNAL": 93,
+      "EVIDENCE_OK_BUT_NOT_COMPARABLE": 17,
+      "Q_COLLAPSED_IN_P1": 11,
+      "Q_UNDERSPECIFIED": 11,
+      "Q_SHORT": 10,
+      "EVIDENCE_STILL_NOISY": 7
+    },
+    "failure_family_counts": {
+      "retrieval_side": 100,
+      "query_side": 32,
+      "comparison_gap": 17
+    },
+    "records": [
+      {
+        "sample_id": "91198",
+        "query": "Colin Kaepernick became a starting quarterback during the 49ers 63rd season in the National Football League.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 16,
+        "query_claims": [
+          "Colin Kaepernick became a starting quarterback during the 49ers 63rd season in the National Football League."
+        ],
+        "query_claim_token_counts": [
+          16
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "194462",
+        "query": "Tilda Swinton is a vegan.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 5,
+        "query_claims": [
+          "Tilda Swinton is a vegan."
+        ],
+        "query_claim_token_counts": [
+          5
+        ],
+        "short_query_claim": true,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.0,
+        "evidence_flag_counts": {},
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "137334",
+        "query": "Fox 2000 Pictures released the film Soul Food.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 8,
+        "query_claims": [
+          "Fox 2000 Pictures released the film Soul Food."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 5,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.0,
+        "evidence_flag_counts": {},
+        "failure_label": "Q_COLLAPSED_IN_P1"
+      },
+      {
+        "sample_id": "166626",
+        "query": "Anne Rice was born in New Jersey.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 7,
+        "query_claims": [
+          "Anne Rice was born in New Jersey."
+        ],
+        "query_claim_token_counts": [
+          7
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "111897",
+        "query": "Telemundo is a English-language television network.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 7,
+        "query_claims": [
+          "Telemundo is a English-language television network."
+        ],
+        "query_claim_token_counts": [
+          7
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 2,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "EVIDENCE_STILL_NOISY"
+      },
+      {
+        "sample_id": "89891",
+        "query": "Damon Albarn's debut album was released in 2011.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 9,
+        "query_claims": [
+          "Damon Albarn's debut album was released in 2011."
+        ],
+        "query_claim_token_counts": [
+          9
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 5,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "EVIDENCE_OK_BUT_NOT_COMPARABLE"
+      },
+      {
+        "sample_id": "181634",
+        "query": "There is a capital called Mogadishu.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 6,
+        "query_claims": [
+          "There is a capital called Mogadishu."
+        ],
+        "query_claim_token_counts": [
+          6
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 4,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "Q_UNDERSPECIFIED"
+      },
+      {
+        "sample_id": "219028",
+        "query": "Savages was exclusively a German film.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 6,
+        "query_claims": [
+          "Savages was exclusively a German film."
+        ],
+        "query_claim_token_counts": [
+          6
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.075,
+        "evidence_flag_counts": {
+          "attribution_or_appositive_heavy": 1
+        },
+        "failure_label": "Q_UNDERSPECIFIED"
+      },
+      {
+        "sample_id": "194372",
+        "query": "Happiness in Slavery is a gospel song by Nine Inch Nails.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 11,
+        "query_claims": [
+          "Happiness in Slavery is a gospel song by Nine Inch Nails."
+        ],
+        "query_claim_token_counts": [
+          11
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "108281",
+        "query": "Andrew Kevin Walker is only Chinese.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 6,
+        "query_claims": [
+          "Andrew Kevin Walker is only Chinese."
+        ],
+        "query_claim_token_counts": [
+          6
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "Q_UNDERSPECIFIED"
+      },
+      {
+        "sample_id": "140846",
+        "query": "Shooter is about an expert marksman who tries to stop the assassination of the president.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 15,
+        "query_claims": [
+          "Shooter is about an expert marksman who tries to stop the assassination of the president."
+        ],
+        "query_claim_token_counts": [
+          15
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "110177",
+        "query": "House is a sitcom.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 4,
+        "query_claims": [
+          "House is a sitcom."
+        ],
+        "query_claim_token_counts": [
+          4
+        ],
+        "short_query_claim": true,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "204361",
+        "query": "The Cretaceous ended.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 3,
+        "query_claims": [
+          "The Cretaceous ended."
+        ],
+        "query_claim_token_counts": [
+          3
+        ],
+        "short_query_claim": true,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "Q_COLLAPSED_IN_P1"
+      },
+      {
+        "sample_id": "54168",
+        "query": "Murda Beatz's real name is Marshall Mathers.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 8,
+        "query_claims": [
+          "Murda Beatz's real name is Marshall Mathers."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "105095",
+        "query": "Nicholas Brody is a character on Homeland.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 7,
+        "query_claims": [
+          "Nicholas Brody is a character on Homeland."
+        ],
+        "query_claim_token_counts": [
+          7
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 2,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.0,
+        "evidence_flag_counts": {},
+        "failure_label": "Q_UNDERSPECIFIED"
+      },
+      {
+        "sample_id": "18708",
+        "query": "Charles Manson has been proven innocent of all crimes.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 9,
+        "query_claims": [
+          "Charles Manson has been proven innocent of all crimes."
+        ],
+        "query_claim_token_counts": [
+          9
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "EVIDENCE_OK_BUT_NOT_COMPARABLE"
+      },
+      {
+        "sample_id": "90809",
+        "query": "Sean Penn is only ever a stage actor.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 8,
+        "query_claims": [
+          "Sean Penn is only ever a stage actor."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "EVIDENCE_STILL_NOISY"
+      },
+      {
+        "sample_id": "167997",
+        "query": "Don Bradman retired from soccer.",
+        "query_bucket": "very_short_factoid",
+        "query_token_count": 5,
+        "query_claims": [
+          "Don Bradman retired from soccer."
+        ],
+        "query_claim_token_counts": [
+          5
+        ],
+        "short_query_claim": true,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "150773",
+        "query": "L.A. Reid has served as the CEO of Arista Records for four years.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 14,
+        "query_claims": [
+          "Reid has served as the CEO of Arista Records for four years."
+        ],
+        "query_claim_token_counts": [
+          12
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 2,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "EVIDENCE_STILL_NOISY"
+      },
+      {
+        "sample_id": "204443",
+        "query": "Brad Wilk helped co-found Rage in 1962.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 8,
+        "query_claims": [
+          "Brad Wilk helped co-found Rage in 1962."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 2,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "EVIDENCE_OK_BUT_NOT_COMPARABLE"
+      },
+      {
+        "sample_id": "192714",
+        "query": "CBS is the network that aired The Millers.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 8,
+        "query_claims": [
+          "CBS is the network that aired The Millers."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 2,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "Q_UNDERSPECIFIED"
+      },
+      {
+        "sample_id": "71182",
+        "query": "Annette Badland was in the 2015 NBA Finals.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 8,
+        "query_claims": [
+          "Annette Badland was in the 2015 NBA Finals."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "159706",
+        "query": "Edgar Wright is a person.",
+        "query_bucket": "ambiguous_name_query",
+        "query_token_count": 5,
+        "query_claims": [
+          "Edgar Wright is a person."
+        ],
+        "query_claim_token_counts": [
+          5
+        ],
+        "short_query_claim": true,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "Q_SHORT"
+      },
+      {
+        "sample_id": "107786",
+        "query": "Ann Richards was professionally involved in politics.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 7,
+        "query_claims": [
+          "Ann Richards was professionally involved in politics."
+        ],
+        "query_claim_token_counts": [
+          7
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "166846",
+        "query": "Drake Bell put out an EP.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 6,
+        "query_claims": [
+          "Drake Bell put out an EP."
+        ],
+        "query_claim_token_counts": [
+          6
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 4,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "Q_COLLAPSED_IN_P1"
+      },
+      {
+        "sample_id": "140764",
+        "query": "Janet Leigh was incapable of writing.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 6,
+        "query_claims": [
+          "Janet Leigh was incapable of writing."
+        ],
+        "query_claim_token_counts": [
+          6
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "197381",
+        "query": "Simón Bolívar is only known as Simón Bolívar.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 12,
+        "query_claims": [
+          "Simón Bolívar is only known as Simón Bolívar."
+        ],
+        "query_claim_token_counts": [
+          12
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "187000",
+        "query": "Bermuda Triangle is in the western part of the Himalayas.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 10,
+        "query_claims": [
+          "Bermuda Triangle is in the western part of the Himalayas."
+        ],
+        "query_claim_token_counts": [
+          10
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "EVIDENCE_OK_BUT_NOT_COMPARABLE"
+      },
+      {
+        "sample_id": "32266",
+        "query": "Colin Kaepernick became a starter during the 49ers 63rd season in the Republican Party.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 14,
+        "query_claims": [
+          "Colin Kaepernick became a starter during the 49ers 63rd season in the Republican Party."
+        ],
+        "query_claim_token_counts": [
+          14
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "196758",
+        "query": "Marnie was directed by someone who was \"The Master of Nothing\".",
+        "query_bucket": "quoted_or_attribution_heavy",
+        "query_token_count": 11,
+        "query_claims": [
+          "Marnie was directed by someone who was \"The Master of Nothing\"."
+        ],
+        "query_claim_token_counts": [
+          11
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "142454",
+        "query": "Advertising is a personal message.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 5,
+        "query_claims": [
+          "Advertising is a personal message."
+        ],
+        "query_claim_token_counts": [
+          5
+        ],
+        "short_query_claim": true,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 4,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.0,
+        "evidence_flag_counts": {},
+        "failure_label": "Q_SHORT"
+      },
+      {
+        "sample_id": "147411",
+        "query": "Hot Right Now is mistakenly attributed to DJ Fresh.",
+        "query_bucket": "quoted_or_attribution_heavy",
+        "query_token_count": 9,
+        "query_claims": [
+          "Hot Right Now is mistakenly attributed to DJ Fresh."
+        ],
+        "query_claim_token_counts": [
+          9
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 2,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "EVIDENCE_OK_BUT_NOT_COMPARABLE"
+      },
+      {
+        "sample_id": "215136",
+        "query": "Private Lives is a three act play from 1930.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 9,
+        "query_claims": [
+          "Private Lives is a three act play from 1930."
+        ],
+        "query_claim_token_counts": [
+          9
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "227362",
+        "query": "Giada at Home was only available on DVD.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 8,
+        "query_claims": [
+          "Giada at Home was only available on DVD."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "EVIDENCE_OK_BUT_NOT_COMPARABLE"
+      },
+      {
+        "sample_id": "145512",
+        "query": "Harold Macmillan was born on February 20, 1894.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 8,
+        "query_claims": [
+          "Harold Macmillan was born on February 20, 1894."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "EVIDENCE_STILL_NOISY"
+      },
+      {
+        "sample_id": "64721",
+        "query": "Aristotle spent time in Athens.",
+        "query_bucket": "very_short_factoid",
+        "query_token_count": 5,
+        "query_claims": [
+          "Aristotle spent time in Athens."
+        ],
+        "query_claim_token_counts": [
+          5
+        ],
+        "short_query_claim": true,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "Q_SHORT"
+      },
+      {
+        "sample_id": "124667",
+        "query": "David Packouz refused to be an entrepreneur.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 7,
+        "query_claims": [
+          "David Packouz refused to be an entrepreneur."
+        ],
+        "query_claim_token_counts": [
+          7
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 2,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "Q_COLLAPSED_IN_P1"
+      },
+      {
+        "sample_id": "52175",
+        "query": "Magic Johnson did not play for the Lakers.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 8,
+        "query_claims": [
+          "Magic Johnson did not play for the Lakers."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 2,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "Q_COLLAPSED_IN_P1"
+      },
+      {
+        "sample_id": "104386",
+        "query": "Tenacious D started in 1997.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 5,
+        "query_claims": [
+          "Tenacious D started in 1997."
+        ],
+        "query_claim_token_counts": [
+          5
+        ],
+        "short_query_claim": true,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 5,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "Q_COLLAPSED_IN_P1"
+      },
+      {
+        "sample_id": "55658",
+        "query": "James VI and I was a major advocate of a single parliament for Scotland and England.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 16,
+        "query_claims": [
+          "James VI and I was a major advocate of a single parliament for Scotland and England."
+        ],
+        "query_claim_token_counts": [
+          16
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 3,
+        "decisive_cross_source_nli": true,
+        "predicted_label": "entailment",
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": null
+      },
+      {
+        "sample_id": "201090",
+        "query": "Marcus Bentley is a broadcaster.",
+        "query_bucket": "ambiguous_name_query",
+        "query_token_count": 5,
+        "query_claims": [
+          "Marcus Bentley is a broadcaster."
+        ],
+        "query_claim_token_counts": [
+          5
+        ],
+        "short_query_claim": true,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "Q_SHORT"
+      },
+      {
+        "sample_id": "129441",
+        "query": "Saxony is in Ireland.",
+        "query_bucket": "very_short_factoid",
+        "query_token_count": 4,
+        "query_claims": [
+          "Saxony is in Ireland."
+        ],
+        "query_claim_token_counts": [
+          4
+        ],
+        "short_query_claim": true,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "107039",
+        "query": "In the End has baseball in it.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 7,
+        "query_claims": [
+          "In the End has baseball in it."
+        ],
+        "query_claim_token_counts": [
+          7
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 3,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "Q_UNDERSPECIFIED"
+      },
+      {
+        "sample_id": "207543",
+        "query": "Mel B released a song on Virgin Records in 2007.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 10,
+        "query_claims": [
+          "Mel B released a song on Virgin Records in 2007."
+        ],
+        "query_claim_token_counts": [
+          10
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.0,
+        "evidence_flag_counts": {},
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "132134",
+        "query": "Noah Cyrus is a younger sister of Macy Grey.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 9,
+        "query_claims": [
+          "Noah Cyrus is a younger sister of Macy Grey."
+        ],
+        "query_claim_token_counts": [
+          9
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.0,
+        "evidence_flag_counts": {},
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "128123",
+        "query": "Mohra is a truck.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 4,
+        "query_claims": [
+          "Mohra is a truck."
+        ],
+        "query_claim_token_counts": [
+          4
+        ],
+        "short_query_claim": true,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.0,
+        "evidence_flag_counts": {},
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "86175",
+        "query": "Hourglass is performed by a Russian singer-songwriter.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 8,
+        "query_claims": [
+          "Hourglass is performed by a Russian singer-songwriter."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "EVIDENCE_OK_BUT_NOT_COMPARABLE"
+      },
+      {
+        "sample_id": "31963",
+        "query": "Shane Black was born in 1961.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 6,
+        "query_claims": [
+          "Shane Black was born in 1961."
+        ],
+        "query_claim_token_counts": [
+          6
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "71126",
+        "query": "A View to a Kill is an action movie.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 9,
+        "query_claims": [
+          "A View to a Kill is an action movie."
+        ],
+        "query_claim_token_counts": [
+          9
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "73623",
+        "query": "Papua comprised all of Indonesia.",
+        "query_bucket": "very_short_factoid",
+        "query_token_count": 5,
+        "query_claims": [
+          "Papua comprised all of Indonesia."
+        ],
+        "query_claim_token_counts": [
+          5
+        ],
+        "short_query_claim": true,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "41665",
+        "query": "There are not rumors that Augustus' wife, Livia, poisoned him.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 10,
+        "query_claims": [
+          "There are not rumors that Augustus' wife, Livia, poisoned him."
+        ],
+        "query_claim_token_counts": [
+          10
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.0,
+        "evidence_flag_counts": {},
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "71959",
+        "query": "Jennifer Lopez made a single.",
+        "query_bucket": "very_short_factoid",
+        "query_token_count": 5,
+        "query_claims": [
+          "Jennifer Lopez made a single."
+        ],
+        "query_claim_token_counts": [
+          5
+        ],
+        "short_query_claim": true,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "Q_SHORT"
+      },
+      {
+        "sample_id": "229316",
+        "query": "A working animal is trained to perform life saving tasks.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 10,
+        "query_claims": [
+          "A working animal is trained to perform life saving tasks."
+        ],
+        "query_claim_token_counts": [
+          10
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "121113",
+        "query": "Billboard Dad is a genre of music.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 7,
+        "query_claims": [
+          "Billboard Dad is a genre of music."
+        ],
+        "query_claim_token_counts": [
+          7
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.0,
+        "evidence_flag_counts": {},
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "21775",
+        "query": "Vedam was written and directed by Christopher Nolan.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 8,
+        "query_claims": [
+          "Vedam was written and directed by Christopher Nolan."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 2,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.075,
+        "evidence_flag_counts": {
+          "attribution_or_appositive_heavy": 1
+        },
+        "failure_label": "EVIDENCE_OK_BUT_NOT_COMPARABLE"
+      },
+      {
+        "sample_id": "112988",
+        "query": "Men in Black II stars eight children.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 7,
+        "query_claims": [
+          "Men in Black II stars eight children."
+        ],
+        "query_claim_token_counts": [
+          7
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "173496",
+        "query": "Sancho Panza is a character in Don Quixote.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 8,
+        "query_claims": [
+          "Sancho Panza is a character in Don Quixote."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.0,
+        "evidence_flag_counts": {},
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "43608",
+        "query": "Magic Johnson was a tap dancer.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 6,
+        "query_claims": [
+          "Magic Johnson was a tap dancer."
+        ],
+        "query_claim_token_counts": [
+          6
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 2,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "EVIDENCE_STILL_NOISY"
+      },
+      {
+        "sample_id": "66638",
+        "query": "The Adventures of Pluto Nash was reviewed by Ron Underwood.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 10,
+        "query_claims": [
+          "The Adventures of Pluto Nash was reviewed by Ron Underwood."
+        ],
+        "query_claim_token_counts": [
+          10
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "26839",
+        "query": "Hedda Gabler's world premiere took place at the Battle of Hastings.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 12,
+        "query_claims": [
+          "Hedda Gabler's world premiere took place at the Battle of Hastings."
+        ],
+        "query_claim_token_counts": [
+          12
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "40351",
+        "query": "Brazzers is a company.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 4,
+        "query_claims": [
+          "Brazzers is a company."
+        ],
+        "query_claim_token_counts": [
+          4
+        ],
+        "short_query_claim": true,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "15307",
+        "query": "Tim Roth is an English actor.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 6,
+        "query_claims": [
+          "Tim Roth is an English actor."
+        ],
+        "query_claim_token_counts": [
+          6
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "EVIDENCE_STILL_NOISY"
+      },
+      {
+        "sample_id": "146231",
+        "query": "Juventus F.C. rejected their traditional black-and-white-striped home uniform in 1903.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 14,
+        "query_claims": [
+          "rejected their traditional black-and-white-striped home uniform in 1903."
+        ],
+        "query_claim_token_counts": [
+          11
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "184083",
+        "query": "Ernest Medina participated in the My Lai Massacre.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 8,
+        "query_claims": [
+          "Ernest Medina participated in the My Lai Massacre."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "63502",
+        "query": "Viola Davis appeared in Kate & Leopold as Darth Maul.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 9,
+        "query_claims": [
+          "Viola Davis appeared in Kate & Leopold as Darth Maul."
+        ],
+        "query_claim_token_counts": [
+          9
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "226877",
+        "query": "Jenna Jameson worked as a glamor model and a stripper.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 10,
+        "query_claims": [
+          "Jenna Jameson worked as a glamor model and a stripper."
+        ],
+        "query_claim_token_counts": [
+          10
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.0,
+        "evidence_flag_counts": {},
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "227130",
+        "query": "New Orleans Pelicans compete in the National Football Association.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 9,
+        "query_claims": [
+          "New Orleans Pelicans compete in the National Football Association."
+        ],
+        "query_claim_token_counts": [
+          9
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 2,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "Q_COLLAPSED_IN_P1"
+      },
+      {
+        "sample_id": "150730",
+        "query": "Caroline Kennedy is a Catholic.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 5,
+        "query_claims": [
+          "Caroline Kennedy is a Catholic."
+        ],
+        "query_claim_token_counts": [
+          5
+        ],
+        "short_query_claim": true,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "134710",
+        "query": "Starrcade was an annual professional wrestling event that began in 1988.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 11,
+        "query_claims": [
+          "Starrcade was an annual professional wrestling event that began in 1988."
+        ],
+        "query_claim_token_counts": [
+          11
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "105310",
+        "query": "Jack Falahee is a person who acts.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 7,
+        "query_claims": [
+          "Jack Falahee is a person who acts."
+        ],
+        "query_claim_token_counts": [
+          7
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "114567",
+        "query": "Seohyun is a dog.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 4,
+        "query_claims": [
+          "Seohyun is a dog."
+        ],
+        "query_claim_token_counts": [
+          4
+        ],
+        "short_query_claim": true,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.0,
+        "evidence_flag_counts": {},
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "71986",
+        "query": "Steve Wozniak was born after the Apple II came out.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 10,
+        "query_claims": [
+          "Steve Wozniak was born after the Apple II came out."
+        ],
+        "query_claim_token_counts": [
+          10
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "EVIDENCE_OK_BUT_NOT_COMPARABLE"
+      },
+      {
+        "sample_id": "221085",
+        "query": "A&E is a cable and satellite television network.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 9,
+        "query_claims": [
+          "A&E is a cable and satellite television network."
+        ],
+        "query_claim_token_counts": [
+          9
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 2,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "Q_UNDERSPECIFIED"
+      },
+      {
+        "sample_id": "71853",
+        "query": "L.A. Reid has served as the president of a record label.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 12,
+        "query_claims": [
+          "Reid has served as the president of a record label."
+        ],
+        "query_claim_token_counts": [
+          10
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "EVIDENCE_OK_BUT_NOT_COMPARABLE"
+      },
+      {
+        "sample_id": "163980",
+        "query": "Veeram is something other than an Indian Tamil film.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 9,
+        "query_claims": [
+          "Veeram is something other than an Indian Tamil film."
+        ],
+        "query_claim_token_counts": [
+          9
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "185193",
+        "query": "Home for the Holidays stars an American actress.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 8,
+        "query_claims": [
+          "Home for the Holidays stars an American actress."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.0,
+        "evidence_flag_counts": {},
+        "failure_label": "Q_COLLAPSED_IN_P1"
+      },
+      {
+        "sample_id": "39437",
+        "query": "Taran Killam is an American writer.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 6,
+        "query_claims": [
+          "Taran Killam is an American writer."
+        ],
+        "query_claim_token_counts": [
+          6
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "34412",
+        "query": "Jayasudha is an actor that stars in Daag.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 8,
+        "query_claims": [
+          "Jayasudha is an actor that stars in Daag."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "101555",
+        "query": "XHamster's The Sex Factor forces eight men and eight women to battle to become a porn star.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 18,
+        "query_claims": [
+          "XHamster's The Sex Factor forces eight men and eight women to battle to become a porn star."
+        ],
+        "query_claim_token_counts": [
+          18
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "150217",
+        "query": "John Dolmayan was born on July 15, 1873.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 8,
+        "query_claims": [
+          "John Dolmayan was born on July 15, 1873."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.175,
+        "evidence_flag_counts": {
+          "attribution_or_appositive_heavy": 1,
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "202783",
+        "query": "Despicable Me 2 was directed by a lake.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 8,
+        "query_claims": [
+          "Despicable Me 2 was directed by a lake."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.075,
+        "evidence_flag_counts": {
+          "attribution_or_appositive_heavy": 1
+        },
+        "failure_label": "EVIDENCE_OK_BUT_NOT_COMPARABLE"
+      },
+      {
+        "sample_id": "228344",
+        "query": "Island Records is a music school.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 6,
+        "query_claims": [
+          "Island Records is a music school."
+        ],
+        "query_claim_token_counts": [
+          6
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "80124",
+        "query": "Sikkim is a part of the World Bank.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 8,
+        "query_claims": [
+          "Sikkim is a part of the World Bank."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.0,
+        "evidence_flag_counts": {},
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "159944",
+        "query": "Christa McAuliffe taught social studies at Concord High School.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 9,
+        "query_claims": [
+          "Christa McAuliffe taught social studies at Concord High School."
+        ],
+        "query_claim_token_counts": [
+          9
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "56669",
+        "query": "Ron Weasley is a President.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 5,
+        "query_claims": [
+          "Ron Weasley is a President."
+        ],
+        "query_claim_token_counts": [
+          5
+        ],
+        "short_query_claim": true,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "80205",
+        "query": "Reign Over Me was released in 2017.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 7,
+        "query_claims": [
+          "Reign Over Me was released in 2017."
+        ],
+        "query_claim_token_counts": [
+          7
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "43776",
+        "query": "Colin Kaepernick is a poker player.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 6,
+        "query_claims": [
+          "Colin Kaepernick is a poker player."
+        ],
+        "query_claim_token_counts": [
+          6
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "79538",
+        "query": "Sheryl Lee has yet to appear in a film as of 2016.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 12,
+        "query_claims": [
+          "Sheryl Lee has yet to appear in a film as of 2016."
+        ],
+        "query_claim_token_counts": [
+          12
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 2,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "EVIDENCE_OK_BUT_NOT_COMPARABLE"
+      },
+      {
+        "sample_id": "172478",
+        "query": "Matteo Renzi is German.",
+        "query_bucket": "very_short_factoid",
+        "query_token_count": 4,
+        "query_claims": [
+          "Matteo Renzi is German."
+        ],
+        "query_claim_token_counts": [
+          4
+        ],
+        "short_query_claim": true,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "88464",
+        "query": "The Road to El Dorado stars Tim Allen.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 8,
+        "query_claims": [
+          "The Road to El Dorado stars Tim Allen."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "60977",
+        "query": "The highest point of the Hindu Kush is Everest.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 9,
+        "query_claims": [
+          "The highest point of the Hindu Kush is Everest."
+        ],
+        "query_claim_token_counts": [
+          9
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "100584",
+        "query": "Same Old Love is disassociated from Selena Gomez.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 8,
+        "query_claims": [
+          "Same Old Love is disassociated from Selena Gomez."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.0,
+        "evidence_flag_counts": {},
+        "failure_label": "EVIDENCE_OK_BUT_NOT_COMPARABLE"
+      },
+      {
+        "sample_id": "32820",
+        "query": "The heart beats at a resting rate close to 22 beats per minute.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 13,
+        "query_claims": [
+          "The heart beats at a resting rate close to 22 beats per minute."
+        ],
+        "query_claim_token_counts": [
+          13
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "215500",
+        "query": "Weekly Idol is hosted by Yoo Jae Suk.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 8,
+        "query_claims": [
+          "Weekly Idol is hosted by Yoo Jae Suk."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "26300",
+        "query": "Heavy Metal music was developed in the early 1970's.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 10,
+        "query_claims": [
+          "Heavy Metal music was developed in the early 1970's."
+        ],
+        "query_claim_token_counts": [
+          10
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.0,
+        "evidence_flag_counts": {},
+        "failure_label": "EVIDENCE_OK_BUT_NOT_COMPARABLE"
+      },
+      {
+        "sample_id": "186996",
+        "query": "Bermuda Triangle is also known by another name.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 8,
+        "query_claims": [
+          "Bermuda Triangle is also known by another name."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "EVIDENCE_OK_BUT_NOT_COMPARABLE"
+      },
+      {
+        "sample_id": "102702",
+        "query": "Ashton Kutcher was directed by George Clooney.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 7,
+        "query_claims": [
+          "Ashton Kutcher was directed by George Clooney."
+        ],
+        "query_claim_token_counts": [
+          7
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.075,
+        "evidence_flag_counts": {
+          "attribution_or_appositive_heavy": 1
+        },
+        "failure_label": "Q_UNDERSPECIFIED"
+      },
+      {
+        "sample_id": "145446",
+        "query": "Topman has clothing outlets in six Irish cities and towns.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 10,
+        "query_claims": [
+          "Topman has clothing outlets in six Irish cities and towns."
+        ],
+        "query_claim_token_counts": [
+          10
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.0,
+        "evidence_flag_counts": {},
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "68084",
+        "query": "Wales' population changed.",
+        "query_bucket": "very_short_factoid",
+        "query_token_count": 3,
+        "query_claims": [
+          "Wales' population changed."
+        ],
+        "query_claim_token_counts": [
+          3
+        ],
+        "short_query_claim": true,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.0,
+        "evidence_flag_counts": {},
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "4713",
+        "query": "Tool has won three Oscars.",
+        "query_bucket": "very_short_factoid",
+        "query_token_count": 5,
+        "query_claims": [
+          "Tool has won three Oscars."
+        ],
+        "query_claim_token_counts": [
+          5
+        ],
+        "short_query_claim": true,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "105419",
+        "query": "Youtube is not a website.",
+        "query_bucket": "very_short_factoid",
+        "query_token_count": 5,
+        "query_claims": [
+          "Youtube is not a website."
+        ],
+        "query_claim_token_counts": [
+          5
+        ],
+        "short_query_claim": true,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.0,
+        "evidence_flag_counts": {},
+        "failure_label": "Q_SHORT"
+      },
+      {
+        "sample_id": "10328",
+        "query": "Sidse Babett Knudsen graduated on November 22nd, 1968.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 8,
+        "query_claims": [
+          "Sidse Babett Knudsen graduated on November 22nd, 1968."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.0,
+        "evidence_flag_counts": {},
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "194904",
+        "query": "Stripes had Conrad Dunn featured in it.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 7,
+        "query_claims": [
+          "Stripes had Conrad Dunn featured in it."
+        ],
+        "query_claim_token_counts": [
+          7
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "72080",
+        "query": "Psych is a required course in California.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 7,
+        "query_claims": [
+          "Psych is a required course in California."
+        ],
+        "query_claim_token_counts": [
+          7
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "76289",
+        "query": "Raees (film) stars a Buddhist.",
+        "query_bucket": "very_short_factoid",
+        "query_token_count": 5,
+        "query_claims": [
+          "Raees (film) stars a Buddhist."
+        ],
+        "query_claim_token_counts": [
+          5
+        ],
+        "short_query_claim": true,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.075,
+        "evidence_flag_counts": {
+          "attribution_or_appositive_heavy": 1
+        },
+        "failure_label": "Q_SHORT"
+      },
+      {
+        "sample_id": "223343",
+        "query": "2015 was the year when the principal photography of The Disaster Aritst (film) started.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 14,
+        "query_claims": [
+          "2015 was the year when the principal photography of The Disaster Aritst (film) started."
+        ],
+        "query_claim_token_counts": [
+          14
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "186590",
+        "query": "In 1971 Asylum Records the American record label was founded by David Geffen and his partner Elliot Roberts.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 18,
+        "query_claims": [
+          "In 1971 Asylum Records the American record label was founded by David Geffen and his partner Elliot Roberts."
+        ],
+        "query_claim_token_counts": [
+          18
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "60685",
+        "query": "Trollhunters was produced by an animation company.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 7,
+        "query_claims": [
+          "Trollhunters was produced by an animation company."
+        ],
+        "query_claim_token_counts": [
+          7
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.0,
+        "evidence_flag_counts": {},
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "38125",
+        "query": "The Armenian Genocide was the killing of Armenians who were mostly Ottoman natives.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 13,
+        "query_claims": [
+          "The Armenian Genocide was the killing of Armenians who were mostly Ottoman natives."
+        ],
+        "query_claim_token_counts": [
+          13
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "201095",
+        "query": "There is a British actor name Marcus Bentley.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 8,
+        "query_claims": [
+          "There is a British actor name Marcus Bentley."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "EVIDENCE_STILL_NOISY"
+      },
+      {
+        "sample_id": "11432",
+        "query": "The first inauguration of Bill Clinton made him the 50th President of the United States.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 15,
+        "query_claims": [
+          "The first inauguration of Bill Clinton made him the 50th President of the United States."
+        ],
+        "query_claim_token_counts": [
+          15
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "172771",
+        "query": "The Beach's director was Danny Boyle.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 7,
+        "query_claims": [
+          "The Beach's director was Danny Boyle."
+        ],
+        "query_claim_token_counts": [
+          7
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.0,
+        "evidence_flag_counts": {},
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "148988",
+        "query": "John Dolmayan was born in northern Lebanon.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 7,
+        "query_claims": [
+          "John Dolmayan was born in northern Lebanon."
+        ],
+        "query_claim_token_counts": [
+          7
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "125513",
+        "query": "The dress did not inspire hashtags.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 6,
+        "query_claims": [
+          "The dress did not inspire hashtags."
+        ],
+        "query_claim_token_counts": [
+          6
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 2,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "Q_COLLAPSED_IN_P1"
+      },
+      {
+        "sample_id": "130920",
+        "query": "Bruce Shand was born on September 22nd, 1917.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 8,
+        "query_claims": [
+          "Bruce Shand was born on September 22nd, 1917."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "128229",
+        "query": "Advertising is an sound-based manner of marketing communication.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 9,
+        "query_claims": [
+          "Advertising is an sound-based manner of marketing communication."
+        ],
+        "query_claim_token_counts": [
+          9
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.0,
+        "evidence_flag_counts": {},
+        "failure_label": "Q_UNDERSPECIFIED"
+      },
+      {
+        "sample_id": "108950",
+        "query": "Alexandra Daddario is Canadian.",
+        "query_bucket": "very_short_factoid",
+        "query_token_count": 4,
+        "query_claims": [
+          "Alexandra Daddario is Canadian."
+        ],
+        "query_claim_token_counts": [
+          4
+        ],
+        "short_query_claim": true,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "Q_SHORT"
+      },
+      {
+        "sample_id": "121189",
+        "query": "The Others (2001 film) lost Best Film.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 7,
+        "query_claims": [
+          "The Others (2001 film) lost Best Film."
+        ],
+        "query_claim_token_counts": [
+          7
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "223766",
+        "query": "Ralph Fults was born January 23 1911 and died in prison.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 11,
+        "query_claims": [
+          "Ralph Fults was born January 23 1911 and died in prison."
+        ],
+        "query_claim_token_counts": [
+          11
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "166848",
+        "query": "Drake Bell put out an extended play in 2011.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 9,
+        "query_claims": [
+          "Drake Bell put out an extended play in 2011."
+        ],
+        "query_claim_token_counts": [
+          9
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 3,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "Q_COLLAPSED_IN_P1"
+      },
+      {
+        "sample_id": "121119",
+        "query": "The 14th Dalai Lama lives in Japan exclusively.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 8,
+        "query_claims": [
+          "The 14th Dalai Lama lives in Japan exclusively."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "141072",
+        "query": "Telemundo is owned by ESPN.",
+        "query_bucket": "very_short_factoid",
+        "query_token_count": 5,
+        "query_claims": [
+          "Telemundo is owned by ESPN."
+        ],
+        "query_claim_token_counts": [
+          5
+        ],
+        "short_query_claim": true,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "Q_SHORT"
+      },
+      {
+        "sample_id": "212194",
+        "query": "Miracle at St. Anna only tells the story of four cats.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 11,
+        "query_claims": [
+          "Miracle at St. Anna only tells the story of four cats."
+        ],
+        "query_claim_token_counts": [
+          11
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "Q_COLLAPSED_IN_P1"
+      },
+      {
+        "sample_id": "63038",
+        "query": "Caroline Kennedy is American.",
+        "query_bucket": "very_short_factoid",
+        "query_token_count": 4,
+        "query_claims": [
+          "Caroline Kennedy is American."
+        ],
+        "query_claim_token_counts": [
+          4
+        ],
+        "short_query_claim": true,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "185206",
+        "query": "Home for the Holidays stars the fourth stepchild of Charlie Chaplin",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 11,
+        "query_claims": [
+          "Home for the Holidays stars the fourth stepchild of Charlie Chaplin"
+        ],
+        "query_claim_token_counts": [
+          11
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "166647",
+        "query": "Anne Rice was born in Fort Lauderdale.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 7,
+        "query_claims": [
+          "Anne Rice was born in Fort Lauderdale."
+        ],
+        "query_claim_token_counts": [
+          7
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "51098",
+        "query": "Stephen Hillenburg was fascinated with politics as a student.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 9,
+        "query_claims": [
+          "Stephen Hillenburg was fascinated with politics as a student."
+        ],
+        "query_claim_token_counts": [
+          9
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "217212",
+        "query": "A monk only avoids practicing religious asceticism.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 7,
+        "query_claims": [
+          "A monk only avoids practicing religious asceticism."
+        ],
+        "query_claim_token_counts": [
+          7
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "47911",
+        "query": "The Mod Squad is a series that fits into the genre of crime drama.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 14,
+        "query_claims": [
+          "The Mod Squad is a series that fits into the genre of crime drama."
+        ],
+        "query_claim_token_counts": [
+          14
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "130717",
+        "query": "The Dark Tower is a fantasy film.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 7,
+        "query_claims": [
+          "The Dark Tower is a fantasy film."
+        ],
+        "query_claim_token_counts": [
+          7
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.0,
+        "evidence_flag_counts": {},
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "135457",
+        "query": "Rupert Murdoch has control of The Galactic Empire.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 8,
+        "query_claims": [
+          "Rupert Murdoch has control of The Galactic Empire."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "EVIDENCE_OK_BUT_NOT_COMPARABLE"
+      },
+      {
+        "sample_id": "24684",
+        "query": "Arizona is a state in the United States.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 8,
+        "query_claims": [
+          "Arizona is a state in the United States."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 5,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "Q_UNDERSPECIFIED"
+      },
+      {
+        "sample_id": "170949",
+        "query": "Smriti Mandhana is an Indian cricketer born in July.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 9,
+        "query_claims": [
+          "Smriti Mandhana is an Indian cricketer born in July."
+        ],
+        "query_claim_token_counts": [
+          9
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "44327",
+        "query": "Emma Watson was born.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 4,
+        "query_claims": [
+          "Emma Watson was born."
+        ],
+        "query_claim_token_counts": [
+          4
+        ],
+        "short_query_claim": true,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "100973",
+        "query": "Angela Bassett gave out a master of fine arts degree.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 10,
+        "query_claims": [
+          "Angela Bassett gave out a master of fine arts degree."
+        ],
+        "query_claim_token_counts": [
+          10
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "179042",
+        "query": "Congressional Space Medal of Honor is the highest award given only to astronauts by NASA.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 15,
+        "query_claims": [
+          "Congressional Space Medal of Honor is the highest award given only to astronauts by NASA."
+        ],
+        "query_claim_token_counts": [
+          15
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "31418",
+        "query": "The Saw franchise grossed under $873 million.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 7,
+        "query_claims": [
+          "The Saw franchise grossed under $873 million."
+        ],
+        "query_claim_token_counts": [
+          7
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.0,
+        "evidence_flag_counts": {},
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "123452",
+        "query": "The Faroe Islands are no longer part of the Kingdom of Mercia.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 12,
+        "query_claims": [
+          "The Faroe Islands are no longer part of the Kingdom of Mercia."
+        ],
+        "query_claim_token_counts": [
+          12
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.0,
+        "evidence_flag_counts": {},
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "204033",
+        "query": "Down With Love is a 2003 comedy film.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 8,
+        "query_claims": [
+          "Down With Love is a 2003 comedy film."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "EVIDENCE_OK_BUT_NOT_COMPARABLE"
+      },
+      {
+        "sample_id": "203012",
+        "query": "The chairwoman of Lockheed Martin and the President are currently the same person.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 13,
+        "query_claims": [
+          "The chairwoman of Lockheed Martin and the President are currently the same person."
+        ],
+        "query_claim_token_counts": [
+          13
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "13218",
+        "query": "Tremont Street Subway is an expensive project.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 7,
+        "query_claims": [
+          "Tremont Street Subway is an expensive project."
+        ],
+        "query_claim_token_counts": [
+          7
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "93412",
+        "query": "Paul Nicholls played Sam Casey in Law & Order: UK.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 9,
+        "query_claims": [
+          "Paul Nicholls played Sam Casey in Law & Order: UK."
+        ],
+        "query_claim_token_counts": [
+          9
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "7208",
+        "query": "Colombiana is a French film.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 5,
+        "query_claims": [
+          "Colombiana is a French film."
+        ],
+        "query_claim_token_counts": [
+          5
+        ],
+        "short_query_claim": true,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.0,
+        "evidence_flag_counts": {},
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "168529",
+        "query": "Rick Yune was on a series that cancelled on December 12.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 11,
+        "query_claims": [
+          "Rick Yune was on a series that cancelled on December 12."
+        ],
+        "query_claim_token_counts": [
+          11
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "133201",
+        "query": "Advertising is a closed sourced message.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 6,
+        "query_claims": [
+          "Advertising is a closed sourced message."
+        ],
+        "query_claim_token_counts": [
+          6
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 2,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.0,
+        "evidence_flag_counts": {},
+        "failure_label": "Q_UNDERSPECIFIED"
+      },
+      {
+        "sample_id": "224965",
+        "query": "Kentucky is known for televised racing.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 6,
+        "query_claims": [
+          "Kentucky is known for televised racing."
+        ],
+        "query_claim_token_counts": [
+          6
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "199410",
+        "query": "Boyhood is about Mason Evans, Jr's childhood.",
+        "query_bucket": "yes_no_claim_like",
+        "query_token_count": 8,
+        "query_claims": [
+          "Boyhood is about Mason Evans, Jr's childhood."
+        ],
+        "query_claim_token_counts": [
+          8
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.0,
+        "evidence_flag_counts": {},
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "10278",
+        "query": "Hush (2016 film) was produced by children.",
+        "query_bucket": "temporal_query",
+        "query_token_count": 7,
+        "query_claims": [
+          "Hush (2016 film) was produced by children."
+        ],
+        "query_claim_token_counts": [
+          7
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "158439",
+        "query": "The Penibaetic System is also called Sistema Penibético in Spanish.",
+        "query_bucket": "entity_seeking",
+        "query_token_count": 11,
+        "query_claims": [
+          "The Penibaetic System is also called Sistema Penibético in Spanish."
+        ],
+        "query_claim_token_counts": [
+          11
+        ],
+        "short_query_claim": false,
+        "query_collapsed_in_p1": false,
+        "cross_source_pair_count": 0,
+        "decisive_cross_source_nli": false,
+        "predicted_label": null,
+        "evidence_average_penalty": 0.1,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 1
+        },
+        "failure_label": "NO_CROSS_SOURCE_SIGNAL"
+      },
+      {
+        "sample_id": "79548",
+        "query": "Topman sells men's accessories.",
+        "query_bucket": "very_short_factoid",
+        "query_token_count": 5,
+        "query_claims": [
+          "Topman sells men's accessories."
+        ],
+        "query_claim_token_counts": [
+          5
+        ],
+        "short_query_claim": true,
+        "query_collapsed_in_p1": true,
+        "cross_source_pair_count": 1,
+        "decisive_cross_source_nli": false,
+        "predicted_label": "neutral",
+        "evidence_average_penalty": 0.2,
+        "evidence_flag_counts": {
+          "parenthetical_heavy": 2
+        },
+        "failure_label": "Q_SHORT"
+      }
+    ]
+  }
+}

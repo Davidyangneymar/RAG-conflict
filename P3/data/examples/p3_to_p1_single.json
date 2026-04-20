@@ -1,0 +1,44 @@
+{
+  "sample_id": "137334",
+  "query": "Fox 2000 Pictures released the film Soul Food.",
+  "label": "SUPPORTS",
+  "metadata": {
+    "dataset": "manual"
+  },
+  "retrieved_chunks": [
+    {
+      "chunk_id": "Soul_Food_-LRB-film-RRB-::chunk-0",
+      "text": "Soul Food is a 1997 American comedy-drama film produced by Kenneth `` Babyface '' Edmonds , Tracey Edmonds and Robert Teitel and released by Fox 2000 Pictures . Featuring an ensemble cast , the film stars Vanessa L. Williams , Vivica A. Fox , Nia Long , Michael Beach , Mekhi Phifer , Jeffrey D. Sams , Irma P. Hall , Gina Ravera and Brandon Hammond . Written and directed by George Tillman , Jr. -- in his major studio debut -- the film centers on the trials of an extended African-American family , held together by longstanding family traditions which begin to fade as serious problems take center stage . Tillman based the family in the film on his own and Soul Food was widely acclaimed for presenting a more positive image of African-Americans than is typically seen in Hollywood films . In 2000 , Showtime premiered a one-hour television series based upon the film . In 2015 ,",
+      "rank": 1,
+      "retrieval_score": 1.0,
+      "source_url": "https://en.wikipedia.org/wiki/Soul_Food_(film)",
+      "source_medium": "Wikipedia",
+      "metadata": {
+        "title": "Soul Food (film)",
+        "source_doc_id": "Soul_Food_-LRB-film-RRB-",
+        "dataset": "fever_wiki_sample",
+        "source_name": "Wikipedia",
+        "published_at": null,
+        "lines": "0\tSoul Food is a 1997 American comedy-drama film produced by Kenneth `` Babyface '' Edmonds , Tracey Edmonds and Robert Teitel and released by Fox 2000 Pictures .\tRobert Teitel\tRobert Teitel\tcomedy-drama film\tcomedy-drama film\tTracey Edmonds\tTracey Edmonds\tFox 2000 Pictures\tFox 2000 Pictures\n1\tFeaturing an ensemble cast , the film stars Vanessa L. Williams , Vivica A. Fox , Nia Long , Michael Beach , Mekhi Phifer , Jeffrey D. Sams , Irma P. Hall , Gina Ravera and Brandon Hammond .\tBrandon Hammond\tBrandon Hammond\tVanessa L. Williams\tVanessa L. Williams\tVivica A. Fox\tVivica A. Fox\tNia Long\tNia Long\tMichael Beach\tMichael Beach\tMekhi Phifer\tMekhi Phifer\tJeffrey D. Sams\tJeffrey D. Sams\tIrma P. Hall\tIrma P. Hall\tGina Ravera\tGina Ravera\tensemble cast\tensemble cast\n2\tWritten and directed by George Tillman , Jr. -- in his major studio debut -- the film centers on the trials of an extended African-American family , held together by longstanding family traditions which begin to fade as serious problems take center stage .\tWritten\tScreenwriter\tdirected\tfilm director\tAfrican-American\tAfrican-American\n3\t\n4\t\n5\tTillman based the family in the film on his own and Soul Food was widely acclaimed for presenting a more positive image of African-Americans than is typically seen in Hollywood films .\tHollywood\tHollywood\n6\tIn 2000 , Showtime premiered a one-hour television series based upon the film .\tShowtime\tShowtime (TV network)\ttelevision series based upon the film\tSoul Food (TV series)\n7\tIn 2015 , it was announced that 20th Century Fox is planning a sequel for film called More Soul Food , written by Tillman , Jr. .\t20th Century Fox\t20th Century Fox\n8\t",
+        "language": null
+      }
+    },
+    {
+      "chunk_id": "Soul_Food_-LRB-film-RRB-::chunk-1",
+      "text": "more positive image of African-Americans than is typically seen in Hollywood films . In 2000 , Showtime premiered a one-hour television series based upon the film . In 2015 , it was announced that 20th Century Fox is planning a sequel for film called More Soul Food , written by Tillman , Jr. .",
+      "rank": 2,
+      "retrieval_score": 0.75,
+      "source_url": "https://en.wikipedia.org/wiki/Soul_Food_(film)",
+      "source_medium": "Wikipedia",
+      "metadata": {
+        "title": "Soul Food (film)",
+        "source_doc_id": "Soul_Food_-LRB-film-RRB-",
+        "dataset": "fever_wiki_sample",
+        "source_name": "Wikipedia",
+        "published_at": null,
+        "lines": "0\tSoul Food is a 1997 American comedy-drama film produced by Kenneth `` Babyface '' Edmonds , Tracey Edmonds and Robert Teitel and released by Fox 2000 Pictures .\tRobert Teitel\tRobert Teitel\tcomedy-drama film\tcomedy-drama film\tTracey Edmonds\tTracey Edmonds\tFox 2000 Pictures\tFox 2000 Pictures\n1\tFeaturing an ensemble cast , the film stars Vanessa L. Williams , Vivica A. Fox , Nia Long , Michael Beach , Mekhi Phifer , Jeffrey D. Sams , Irma P. Hall , Gina Ravera and Brandon Hammond .\tBrandon Hammond\tBrandon Hammond\tVanessa L. Williams\tVanessa L. Williams\tVivica A. Fox\tVivica A. Fox\tNia Long\tNia Long\tMichael Beach\tMichael Beach\tMekhi Phifer\tMekhi Phifer\tJeffrey D. Sams\tJeffrey D. Sams\tIrma P. Hall\tIrma P. Hall\tGina Ravera\tGina Ravera\tensemble cast\tensemble cast\n2\tWritten and directed by George Tillman , Jr. -- in his major studio debut -- the film centers on the trials of an extended African-American family , held together by longstanding family traditions which begin to fade as serious problems take center stage .\tWritten\tScreenwriter\tdirected\tfilm director\tAfrican-American\tAfrican-American\n3\t\n4\t\n5\tTillman based the family in the film on his own and Soul Food was widely acclaimed for presenting a more positive image of African-Americans than is typically seen in Hollywood films .\tHollywood\tHollywood\n6\tIn 2000 , Showtime premiered a one-hour television series based upon the film .\tShowtime\tShowtime (TV network)\ttelevision series based upon the film\tSoul Food (TV series)\n7\tIn 2015 , it was announced that 20th Century Fox is planning a sequel for film called More Soul Food , written by Tillman , Jr. .\t20th Century Fox\t20th Century Fox\n8\t",
+        "language": null
+      }
+    }
+  ]
+}

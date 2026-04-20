@@ -1,0 +1,143 @@
+{
+  "records_evaluated": 30,
+  "claims_evaluated": 426,
+  "average_claim_token_length": 22.3568,
+  "short_claim_count": 10,
+  "short_claim_ratio": 0.0235,
+  "broken_claim_count": 5,
+  "broken_claim_ratio": 0.0117,
+  "entity_only_like_count": 3,
+  "entity_only_like_ratio": 0.007,
+  "title_only_like_count": 8,
+  "title_only_like_ratio": 0.0188,
+  "records_with_broken_claims": 5,
+  "records_with_broken_claims_ratio": 0.1667,
+  "examples": [
+    {
+      "sample_id": "137334",
+      "claim_id": "137334:Soul_Food_-LRB-film-RRB-::chunk-0:sent2",
+      "text": "Williams , Vivica A.",
+      "subject": "Williams Vivica A",
+      "relation": null,
+      "object": null,
+      "reasons": [
+        "broken_fragment",
+        "entity_only_like",
+        "title_only_like"
+      ],
+      "token_count": 3
+    },
+    {
+      "sample_id": "137334",
+      "claim_id": "137334:Soul_Food_-LRB-film-RRB-::chunk-0:sent5",
+      "text": "Hall , Gina Ravera and Brandon Hammond .",
+      "subject": "Hall Gina Ravera and Brandon",
+      "relation": null,
+      "object": null,
+      "reasons": [
+        "title_only_like"
+      ],
+      "token_count": 6
+    },
+    {
+      "sample_id": "111897",
+      "claim_id": "111897:Food_Network::chunk-0:sent2",
+      "text": "-LRB- which owns the remaining 30 % -RRB- .",
+      "subject": "LRB- which owns the remaining",
+      "relation": null,
+      "object": null,
+      "reasons": [
+        "broken_fragment"
+      ],
+      "token_count": 7
+    },
+    {
+      "sample_id": "204361",
+      "claim_id": "204361:query:sent0",
+      "text": "The Cretaceous ended.",
+      "subject": "The Cretaceous ended",
+      "relation": null,
+      "object": null,
+      "reasons": [
+        "broken_fragment",
+        "entity_only_like",
+        "title_only_like"
+      ],
+      "token_count": 3
+    },
+    {
+      "sample_id": "192714",
+      "claim_id": "192714:Food_Network::chunk-0:sent2",
+      "text": "-LRB- which owns the remaining 30 % -RRB- .",
+      "subject": "LRB- which owns the remaining",
+      "relation": null,
+      "object": null,
+      "reasons": [
+        "broken_fragment"
+      ],
+      "token_count": 7
+    },
+    {
+      "sample_id": "166846",
+      "claim_id": "166846:query:sent0",
+      "text": "Drake Bell put out an EP.",
+      "subject": "Drake Bell put out an",
+      "relation": null,
+      "object": null,
+      "reasons": [
+        "title_only_like"
+      ],
+      "token_count": 6
+    },
+    {
+      "sample_id": "142454",
+      "claim_id": "142454:Advertising::chunk-0:sent4",
+      "text": ", not directed to a particular individual .",
+      "subject": "not directed to a particular",
+      "relation": null,
+      "object": null,
+      "reasons": [
+        "broken_fragment",
+        "title_only_like"
+      ],
+      "token_count": 6
+    },
+    {
+      "sample_id": "64721",
+      "claim_id": "64721:query:sent0",
+      "text": "Aristotle spent time in Athens.",
+      "subject": "Aristotle spent time in Athens",
+      "relation": null,
+      "object": null,
+      "reasons": [
+        "title_only_like"
+      ],
+      "token_count": 5
+    },
+    {
+      "sample_id": "52175",
+      "claim_id": "52175:Magic_Johnson::chunk-0:sent0",
+      "text": "Earvin `` Magic '' Johnson Jr.",
+      "subject": "Earvin Magic Johnson Jr",
+      "relation": null,
+      "object": null,
+      "reasons": [
+        "entity_only_like",
+        "title_only_like"
+      ],
+      "token_count": 4
+    },
+    {
+      "sample_id": "104386",
+      "claim_id": "104386:query:sent0",
+      "text": "Tenacious D started in 1997.",
+      "subject": "Tenacious D started",
+      "relation": null,
+      "object": null,
+      "reasons": [
+        "title_only_like"
+      ],
+      "token_count": 5
+    }
+  ]
+}

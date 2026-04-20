@@ -1,0 +1,49 @@
+# Core retrieval configuration for the local MVP.
+# The defaults aim to be laptop-friendly, but the target research models
+# are included below for easy switching later:
+# - embedding_model_name: "BAAI/bge-m3"
+# - reranker_model_name: "BAAI/bge-reranker-v2-m3"
+
+embedding_backend: "hash"
+embedding_model_name: "sentence-transformers/all-MiniLM-L6-v2"
+embedding_batch_size: 32
+
+reranker_backend: "heuristic"
+reranker_model_name: "cross-encoder/ms-marco-MiniLM-L-6-v2"
+
+qdrant_collection_name: "conflict_aware_rag_dev"
+qdrant_path: "data/processed/qdrant"
+chunk_store_path: "data/processed/chunks.jsonl"
+bm25_store_path: "data/processed/bm25_corpus.json"
+
+chunk_size: 160
+chunk_overlap: 30
+chunking_version: "v2"
+sentence_aware_chunking: true
+min_chunk_tokens: 24
+target_chunk_tokens: 96
+max_chunk_tokens: 144
+sentence_overlap: 1
+min_sentences_per_chunk: 2
+filter_fragmentary_chunks: true
+enable_evidence_hygiene: false
+evidence_hygiene_penalty_weight: 0.35
+evidence_hygiene_skip_threshold: 0.85
+evidence_hygiene_extra_pool: 5
+evidence_hygiene_min_tokens: 6
+
+top_n_before_rerank: 24
+top_k_after_rerank: 8
+
+hybrid_alpha: 0.55
+
+max_per_source: 2
+max_per_doc: 2
+default_mode: "hybrid"
+enable_rerank: true
+enable_diversify: true
+
+fallback_embedding_dim: 256
+allow_model_fallback: true
+
+log_level: "INFO"

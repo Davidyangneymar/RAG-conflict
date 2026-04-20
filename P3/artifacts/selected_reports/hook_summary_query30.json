@@ -1,0 +1,125 @@
+{
+  "input": "data/examples/p3_to_p1_batch_query30.json",
+  "evaluated_records": 30,
+  "avg_input_chunks_per_record": 3.0,
+  "avg_claims_per_record": 14.2,
+  "avg_candidate_pairs_per_record": 10.0333,
+  "avg_cross_source_pairs_per_record": 1.5667,
+  "records_with_retrieved_chunks": 30,
+  "records_with_cross_source_pairs": 24,
+  "records_with_decisive_cross_source_nli": 1,
+  "cross_source_pair_coverage": 0.8,
+  "decisive_cross_source_nli_coverage": 0.0333,
+  "cross_source_nli_distribution": {
+    "neutral": 45,
+    "entailment": 2
+  },
+  "preview": [
+    {
+      "sample_id": "137334",
+      "label": "SUPPORTS",
+      "retrieved_chunks": 2,
+      "claims": 12,
+      "candidate_pairs": 9,
+      "cross_source_pairs": 4,
+      "cross_source_nli_labels": {
+        "neutral": 4
+      }
+    },
+    {
+      "sample_id": "111897",
+      "label": "REFUTES",
+      "retrieved_chunks": 2,
+      "claims": 12,
+      "candidate_pairs": 10,
+      "cross_source_pairs": 1,
+      "cross_source_nli_labels": {
+        "neutral": 1
+      }
+    },
+    {
+      "sample_id": "89891",
+      "label": "REFUTES",
+      "retrieved_chunks": 2,
+      "claims": 23,
+      "candidate_pairs": 11,
+      "cross_source_pairs": 1,
+      "cross_source_nli_labels": {
+        "neutral": 1
+      }
+    },
+    {
+      "sample_id": "181634",
+      "label": "SUPPORTS",
+      "retrieved_chunks": 2,
+      "claims": 27,
+      "candidate_pairs": 24,
+      "cross_source_pairs": 4,
+      "cross_source_nli_labels": {
+        "neutral": 4
+      }
+    },
+    {
+      "sample_id": "219028",
+      "label": "REFUTES",
+      "retrieved_chunks": 2,
+      "claims": 8,
+      "candidate_pairs": 2,
+      "cross_source_pairs": 1,
+      "cross_source_nli_labels": {
+        "neutral": 1
+      }
+    },
+    {
+      "sample_id": "108281",
+      "label": "REFUTES",
+      "retrieved_chunks": 2,
+      "claims": 7,
+      "candidate_pairs": 2,
+      "cross_source_pairs": 1,
+      "cross_source_nli_labels": {
+        "neutral": 1
+      }
+    },
+    {
+      "sample_id": "204361",
+      "label": "SUPPORTS",
+      "retrieved_chunks": 2,
+      "claims": 12,
+      "candidate_pairs": 6,
+      "cross_source_pairs": 1,
+      "cross_source_nli_labels": {
+        "neutral": 1
+      }
+    },
+    {
+      "sample_id": "54168",
+      "label": "REFUTES",
+      "retrieved_chunks": 2,
+      "claims": 7,
+      "candidate_pairs": 1,
+      "cross_source_pairs": 0,
+      "cross_source_nli_labels": {}
+    },
+    {
+      "sample_id": "105095",
+      "label": "SUPPORTS",
+      "retrieved_chunks": 2,
+      "claims": 10,
+      "candidate_pairs": 8,
+      "cross_source_pairs": 2,
+      "cross_source_nli_labels": {
+        "neutral": 2
+      }
+    },
+    {
+      "sample_id": "18708",
+      "label": "REFUTES",
+      "retrieved_chunks": 2,
+      "claims": 11,
+      "candidate_pairs": 3,
+      "cross_source_pairs": 0,
+      "cross_source_nli_labels": {}
+    }
+  ]
+}
