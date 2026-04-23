@@ -15,19 +15,19 @@ here="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$here"
 
 echo "=========================================================="
-echo "[1/4] P1 -> P2 adapter contract test"
+echo "[1/5] P1 -> P2 adapter contract test"
 echo "=========================================================="
 python scripts/test_contract.py scripts/sample_p1_payload_with_roles.json
 
 echo ""
 echo "=========================================================="
-echo "[2/4] Fusion + role routing smoke tests"
+echo "[2/5] Fusion + role routing smoke tests"
 echo "=========================================================="
 python scripts/smoke_test_p2_fusion.py
 
 echo ""
 echo "=========================================================="
-echo "[3/4] Conflict typing smoke tests"
+echo "[3/5] Conflict typing smoke tests"
 echo "=========================================================="
 python scripts/smoke_test_conflict_typing.py
 
