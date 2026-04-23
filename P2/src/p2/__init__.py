@@ -41,6 +41,12 @@ from .prompt_strategy import (
     build_prompt_bundle,
     build_answer_plan_for_sample,
     build_answer_plans,
+    QueryEnvelope,
+    EvidenceCluster,
+    AnswerPlanExchange,
+    P5FeedbackHook,
+    DownstreamExporter,
+    to_exchange_payload,
 )
 
 __all__ = [
@@ -89,4 +95,11 @@ __all__ = [
     "build_prompt_bundle",
     "build_answer_plan_for_sample",
     "build_answer_plans",
+    # p6 extension channels (for P5/future modules)
+    "QueryEnvelope",
+    "EvidenceCluster",
+    "AnswerPlanExchange",
+    "P5FeedbackHook",
+    "DownstreamExporter",
+    "to_exchange_payload",
 ]

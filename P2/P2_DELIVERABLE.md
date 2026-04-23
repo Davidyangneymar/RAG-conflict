@@ -22,7 +22,7 @@ The P2 module does two jobs on top of P1's JSON output:
    attach a resolution policy the downstream generation layer can
    switch on.
 
-P2 now also includes a **P6-facing prompt strategy layer**:
+P2 now integrates a **P6-facing prompt strategy layer** (implemented in root `P6/` and exposed through a P2 compatibility bridge):
 
 3. **Controlled-generation planning** — build `AnswerContext` from
    conflict-typed outputs, route policy-specific prompt strategy, produce
@@ -59,7 +59,7 @@ Output is a single JSON file, shape frozen in
 │       │   ├── __init__.py
 │       │   ├── contracts.py
 │       │   └── typer.py
-│       ├── prompt_strategy/
+│       ├── prompt_strategy/            compatibility bridge to root P6 module
 │       │   ├── __init__.py
 │       │   ├── contracts.py
 │       │   └── planner.py
@@ -71,7 +71,7 @@ Output is a single JSON file, shape frozen in
 │   ├── test_contract.py              P1 -> P2 adapter check
 │   ├── smoke_test_p2_fusion.py       stance+NLI fusion unit tests
 │   ├── smoke_test_conflict_typing.py conflict-typer unit tests
-│   ├── smoke_test_prompt_strategy.py P6 prompt-strategy unit tests
+│   ├── smoke_test_prompt_strategy.py P6 prompt-strategy unit tests (via P2 API)
 │   ├── run_p2_pipeline.py            stance-only runner
 │   ├── run_averitec_pipeline.py      full closed-loop runner
 │   ├── inspect_p2_on_averitec.py     pair-level diagnostics
@@ -87,6 +87,15 @@ Output is a single JSON file, shape frozen in
         ├── model/runtime_config.json
         ├── model/hf_model/...
         └── model/hf_tokenizer/...
+```
+
+Standalone P6 implementation lives at repository root:
+
+```
+../P6/
+├── README.md
+├── docs/TECHNICAL_DESIGN.md
+└── src/p6/{contracts.py, planner.py, extensions.py}
 ```
 
 **Optional — only needed if you want to retrain the BERT stance model:**
@@ -195,6 +204,12 @@ typed_output, answer_plans = run_full_p2_with_answer_plans_from_path(
 for plan in answer_plans:
     prompt_for_stage_a = plan.prompt_bundle.stage_a_analysis_prompt
     prompt_for_stage_b = plan.prompt_bundle.stage_b_answer_prompt
+```
+
+For direct P6 module integration:
+
+```python
+from p6 import build_answer_plan_for_sample, to_exchange_payload
 ```
 
 ### 5.2 From a JSON hand-off

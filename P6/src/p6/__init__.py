@@ -1,30 +1,19 @@
-"""
-Compatibility bridge: keep legacy `src.p2.prompt_strategy` API stable while
-the implementation lives in the standalone root-level P6 module.
-"""
-
-from __future__ import annotations
-
-import sys
-from pathlib import Path
-
-_REPO_ROOT = Path(__file__).resolve().parents[4]
-_P6_SRC = _REPO_ROOT / "P6" / "src"
-if _P6_SRC.exists() and str(_P6_SRC) not in sys.path:
-    sys.path.insert(0, str(_P6_SRC))
-
-from p6 import (  # type: ignore  # noqa: E402
+from .contracts import (
     EvidenceItem,
     ConflictSummary,
     AnswerContext,
     PromptBundle,
     AbstentionDecision,
     AnswerPlan,
+)
+from .planner import (
     build_answer_context,
     decide_abstention,
     build_prompt_bundle,
     build_answer_plan_for_sample,
     build_answer_plans,
+)
+from .extensions import (
     QueryEnvelope,
     EvidenceCluster,
     AnswerPlanExchange,
@@ -52,3 +41,4 @@ __all__ = [
     "DownstreamExporter",
     "to_exchange_payload",
 ]
+

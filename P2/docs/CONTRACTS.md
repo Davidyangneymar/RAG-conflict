@@ -136,6 +136,8 @@ Last updated: 2026-04-18
 
 Last updated: 2026-04-23
 
+实现位置：仓库根目录 `P6/src/p6`（P2 `src/p2/prompt_strategy` 仅做兼容桥接导出）。
+
 P6 可以直接调用：
 
 - `src.p2.run_full_p2_with_answer_plans_from_path(p1_payload_path, ...)`
@@ -224,6 +226,16 @@ P6 可以直接调用：
 - `abstain` 或门控触发 → 拒答/低置信度
 - `down_weight_low_quality` → 降权低可信来源
 - `skip` → 过滤噪声
+
+### 为 P5 / 未来模块预留的标准扩展通道
+
+P6 暴露标准交换接口（见 `P6/src/p6/extensions.py`）：
+
+- `to_exchange_payload(plan, version="p6.v1")`
+- `P5FeedbackHook.on_answer_plan(plan) -> Dict[str, Any]`
+- `DownstreamExporter.export(payload) -> None`
+
+用于统一对接评估迭代、展示层和后续模块，避免后续重复改造核心 AnswerPlan 契约。
 
 ---
 

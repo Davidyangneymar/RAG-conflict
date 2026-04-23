@@ -20,7 +20,7 @@ P1 JSON
 - resolution_policy
 - rationale(可解释证据)
 
-同时提供 P6 受控生成策略层（prompt strategy）：
+同时提供 P6 受控生成策略层（prompt strategy，独立实现位于仓库根目录 `../P6`，P2 侧保留兼容桥接）：
 
 - 只消费 P2 `ConflictTypedOutput`
 - 聚合 `AnswerContext`（query / evidence clusters / conflict summary / citations）
@@ -63,6 +63,7 @@ P1 JSON
 - [docs/CONTRACTS.md](docs/CONTRACTS.md): P1->P2 与 P2->下游契约
 - [P2_DELIVERABLE.md](P2_DELIVERABLE.md): 交付清单
 - [BERT_STANCE_MODULE_USAGE.md](BERT_STANCE_MODULE_USAGE.md): BERT 模块说明
+- [../P6/docs/TECHNICAL_DESIGN.md](../P6/docs/TECHNICAL_DESIGN.md): P6 详细技术设计（算法/数据结构/流程图）
 
 ## 2. 环境与安装
 
@@ -191,6 +192,7 @@ from src.p2 import (
 
 - run_full_p2_pipeline_from_path(...)
 - run_full_p2_with_answer_plans_from_path(...)  # 若需直接对接 P6
+- to_exchange_payload(...)  # 若需标准化对接 P5/其他模块
 
 契约以 [docs/CONTRACTS.md](docs/CONTRACTS.md) 为准。
 
