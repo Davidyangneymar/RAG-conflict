@@ -33,12 +33,18 @@ python scripts/smoke_test_conflict_typing.py
 
 echo ""
 echo "=========================================================="
-echo "[4/4] End-to-end AVeriTeC closed-loop (loads BERT model)"
+echo "[4/5] P6 prompt strategy smoke tests"
+echo "=========================================================="
+python scripts/smoke_test_prompt_strategy.py
+
+echo ""
+echo "=========================================================="
+echo "[5/5] End-to-end AVeriTeC closed-loop (loads BERT model)"
 echo "=========================================================="
 if [[ ! -d "outputs/fnc1_bert_upgrade_full" ]]; then
   echo "SKIP: outputs/fnc1_bert_upgrade_full not found."
-  echo "      Stage 4 needs the trained BERT artifacts to run."
-  echo "      The first three stages already cover all P2 logic"
+  echo "      Stage 5 needs the trained BERT artifacts to run."
+  echo "      The first four stages already cover all P2 logic"
   echo "      without the model, so this skip does not hide bugs."
   exit 0
 fi
