@@ -26,6 +26,27 @@ from .pipeline import (
     run_p2_pipeline_from_records,
     run_full_p2_pipeline_from_path,
     run_full_p2_pipeline_from_records,
+    run_full_p2_with_answer_plans_from_path,
+    run_full_p2_with_answer_plans_from_records,
+)
+from .prompt_strategy import (
+    EvidenceItem,
+    ConflictSummary,
+    AnswerContext,
+    PromptBundle,
+    AbstentionDecision,
+    AnswerPlan,
+    build_answer_context,
+    decide_abstention,
+    build_prompt_bundle,
+    build_answer_plan_for_sample,
+    build_answer_plans,
+    QueryEnvelope,
+    EvidenceCluster,
+    AnswerPlanExchange,
+    P5FeedbackHook,
+    DownstreamExporter,
+    to_exchange_payload,
 )
 
 __all__ = [
@@ -60,4 +81,25 @@ __all__ = [
     "run_p2_pipeline_from_records",
     "run_full_p2_pipeline_from_path",
     "run_full_p2_pipeline_from_records",
+    "run_full_p2_with_answer_plans_from_path",
+    "run_full_p2_with_answer_plans_from_records",
+    # p6-facing prompt strategy contracts + planners
+    "EvidenceItem",
+    "ConflictSummary",
+    "AnswerContext",
+    "PromptBundle",
+    "AbstentionDecision",
+    "AnswerPlan",
+    "build_answer_context",
+    "decide_abstention",
+    "build_prompt_bundle",
+    "build_answer_plan_for_sample",
+    "build_answer_plans",
+    # p6 extension channels (for P5/future modules)
+    "QueryEnvelope",
+    "EvidenceCluster",
+    "AnswerPlanExchange",
+    "P5FeedbackHook",
+    "DownstreamExporter",
+    "to_exchange_payload",
 ]

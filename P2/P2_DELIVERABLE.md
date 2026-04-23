@@ -22,6 +22,13 @@ The P2 module does two jobs on top of P1's JSON output:
    attach a resolution policy the downstream generation layer can
    switch on.
 
+P2 now integrates a **P6-facing prompt strategy layer** (implemented in root `P6/` and exposed through a P2 compatibility bridge):
+
+3. **Controlled-generation planning** — build `AnswerContext` from
+   conflict-typed outputs, route policy-specific prompt strategy, produce
+   two-stage prompts (analysis draft + constrained final answer), and
+   apply abstention gate rules.
+
 Output is a single JSON file, shape frozen in
 [docs/CONTRACTS.md](docs/CONTRACTS.md).
 
@@ -52,6 +59,10 @@ Output is a single JSON file, shape frozen in
 │       │   ├── __init__.py
 │       │   ├── contracts.py
 │       │   └── typer.py
+│       ├── prompt_strategy/            compatibility bridge to root P6 module
+│       │   ├── __init__.py
+│       │   ├── contracts.py
+│       │   └── planner.py
 │       └── datasets/
 │           ├── __init__.py
 │           └── averitec.py           (dev-only; remove once P1 is live)
@@ -60,6 +71,7 @@ Output is a single JSON file, shape frozen in
 │   ├── test_contract.py              P1 -> P2 adapter check
 │   ├── smoke_test_p2_fusion.py       stance+NLI fusion unit tests
 │   ├── smoke_test_conflict_typing.py conflict-typer unit tests
+│   ├── smoke_test_prompt_strategy.py P6 prompt-strategy unit tests (via P2 API)
 │   ├── run_p2_pipeline.py            stance-only runner
 │   ├── run_averitec_pipeline.py      full closed-loop runner
 │   ├── inspect_p2_on_averitec.py     pair-level diagnostics
@@ -75,6 +87,15 @@ Output is a single JSON file, shape frozen in
         ├── model/runtime_config.json
         ├── model/hf_model/...
         └── model/hf_tokenizer/...
+```
+
+Standalone P6 implementation lives at repository root:
+
+```
+../P6/
+├── README.md
+├── docs/TECHNICAL_DESIGN.md
+└── src/p6/{contracts.py, planner.py, extensions.py}
 ```
 
 **Optional — only needed if you want to retrain the BERT stance model:**
@@ -142,10 +163,11 @@ bash scripts/run_all_tests.sh
 
 Expected output from the validator:
 
-- **[1/4]** adapter contract: `All samples OK.`
-- **[2/4]** fusion tests: `All 8 tests passed.`
-- **[3/4]** conflict typing tests: `All 22 tests passed.`
-- **[4/4]** AVeriTeC closed loop: `Processed 4 sample(s).` followed by
+- **[1/5]** adapter contract: `All samples OK.`
+- **[2/5]** fusion tests: `All 8 tests passed.`
+- **[3/5]** conflict typing tests: `All 22 tests passed.`
+- **[4/5]** prompt strategy tests: `All 5 tests passed.`
+- **[5/5]** AVeriTeC closed loop: `Processed 4 sample(s).` followed by
   per-sample `type_counts` and a sanity table.
 
 If any stage fails, the script exits non-zero — read the failure
@@ -169,6 +191,25 @@ for sample in output.samples:
         elif pair.conflict_type == "ambiguity":
             # your "disambiguate first" branch
             ...
+```
+
+If downstream needs P6 answer plans directly:
+
+```python
+from src.p2 import run_full_p2_with_answer_plans_from_path
+
+typed_output, answer_plans = run_full_p2_with_answer_plans_from_path(
+    "path/to/p1_output.json"
+)
+for plan in answer_plans:
+    prompt_for_stage_a = plan.prompt_bundle.stage_a_analysis_prompt
+    prompt_for_stage_b = plan.prompt_bundle.stage_b_answer_prompt
+```
+
+For direct P6 module integration:
+
+```python
+from p6 import build_answer_plan_for_sample, to_exchange_payload
 ```
 
 ### 5.2 From a JSON hand-off

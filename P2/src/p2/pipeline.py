@@ -10,12 +10,13 @@ Two entry points:
 from __future__ import annotations
 
 from pathlib import Path
-from typing import List, Optional, Union
+from typing import List, Optional, Tuple, Union
 
 from .p1_adapter import InputRecord, load_p1_payload, parse_p1_payload
 from .contracts import P2Output
 from .stance import PairStanceRunner
 from .conflict_typing import type_sample, ConflictTypedOutput
+from .prompt_strategy import AnswerPlan, build_answer_plans
 
 
 def run_p2_pipeline_from_path(
@@ -79,6 +80,41 @@ def run_full_p2_pipeline_from_path(
 ) -> ConflictTypedOutput:
     records = load_p1_payload(payload_path)
     return run_full_p2_pipeline_from_records(
+        records,
+        model_output_dir=model_output_dir,
+        preferred_device=preferred_device,
+    )
+
+
+def run_full_p2_with_answer_plans_from_records(
+    records: List[InputRecord],
+    model_output_dir: Optional[str | Path] = None,
+    preferred_device: Optional[str] = None,
+    gold_verdicts: Optional[List[Optional[str]]] = None,
+) -> Tuple[ConflictTypedOutput, List[AnswerPlan]]:
+    """
+    Stance + conflict typing + P6-facing answer-plan prompts in one call.
+
+    The answer-plan layer only consumes the typed output and original input
+    records for claim lookup / traceability.
+    """
+    typed = run_full_p2_pipeline_from_records(
+        records,
+        model_output_dir=model_output_dir,
+        preferred_device=preferred_device,
+        gold_verdicts=gold_verdicts,
+    )
+    plans = build_answer_plans(typed.samples, records)
+    return typed, plans
+
+
+def run_full_p2_with_answer_plans_from_path(
+    payload_path: Union[str, Path],
+    model_output_dir: Optional[str | Path] = None,
+    preferred_device: Optional[str] = None,
+) -> Tuple[ConflictTypedOutput, List[AnswerPlan]]:
+    records = load_p1_payload(payload_path)
+    return run_full_p2_with_answer_plans_from_records(
         records,
         model_output_dir=model_output_dir,
         preferred_device=preferred_device,

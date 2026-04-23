@@ -8,6 +8,7 @@ strategy / generation** 那一节。
 
 - [P1 → P2 输入契约](#p1--p2-输入契约) (消费端视角,字段取自 P1 契约)
 - [P2 → 下游输出契约](#p2--下游输出契约)
+- [P2 → P6 受控生成计划契约](#p2--p6-受控生成计划契约)
 - [Dev-only: AVeriTeC → P1-shape 适配](#dev-only-averitec--p1-shape-适配)
 
 ---
@@ -128,6 +129,113 @@ Last updated: 2026-04-18
 - `fusion_confidence` 和 `typing_confidence` 都是 0..1,但语义不同:
   前者衡量 stance 和 NLI 是否互相印证,后者衡量 conflict type 判断
   的可信度。不要互相比较。
+
+---
+
+## P2 → P6 受控生成计划契约
+
+Last updated: 2026-04-23
+
+实现位置：仓库根目录 `P6/src/p6`（P2 `src/p2/prompt_strategy` 仅做兼容桥接导出）。
+
+P6 可以直接调用：
+
+- `src.p2.run_full_p2_with_answer_plans_from_path(p1_payload_path, ...)`
+- `src.p2.run_full_p2_with_answer_plans_from_records(records, ...)`
+
+返回 `(ConflictTypedOutput, List[AnswerPlan])`。其中 `AnswerPlan` 仅依赖
+`ConflictTypedOutput + InputRecord(claim lookup)` 构建，不重复做冲突分类。
+
+### `AnswerPlan` Top-Level Shape
+
+```json
+{
+  "sample_id": "string",
+  "answer_context": { "...": "..." },
+  "prompt_bundle": { "...": "..." },
+  "abstention": { "...": "..." }
+}
+```
+
+### `answer_context`
+
+```json
+{
+  "sample_id": "string",
+  "query": "string",
+  "evidence_clusters": {
+    "support": [<EvidenceItem>],
+    "oppose": [<EvidenceItem>],
+    "neutral": [<EvidenceItem>]
+  },
+  "conflict_summary": {
+    "primary_conflict_type": "string",
+    "primary_resolution_policy": "string",
+    "pair_count": 0,
+    "contradiction_ratio": 0.0,
+    "low_confidence_ratio": 0.0,
+    "average_typing_confidence": 0.0,
+    "policy_distribution": {}
+  },
+  "citations": [
+    {
+      "claim_id": "string",
+      "source_url": "string | null",
+      "source_medium": "string | null",
+      "time": "string | null"
+    }
+  ],
+  "trace_claim_ids": ["string"]
+}
+```
+
+### `prompt_bundle`
+
+```json
+{
+  "strategy_name": "balanced_summary | temporal_prefer_latest | parallel_opinions | disambiguate_then_answer | abstain_with_explanation | quality_weighted_answer | drop_noise",
+  "stage_a_analysis_prompt": "string",
+  "stage_b_answer_prompt": "string",
+  "output_schema": {
+    "required": ["结论", "分歧点", "证据列表", "置信度", "是否拒答"]
+  }
+}
+```
+
+`stage_a_analysis_prompt` 只做冲突分析草案；`stage_b_answer_prompt` 执行强约束结构化输出。
+
+### `abstention`
+
+```json
+{
+  "should_abstain": false,
+  "reason": "string",
+  "threshold_snapshot": {
+    "contradiction_ratio": 0.5,
+    "low_confidence_ratio": 0.6,
+    "average_typing_confidence": 0.5
+  }
+}
+```
+
+### P6 路由原则
+
+- `prefer_latest` → 时间优先策略（强调新证据）
+- `show_all_sides` → 并列多立场
+- `disambiguate_first` → 先消歧后结论
+- `abstain` 或门控触发 → 拒答/低置信度
+- `down_weight_low_quality` → 降权低可信来源
+- `skip` → 过滤噪声
+
+### 为 P5 / 未来模块预留的标准扩展通道
+
+P6 暴露标准交换接口（见 `P6/src/p6/extensions.py`）：
+
+- `to_exchange_payload(plan, version="p6.v1")`
+- `P5FeedbackHook.on_answer_plan(plan) -> Dict[str, Any]`
+- `DownstreamExporter.export(payload) -> None`
+
+用于统一对接评估迭代、展示层和后续模块，避免后续重复改造核心 AnswerPlan 契约。
 
 ---
 

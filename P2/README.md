@@ -20,6 +20,13 @@ P1 JSON
 - resolution_policy
 - rationale(可解释证据)
 
+同时提供 P6 受控生成策略层（prompt strategy，独立实现位于仓库根目录 `../P6`，P2 侧保留兼容桥接）：
+
+- 只消费 P2 `ConflictTypedOutput`
+- 聚合 `AnswerContext`（query / evidence clusters / conflict summary / citations）
+- 输出两阶段 prompt（分析草案 -> 强约束结构化回答）
+- 内置拒答门控（abstention gate）
+
 ## 1. 仓库结构整理
 
 ### 核心代码
@@ -40,6 +47,7 @@ P1 JSON
 - [scripts/profile_averitec_sources.py](scripts/profile_averitec_sources.py): 提取 AVeriTeC 来源分布
 - [scripts/smoke_test_p2_fusion.py](scripts/smoke_test_p2_fusion.py): 融合单测
 - [scripts/smoke_test_conflict_typing.py](scripts/smoke_test_conflict_typing.py): 冲突规则单测
+- [scripts/smoke_test_prompt_strategy.py](scripts/smoke_test_prompt_strategy.py): P6 prompt 策略层单测
 - [scripts/test_contract.py](scripts/test_contract.py): 输入契约测试
 
 ### 模型与实验
@@ -55,6 +63,7 @@ P1 JSON
 - [docs/CONTRACTS.md](docs/CONTRACTS.md): P1->P2 与 P2->下游契约
 - [P2_DELIVERABLE.md](P2_DELIVERABLE.md): 交付清单
 - [BERT_STANCE_MODULE_USAGE.md](BERT_STANCE_MODULE_USAGE.md): BERT 模块说明
+- [../P6/docs/TECHNICAL_DESIGN.md](../P6/docs/TECHNICAL_DESIGN.md): P6 详细技术设计（算法/数据结构/流程图）
 
 ## 2. 环境与安装
 
@@ -81,7 +90,8 @@ bash scripts/run_all_tests.sh
 1. P1->P2 契约测试
 2. stance+NLI 融合 smoke tests
 3. conflict typing smoke tests
-4. AVeriTeC 全链路小样本运行
+4. P6 prompt strategy smoke tests
+5. AVeriTeC 全链路小样本运行
 
 ### 运行全链路示例
 
@@ -170,15 +180,19 @@ from src.p2 import (
     parse_p1_payload,
     run_p2_pipeline_from_path,
     run_full_p2_pipeline_from_path,
+    run_full_p2_with_answer_plans_from_path,
     StancedPair,
     TypedPair,
     ConflictTypedOutput,
+    AnswerPlan,
 )
 ```
 
 生产环境建议直接使用：
 
 - run_full_p2_pipeline_from_path(...)
+- run_full_p2_with_answer_plans_from_path(...)  # 若需直接对接 P6
+- to_exchange_payload(...)  # 若需标准化对接 P5/其他模块
 
 契约以 [docs/CONTRACTS.md](docs/CONTRACTS.md) 为准。
 
