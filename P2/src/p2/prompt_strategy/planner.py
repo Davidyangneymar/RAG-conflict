@@ -2,13 +2,9 @@
 
 from __future__ import annotations
 
-import sys
-from pathlib import Path
+from ._bridge import ensure_p6_on_path
 
-_REPO_ROOT = Path(__file__).resolve().parents[4]
-_P6_SRC = _REPO_ROOT / "P6" / "src"
-if _P6_SRC.exists() and str(_P6_SRC) not in sys.path:
-    sys.path.insert(0, str(_P6_SRC))
+ensure_p6_on_path()
 
 from p6.planner import (  # type: ignore  # noqa: E402,F401
     build_answer_context,
