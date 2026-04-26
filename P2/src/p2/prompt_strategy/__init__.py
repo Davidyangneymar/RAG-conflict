@@ -26,6 +26,9 @@ from p6 import (  # type: ignore  # noqa: E402
     AnswerPlanExchange,
     P5FeedbackHook,
     DownstreamExporter,
+    build_p5_feedback_payload,
+    SimpleP5FeedbackHook,
+    JsonlDownstreamExporter,
     to_exchange_payload,
 )
 
@@ -46,5 +49,8 @@ __all__ = [
     "AnswerPlanExchange",
     "P5FeedbackHook",
     "DownstreamExporter",
+    "build_p5_feedback_payload",
+    "SimpleP5FeedbackHook",
+    "JsonlDownstreamExporter",
     "to_exchange_payload",
 ]
