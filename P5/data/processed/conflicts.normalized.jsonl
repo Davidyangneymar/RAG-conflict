@@ -1,0 +1,500 @@
+{"sample_id": "conflicts-0", "dataset": "conflicts", "query": "What is the population of Broken Bow?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-1", "dataset": "conflicts", "query": "What sport is Bobby Carpenter associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-2", "dataset": "conflicts", "query": "Who are the directors of the film \"Lahu Ke Do Rang\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-3", "dataset": "conflicts", "query": "What sport is Ryan Davis associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-4", "dataset": "conflicts", "query": "When was the Cathedral of Saint Augustine established?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-5", "dataset": "conflicts", "query": "What sport is William Carrier associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-6", "dataset": "conflicts", "query": "When was the Dallas County Courthouse built?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-7", "dataset": "conflicts", "query": "What sport is Justin Thomas associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-8", "dataset": "conflicts", "query": "When was General Bryan born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-9", "dataset": "conflicts", "query": "What is the population of Pilzno?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-10", "dataset": "conflicts", "query": "Who is the current Minister of Immigration?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-11", "dataset": "conflicts", "query": "What is the length of the Moravica river?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-12", "dataset": "conflicts", "query": "Who is the artist of the album \"VII\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-13", "dataset": "conflicts", "query": "Who is the artist of the album \"A Kind of Hush\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-14", "dataset": "conflicts", "query": "Who is the artist of the album \"The Heat\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-15", "dataset": "conflicts", "query": "What sport is Doak associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-16", "dataset": "conflicts", "query": "What is the estimated population of Handa?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-17", "dataset": "conflicts", "query": "What is the medium of \"The Man Who Never Was\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-18", "dataset": "conflicts", "query": "What sport is Ronald Powell associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-19", "dataset": "conflicts", "query": "Who won the 5th Soccer Bowl?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-20", "dataset": "conflicts", "query": "What is the type of institution Fontbonne is?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-21", "dataset": "conflicts", "query": "When did Louis Alexandre die?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-22", "dataset": "conflicts", "query": "Where is the Kate Chopin House located?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-23", "dataset": "conflicts", "query": "Who is the artist of the \"Freedom Suite\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-24", "dataset": "conflicts", "query": "What is the medium of \"Loitering with Intent\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-25", "dataset": "conflicts", "query": "What political party was William Fields affiliated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-26", "dataset": "conflicts", "query": "What is the language of the television series \"Ardhangini\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-27", "dataset": "conflicts", "query": "What is the genre of \"Big Girl\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-28", "dataset": "conflicts", "query": "What is the primary function of RICC?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-29", "dataset": "conflicts", "query": "Where was Justice Dunn born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-30", "dataset": "conflicts", "query": "Who is the director of the film \"Death at a Funeral\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-31", "dataset": "conflicts", "query": "Where is Interstate 235 located?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-32", "dataset": "conflicts", "query": "What is the population of Madi Municipality?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-33", "dataset": "conflicts", "query": "What is the population of Blue Lake Township, Michigan?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-34", "dataset": "conflicts", "query": "What is the profession of Ingrid Visser?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-35", "dataset": "conflicts", "query": "When was the City of Maryborough established?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-36", "dataset": "conflicts", "query": "What sport is China Clipper associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-37", "dataset": "conflicts", "query": "Where was Airways International based?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-38", "dataset": "conflicts", "query": "In which city did Conry practice law?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-39", "dataset": "conflicts", "query": "When was Justice Ritchie born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-40", "dataset": "conflicts", "query": "When was Horace Rumbold born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-41", "dataset": "conflicts", "query": "When was Beacon Mill last worked?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-42", "dataset": "conflicts", "query": "What is the genre of \"Hard Time\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-43", "dataset": "conflicts", "query": "What is the population of Qorveh?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-44", "dataset": "conflicts", "query": "221B Baker Street is a game for which type of medium?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-45", "dataset": "conflicts", "query": "What is the population of Sandusky Township, Ohio?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-46", "dataset": "conflicts", "query": "Who was the husband of Khentkaus?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-47", "dataset": "conflicts", "query": "What sport is the 2013 China Open associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-48", "dataset": "conflicts", "query": "What is the birth date of Maurice Roche?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-49", "dataset": "conflicts", "query": "What sport is Hiroyuki Miura associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-50", "dataset": "conflicts", "query": "What is \"The 1975\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-51", "dataset": "conflicts", "query": "When was the Bonner House built?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-52", "dataset": "conflicts", "query": "When was Guerin High School established?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-53", "dataset": "conflicts", "query": "Who is the artist of the album \"War Music\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-54", "dataset": "conflicts", "query": "What sport is Vestri associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-55", "dataset": "conflicts", "query": "Where is the UPRA located?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-56", "dataset": "conflicts", "query": "Who is the artist of the album \"Crazy for You\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-57", "dataset": "conflicts", "query": "What is the primary instrument played by Allah Rakha?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-58", "dataset": "conflicts", "query": "What type of music is associated with The Gamblers?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-59", "dataset": "conflicts", "query": "Where is the Red Brick School located?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-60", "dataset": "conflicts", "query": "What is the primary medium associated with the New York School?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-61", "dataset": "conflicts", "query": "19 Mayıs Stadium is the home venue of which sports team?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-62", "dataset": "conflicts", "query": "What sport is the Victoria Cup associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-63", "dataset": "conflicts", "query": "What is the population of Kensett?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-64", "dataset": "conflicts", "query": "What position did Gary Bennett play in during his professional football career?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-65", "dataset": "conflicts", "query": "What is the population of Gniewkowo?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-66", "dataset": "conflicts", "query": "What political party is Senator Tate a member of?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-67", "dataset": "conflicts", "query": "Who produced the album \"The Athens Demos\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-68", "dataset": "conflicts", "query": "When did the Freaky Friday musical begin its performances?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-69", "dataset": "conflicts", "query": "What sport is Nathan Wood associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-70", "dataset": "conflicts", "query": "Who is the artist of the album \"Free Your Mind\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-71", "dataset": "conflicts", "query": "Where is YHSS located?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-72", "dataset": "conflicts", "query": "When was the Zook House built?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-73", "dataset": "conflicts", "query": "What is the style of the San Vicente Ferrer Church?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-74", "dataset": "conflicts", "query": "Who is the artist of the album \"Crazy World\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-75", "dataset": "conflicts", "query": "In which city is the Washington Street station located?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-76", "dataset": "conflicts", "query": "20000 series is operated by which private railway operator?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-77", "dataset": "conflicts", "query": "When was Joseph Lafontaine born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-78", "dataset": "conflicts", "query": "When did Tom Fisher play in the Major League?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-79", "dataset": "conflicts", "query": "Where is Fort Buchanan located?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-80", "dataset": "conflicts", "query": "When was the album \"Girls' Generation\" released?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-81", "dataset": "conflicts", "query": "When was Altrincham Grammar School established?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-82", "dataset": "conflicts", "query": "What political party is John Dailey affiliated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-83", "dataset": "conflicts", "query": "What is the population of Centerville, Illinois?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-84", "dataset": "conflicts", "query": "What is the engine size of the V-Strom?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-85", "dataset": "conflicts", "query": "What political party was James Humphrey affiliated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-86", "dataset": "conflicts", "query": "What is the profession of Pier Crescenzi?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-87", "dataset": "conflicts", "query": "Who designed the Gunbus?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-88", "dataset": "conflicts", "query": "What is the medium of \"A Single Man\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-89", "dataset": "conflicts", "query": "When was Harry Parkes born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-90", "dataset": "conflicts", "query": "Who is the artist associated with the album \"Out of the Box\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-91", "dataset": "conflicts", "query": "What political party was Daniel Hogan affiliated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-92", "dataset": "conflicts", "query": "What is the common name for Yellow Lantern?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-93", "dataset": "conflicts", "query": "What is the median age in Fort Kent?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-94", "dataset": "conflicts", "query": "What is \"The Great McGonagall\" known for?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-95", "dataset": "conflicts", "query": "What sport is the Munster Senior Cup associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-96", "dataset": "conflicts", "query": "What sport is Tim Martin associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-97", "dataset": "conflicts", "query": "What sport does Cameron Murray play?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-98", "dataset": "conflicts", "query": "What is the population of St. Paul, Texas?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-99", "dataset": "conflicts", "query": "Who is the artist of the \"Never Ever\" EP?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-100", "dataset": "conflicts", "query": "When was Corruption Watch established?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-101", "dataset": "conflicts", "query": "What year was the album \"Chayanne\" released?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-102", "dataset": "conflicts", "query": "Who is the artist of the album \"Beyond Measure\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-103", "dataset": "conflicts", "query": "Who is the artist of the album \"Lazy Afternoon\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-104", "dataset": "conflicts", "query": "What is the birth date of Richard Aldworth?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-105", "dataset": "conflicts", "query": "Who was Mahmud I's father?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-106", "dataset": "conflicts", "query": "Who directed the film \"Baby Doll\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-107", "dataset": "conflicts", "query": "100 Squadron was formed in which country?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-108", "dataset": "conflicts", "query": "Who directed the film \"Yellow Ticket\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-109", "dataset": "conflicts", "query": "Who is the artist of \"The Coast Is Clear\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-110", "dataset": "conflicts", "query": "What is the population of Sherbourne?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-111", "dataset": "conflicts", "query": "When was Robert Hutchinson elected to a public office?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-112", "dataset": "conflicts", "query": "When was the construction of the Time-Life Building started?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-113", "dataset": "conflicts", "query": "What sport is Doug Harvey associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-114", "dataset": "conflicts", "query": "What sport is Scott Jackson associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-115", "dataset": "conflicts", "query": "What is the genre of the film \"The Squeeze\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-116", "dataset": "conflicts", "query": "What sport did Jack Snow play?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-117", "dataset": "conflicts", "query": "What is the population of Vermillion Township?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-118", "dataset": "conflicts", "query": "Who is the architect of the Elks Club Building?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-119", "dataset": "conflicts", "query": "What is the population of Pinehurst, Texas?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-120", "dataset": "conflicts", "query": "Who is the main character in the video game \"Who Framed Roger Rabbit\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-121", "dataset": "conflicts", "query": "When was Stephen O'Mara born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-122", "dataset": "conflicts", "query": "When was the Croatian money introduced?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-123", "dataset": "conflicts", "query": "What is the profession of Peter Bergman?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-124", "dataset": "conflicts", "query": "What is the median age in Riceville?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-125", "dataset": "conflicts", "query": "What war did the Pretoria Peace Agreement end?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-126", "dataset": "conflicts", "query": "Who is the artist of the \"Classic Christmas\" album?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-127", "dataset": "conflicts", "query": "What is the total population of Katwa?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-128", "dataset": "conflicts", "query": "What political party does Marcoux belong to?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-129", "dataset": "conflicts", "query": "Where is Lincoln County High School located?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-130", "dataset": "conflicts", "query": "What is the language of the film \"Devatha\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-131", "dataset": "conflicts", "query": "What is the medium of \"Green Pastures\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-132", "dataset": "conflicts", "query": "What does RSJ refer to?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-133", "dataset": "conflicts", "query": "Who is the artist of \"The Love Album\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-134", "dataset": "conflicts", "query": "When was Judge Cummings confirmed by the Senate?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-135", "dataset": "conflicts", "query": "What is the population of Rush Township, Ohio?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-136", "dataset": "conflicts", "query": "When was the Turkish Republican Party founded?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-137", "dataset": "conflicts", "query": "When was Judge Howe born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-138", "dataset": "conflicts", "query": "What position did Richard Wood play in American football?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-139", "dataset": "conflicts", "query": "What is the population of Port Vincent?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-140", "dataset": "conflicts", "query": "What is the profession of John H. Williams?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-141", "dataset": "conflicts", "query": "What sport is Richard Leach associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-142", "dataset": "conflicts", "query": "2017 Census of which country was conducted?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-143", "dataset": "conflicts", "query": "What is the population of Wheatland, Wisconsin?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-144", "dataset": "conflicts", "query": "What is the population of Shawnee Hills?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-145", "dataset": "conflicts", "query": "What is the primary product or industry associated with Heubach?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-146", "dataset": "conflicts", "query": "When was Austin City Hall built?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-147", "dataset": "conflicts", "query": "What is the population of Wadi?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-148", "dataset": "conflicts", "query": "What is the broadcast format of WCMA?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-149", "dataset": "conflicts", "query": "Who is the artist of the album \"Talk Show\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-150", "dataset": "conflicts", "query": "Who is the creator of Real World?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-151", "dataset": "conflicts", "query": "When was Christy O'Connor born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-152", "dataset": "conflicts", "query": "Which line is Belorussky a station on?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-153", "dataset": "conflicts", "query": "Who is the artist of the album \"Giant Steps\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-154", "dataset": "conflicts", "query": "When was the PMK founded?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-155", "dataset": "conflicts", "query": "Who is the artist of the album \"Music of the Spheres\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-156", "dataset": "conflicts", "query": "Who is the artist of the album \"I'm the Man\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-157", "dataset": "conflicts", "query": "What is the release date of Every Mother Counts?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-158", "dataset": "conflicts", "query": "Who is the husband of Chilonis?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-159", "dataset": "conflicts", "query": "What is the profession of Kim So-yeong?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-160", "dataset": "conflicts", "query": "Who is the composer of String Quintet No. 2?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-161", "dataset": "conflicts", "query": "What is the medium of \"The Private Secretary\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-162", "dataset": "conflicts", "query": "What is the profession of Jeff Green?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-163", "dataset": "conflicts", "query": "What is the size of Winter Island?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-164", "dataset": "conflicts", "query": "What is the profession of C. Mayer?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-165", "dataset": "conflicts", "query": "Who led the Chola invasion of Kalinga?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-166", "dataset": "conflicts", "query": "What sport is Nicholas Hill associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-167", "dataset": "conflicts", "query": "What is the medium of \"Monkey Grip\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-168", "dataset": "conflicts", "query": "Who is the artist of the album \"Shock Value\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-169", "dataset": "conflicts", "query": "Who was the owner of the Short House?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-170", "dataset": "conflicts", "query": "What is Terry McDonald's profession?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-171", "dataset": "conflicts", "query": "When was the Museum of Applied Arts established?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-172", "dataset": "conflicts", "query": "What sport is Bragin associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-173", "dataset": "conflicts", "query": "What is the genre of \"A Time for Love\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-174", "dataset": "conflicts", "query": "What is Robin Wright known for?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-175", "dataset": "conflicts", "query": "Who is the artist of the \"David with the Head of Goliath\" work?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-176", "dataset": "conflicts", "query": "Who is the artist of the album \"Without You I'm Nothing\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-177", "dataset": "conflicts", "query": "Who is the artist of the album \"Fear No Evil\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-178", "dataset": "conflicts", "query": "When was the Empire of Haiti established?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-179", "dataset": "conflicts", "query": "What is the location of Mooretown?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-180", "dataset": "conflicts", "query": "In which state is Van Horn High School located?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-181", "dataset": "conflicts", "query": "What is the medium of \"The English Patient\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-182", "dataset": "conflicts", "query": "When was the David Jones House built?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-183", "dataset": "conflicts", "query": "Who is the artist of the album \"What's My Name?\"", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-184", "dataset": "conflicts", "query": "What is the estimated population of Lost Springs?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-185", "dataset": "conflicts", "query": "Who is the director of the film \"Turkey Shoot\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-186", "dataset": "conflicts", "query": "What sport does Coneo specialize in?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-187", "dataset": "conflicts", "query": "What is the population of Croydon Park?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-188", "dataset": "conflicts", "query": "When did the Battle of Cancha Rayada take place?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-189", "dataset": "conflicts", "query": "What is the language of the film Choorian?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-190", "dataset": "conflicts", "query": "24th Rifle Division was formed in which year?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-191", "dataset": "conflicts", "query": "Who is the primary user of the Denton Airport?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-192", "dataset": "conflicts", "query": "What is the region of Forum Iulii?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-193", "dataset": "conflicts", "query": "When was Egg Rock Light constructed?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-194", "dataset": "conflicts", "query": "When was the Goodrich House built?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-195", "dataset": "conflicts", "query": "What sport is Boca Juniors associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-196", "dataset": "conflicts", "query": "1st arrondissement is located in which city?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-197", "dataset": "conflicts", "query": "When was POSB founded?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-198", "dataset": "conflicts", "query": "What sport is Pekka Niemi known for?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-199", "dataset": "conflicts", "query": "What is the estimated population of Hajin/Nor Hachn?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-200", "dataset": "conflicts", "query": "When was Dunville incorporated as a town?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-201", "dataset": "conflicts", "query": "Who is the architect of the Kidd House?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-202", "dataset": "conflicts", "query": "Who is the artist of the album \"Country Life\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-203", "dataset": "conflicts", "query": "What year did the Battle of Taku Forts take place?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-204", "dataset": "conflicts", "query": "When was Geoffrey Cook born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-205", "dataset": "conflicts", "query": "When was Cedar Creek High School established?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-206", "dataset": "conflicts", "query": "What is the medium of Musketeer?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-207", "dataset": "conflicts", "query": "Who is the band associated with the album \"Interiors\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-208", "dataset": "conflicts", "query": "What is the population of Orrock?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-209", "dataset": "conflicts", "query": "What is Greg Boyer's profession?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-210", "dataset": "conflicts", "query": "What is the median income for a family in Screven?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-211", "dataset": "conflicts", "query": "When was Judge Ritter born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-212", "dataset": "conflicts", "query": "What is the total population of Namakkal?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-213", "dataset": "conflicts", "query": "When was South Hills High School established?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-214", "dataset": "conflicts", "query": "What gender is the student body of St. Michael Academy?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-215", "dataset": "conflicts", "query": "When was the Allyn House built?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-216", "dataset": "conflicts", "query": "When was the Coastal Highway expanded to four lanes?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-217", "dataset": "conflicts", "query": "What sport is the Belgian Open associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-218", "dataset": "conflicts", "query": "What is the population of Middlesex Township, Pennsylvania?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-219", "dataset": "conflicts", "query": "What is the population of Marlette?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-220", "dataset": "conflicts", "query": "What is the modern-day name of Abdera?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-221", "dataset": "conflicts", "query": "Who is the artist of the album \"Big Fun\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-222", "dataset": "conflicts", "query": "What is the primary function of the Butterfly House?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-223", "dataset": "conflicts", "query": "What is the military rank of General Schultz?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-224", "dataset": "conflicts", "query": "What sport is Altrincham associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-225", "dataset": "conflicts", "query": "What position does Moussa Sylla play in?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-226", "dataset": "conflicts", "query": "When was the album \"Killswitch Engage\" released?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-227", "dataset": "conflicts", "query": "Who is the father of Junjun?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-228", "dataset": "conflicts", "query": "What is the profession of S. John Ross?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-229", "dataset": "conflicts", "query": "When was the Cross of Liberty established?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-230", "dataset": "conflicts", "query": "What is Jon Hill's profession?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-231", "dataset": "conflicts", "query": "What is the medium of \"El derecho de nacer\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-232", "dataset": "conflicts", "query": "What political party is Senator Atkinson a part of?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-233", "dataset": "conflicts", "query": "When was Attorney General Russell called to the Bar?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-234", "dataset": "conflicts", "query": "Who is the artist of the album \"Direct Hits\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-235", "dataset": "conflicts", "query": "What is the population of Llanquihue?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-236", "dataset": "conflicts", "query": "What year did Walter Erskine become the Earl of Mar and Kellie?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-237", "dataset": "conflicts", "query": "What is the profession of Kasuri?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-238", "dataset": "conflicts", "query": "What is the population of Casnovia?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-239", "dataset": "conflicts", "query": "Who is the artist of the album \"Holy Smoke\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-240", "dataset": "conflicts", "query": "What is the gender composition of Wirral Grammar School?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-241", "dataset": "conflicts", "query": "When was Cove Fort built?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-242", "dataset": "conflicts", "query": "What type of transportation does the Karawanks Tunnel primarily serve?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-243", "dataset": "conflicts", "query": "Who is the artist of the album \"Plays Well with Others\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-244", "dataset": "conflicts", "query": "What is the primary activity of the OUCC?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-245", "dataset": "conflicts", "query": "Who is the artist of the album \"Raindrops Keep Fallin' on My Head\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-246", "dataset": "conflicts", "query": "Who is the composer of Symphony No. 1 in C major?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-247", "dataset": "conflicts", "query": "What sport is Koger associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-248", "dataset": "conflicts", "query": "What is the profession of Francesco Negri?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-249", "dataset": "conflicts", "query": "When was Stanley F.C. established?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-250", "dataset": "conflicts", "query": "Who is the artist associated with the album \"Familiar Stranger\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-251", "dataset": "conflicts", "query": "What is the format of KSGF?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-252", "dataset": "conflicts", "query": "How many libraries are part of the LCLS?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-253", "dataset": "conflicts", "query": "Where was Justice Rodriguez born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-254", "dataset": "conflicts", "query": "What is the population of Furna according to the 2010 census?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-255", "dataset": "conflicts", "query": "What river does Henrys Fork flow into?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-256", "dataset": "conflicts", "query": "What is the genre of the film \"Manic\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-257", "dataset": "conflicts", "query": "How many local clubs does the Boys & Girls Club have?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-258", "dataset": "conflicts", "query": "When was Edmund Brockman born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-259", "dataset": "conflicts", "query": "When was Phi Delta Gamma founded?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-260", "dataset": "conflicts", "query": "2nd Duke of Newcastle, what year was he born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-261", "dataset": "conflicts", "query": "When did Morea start playing for Papua New Guinea?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-262", "dataset": "conflicts", "query": "What sport is the Hong Kong Open associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-263", "dataset": "conflicts", "query": "When was Sunshine Records established?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-264", "dataset": "conflicts", "query": "What does the term \"Ibanag\" refer to?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-265", "dataset": "conflicts", "query": "1978 college football season was part of which division?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-266", "dataset": "conflicts", "query": "Who is the artist of the main song in the \"Footloose\" soundtrack?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-267", "dataset": "conflicts", "query": "Where is Franklin County High School located?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-268", "dataset": "conflicts", "query": "What is the genre of \"Six Feet Under\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-269", "dataset": "conflicts", "query": "What does the term \"Siraya\" refer to?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-270", "dataset": "conflicts", "query": "80th Regiment of Foot was raised in which year?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-271", "dataset": "conflicts", "query": "What is the population of Young America Township?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-272", "dataset": "conflicts", "query": "What was the rank of Admiral Morgan in the United States Navy?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-273", "dataset": "conflicts", "query": "Who is the artist of the album \"Welcome to My World\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-274", "dataset": "conflicts", "query": "What is the primary function of Belorechensky?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-275", "dataset": "conflicts", "query": "Who is the artist of the album \"Feel the Fire\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-276", "dataset": "conflicts", "query": "Who is the artist of the album \"Come into My Life\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-277", "dataset": "conflicts", "query": "When did John Oscroft begin his career in cricket?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-278", "dataset": "conflicts", "query": "Where is the News Democrat published?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-279", "dataset": "conflicts", "query": "Who directed the film \"Imitation of Life\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-280", "dataset": "conflicts", "query": "Who is the artist of the song \"It's Raining\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-281", "dataset": "conflicts", "query": "What is the format of the film about the Donner Party?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-282", "dataset": "conflicts", "query": "What is the profession of Richard Sheppard?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-283", "dataset": "conflicts", "query": "What sport is Scott Murray associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-284", "dataset": "conflicts", "query": "Where is the Larkin Covered Bridge located?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-285", "dataset": "conflicts", "query": "When was the Danger Mouse TV series released?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-286", "dataset": "conflicts", "query": "What type of aircraft was involved in Flight 109?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-287", "dataset": "conflicts", "query": "What is the typical color of the interior surface of the fruiting bodies of the Fairy Cup?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-288", "dataset": "conflicts", "query": "What sport is Tim Steele associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-289", "dataset": "conflicts", "query": "What sport does James Tilley play?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-290", "dataset": "conflicts", "query": "When was Ralph Cole elected to the Ohio House of Representatives?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-291", "dataset": "conflicts", "query": "What does the name \"Woolstone\" mean?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-292", "dataset": "conflicts", "query": "What sport is Larry Gilbert associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-293", "dataset": "conflicts", "query": "What is the genre of \"The Hot Rock\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-294", "dataset": "conflicts", "query": "What is the profession of Andrew McFarlane?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-295", "dataset": "conflicts", "query": "What is the population of East Brooklyn?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-296", "dataset": "conflicts", "query": "What is the genre of the film \"Inner Sanctum\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-297", "dataset": "conflicts", "query": "When was Araki Station opened?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-298", "dataset": "conflicts", "query": "Who is the director of the film \"Stranger than Fiction\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-299", "dataset": "conflicts", "query": "What is the profession of Ian Murray?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-300", "dataset": "conflicts", "query": "When was Admiral Stopford born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-301", "dataset": "conflicts", "query": "What sport is David Hancock associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-302", "dataset": "conflicts", "query": "When was the Pugh House built?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-303", "dataset": "conflicts", "query": "What was the courtesy name of Marquis Su?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-304", "dataset": "conflicts", "query": "Who is the author of \"Why I Am Not\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-305", "dataset": "conflicts", "query": "When was Empress Borjigit born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-306", "dataset": "conflicts", "query": "What is the population of Longtown?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-307", "dataset": "conflicts", "query": "Who is the creator of \"The Wilderness Years\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-308", "dataset": "conflicts", "query": "Who is the composer of Symphony No. 38?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-309", "dataset": "conflicts", "query": "What does VCD refer to?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-310", "dataset": "conflicts", "query": "When did James Scudamore die?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-311", "dataset": "conflicts", "query": "What is another common name for the Hummingbird Bush?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-312", "dataset": "conflicts", "query": "Who was Jingzong's father?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-313", "dataset": "conflicts", "query": "When was Jimmy Ryan born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-314", "dataset": "conflicts", "query": "When was the Earle House built?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-315", "dataset": "conflicts", "query": "What is the location of Abingdon High School?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-316", "dataset": "conflicts", "query": "What is the genre of the film \"Fools Rush In\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-317", "dataset": "conflicts", "query": "When was Princess Elisabeth of Thurn and Taxis born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-318", "dataset": "conflicts", "query": "Who is the director of \"The Power of Darkness\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-319", "dataset": "conflicts", "query": "Who is the director of the film \"Deadfall\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-320", "dataset": "conflicts", "query": "What sport is Wayne Jones associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-321", "dataset": "conflicts", "query": "Who is the artist of the album \"Accelerate\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-322", "dataset": "conflicts", "query": "What sport is Keith Butler associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-323", "dataset": "conflicts", "query": "When was General Bradshaw born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-324", "dataset": "conflicts", "query": "What sport is a \"Perfect Score\" associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-325", "dataset": "conflicts", "query": "When was Justice Cole born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-326", "dataset": "conflicts", "query": "487th refers to which type of unit?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-327", "dataset": "conflicts", "query": "What is the population of Elkins?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-328", "dataset": "conflicts", "query": "When was the Church of Our Lady of the Rosary built?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-329", "dataset": "conflicts", "query": "Who is the artist performing in \"Live at the El Rey\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-330", "dataset": "conflicts", "query": "When was the Submarine Service established?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-331", "dataset": "conflicts", "query": "When was Wang Peng born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-332", "dataset": "conflicts", "query": "What is the population of Licking Township?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-333", "dataset": "conflicts", "query": "94 Squadron was formed in which year?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-334", "dataset": "conflicts", "query": "Who is the creator of the \"Iconoclast\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-335", "dataset": "conflicts", "query": "371st refers to which type of unit?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-336", "dataset": "conflicts", "query": "What is the genre of the \"Transit of Venus\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-337", "dataset": "conflicts", "query": "What year was Lucius Calpurnius Piso Caesoninus elected consul?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-338", "dataset": "conflicts", "query": "When was Tomorrow's World first broadcast?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-339", "dataset": "conflicts", "query": "When did Arteaga (footballer) begin his professional career?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-340", "dataset": "conflicts", "query": "64th Division was formed in which year?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-341", "dataset": "conflicts", "query": "When did Cosimo de' Medici become Grand Duke of Tuscany?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-342", "dataset": "conflicts", "query": "When was the Security Building constructed?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-343", "dataset": "conflicts", "query": "What year was the Married Women's Property Act passed?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-344", "dataset": "conflicts", "query": "When did John Sparke die?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-345", "dataset": "conflicts", "query": "When was General Ritchie born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-346", "dataset": "conflicts", "query": "Who is the artist of the album \"Both Sides Now\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-347", "dataset": "conflicts", "query": "Who was the candidate selected by the Conservative Party in the Newport by-election?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-348", "dataset": "conflicts", "query": "What conflict is the Battle of Beirut associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-349", "dataset": "conflicts", "query": "What is the population of Washington Township, Michigan?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-350", "dataset": "conflicts", "query": "Where is the Boston and Maine Railroad Depot located?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-351", "dataset": "conflicts", "query": "When was Marina High School established?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-352", "dataset": "conflicts", "query": "What is Harold King known for?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-353", "dataset": "conflicts", "query": "What is the population of Lawrence, Wisconsin?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-354", "dataset": "conflicts", "query": "Who is the artist associated with \"With a Little Help from My Friends\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-355", "dataset": "conflicts", "query": "When was the Rage Against the Machine album released?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-356", "dataset": "conflicts", "query": "What sport is Paddy Ryan associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-357", "dataset": "conflicts", "query": "When was Bartholomew Green born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-358", "dataset": "conflicts", "query": "When was Christ Lutheran Church founded?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-359", "dataset": "conflicts", "query": "Who is the artist of the album \"Golden Hits\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-360", "dataset": "conflicts", "query": "When was Rutherford High School established?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-361", "dataset": "conflicts", "query": "What is the population of Rocky Ford?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-362", "dataset": "conflicts", "query": "What is the population of Keyes?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-363", "dataset": "conflicts", "query": "What sport is Keith Jennings associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-364", "dataset": "conflicts", "query": "When was Porush born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-365", "dataset": "conflicts", "query": "When was the Ognissanti church completed?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-366", "dataset": "conflicts", "query": "When was Senator Bloomer born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-367", "dataset": "conflicts", "query": "What is the primary political ideology of National Action?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-368", "dataset": "conflicts", "query": "Who is the artist of the album \"Double Live\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-369", "dataset": "conflicts", "query": "When was Thomas Belasyse born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-370", "dataset": "conflicts", "query": "What is the population of Pittsville?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-371", "dataset": "conflicts", "query": "When was the Poplar station opened?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-372", "dataset": "conflicts", "query": "Who is the creator of \"Flesh and Bone\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-373", "dataset": "conflicts", "query": "What political party was Governor Olson a member of?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-374", "dataset": "conflicts", "query": "When was the Giff first held?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-375", "dataset": "conflicts", "query": "Who is the artist of the album \"Down Home\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-376", "dataset": "conflicts", "query": "What is the population of Hughesville?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-377", "dataset": "conflicts", "query": "Who is the artist of the album \"Revisited\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-378", "dataset": "conflicts", "query": "What is the founding date of the Revolutionary Left Movement?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-379", "dataset": "conflicts", "query": "When was the Los Angeles Olympics held?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-380", "dataset": "conflicts", "query": "Who is the creator of \"I Will Follow\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-381", "dataset": "conflicts", "query": "Who is the main character in \"The Lost Prince\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-382", "dataset": "conflicts", "query": "Where is Mahkota located?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-383", "dataset": "conflicts", "query": "Who directed the film \"The Charge of the Light Brigade\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-384", "dataset": "conflicts", "query": "When was the National Indian Association formed?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-385", "dataset": "conflicts", "query": "Who is the artist of the album \"Brand New Me\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-386", "dataset": "conflicts", "query": "When was Kevin Lewis born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-387", "dataset": "conflicts", "query": "What is the population of New Lebanon?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-388", "dataset": "conflicts", "query": "When did Attorney General Lawrence serve in his position?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-389", "dataset": "conflicts", "query": "Who is the artist of the album \"Stranger Things Have Happened\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-390", "dataset": "conflicts", "query": "What is the population of Clearwater County?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-391", "dataset": "conflicts", "query": "What is the genre of the production featuring Tony Blair?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-392", "dataset": "conflicts", "query": "When did Akarin debut?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-393", "dataset": "conflicts", "query": "Who was Chilperic's father?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-394", "dataset": "conflicts", "query": "What is the population of Pilica?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-395", "dataset": "conflicts", "query": "What year did the Battle of Ramla take place?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-396", "dataset": "conflicts", "query": "What channel is NewsChannel 5 affiliated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-397", "dataset": "conflicts", "query": "What does the abbreviation SFJ refer to?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-398", "dataset": "conflicts", "query": "When was St. John's Evangelical Lutheran Church built?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-399", "dataset": "conflicts", "query": "Who is the main character in the film Jadoo?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-400", "dataset": "conflicts", "query": "Where is The Daily Citizen published?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-401", "dataset": "conflicts", "query": "What is the common name of the plant species Aiea?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-402", "dataset": "conflicts", "query": "Who is the artist of the album \"Inception\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-403", "dataset": "conflicts", "query": "When did Henry St John-Mildmay become the Baronet?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-404", "dataset": "conflicts", "query": "When did the Women's Strike take place?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-405", "dataset": "conflicts", "query": "When did George Brodrick die?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-406", "dataset": "conflicts", "query": "302 Squadron was formed in which year?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-407", "dataset": "conflicts", "query": "When was the Douglas County Courthouse built?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-408", "dataset": "conflicts", "query": "What sport is Michael Myers associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-409", "dataset": "conflicts", "query": "What is the population of Osgood?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-410", "dataset": "conflicts", "query": "What is the historical name of Biu?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-411", "dataset": "conflicts", "query": "When was the Kansas City Southern Depot built?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-412", "dataset": "conflicts", "query": "What is the population of Tyro?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-413", "dataset": "conflicts", "query": "What was the profession of Henry Moseley?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-414", "dataset": "conflicts", "query": "What year was Judge Sparks born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-415", "dataset": "conflicts", "query": "What sport is Tyler Moore associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-416", "dataset": "conflicts", "query": "When was the Syracuse railway station opened?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-417", "dataset": "conflicts", "query": "What is the population of Bennington Township?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-418", "dataset": "conflicts", "query": "What is the population of Lake Mills?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-419", "dataset": "conflicts", "query": "Who is the director of the film \"Game of Death\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-420", "dataset": "conflicts", "query": "Who composed the musical setting for the Liturgy of Saint John Chrysostom?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-421", "dataset": "conflicts", "query": "What is the mascot of West Valley High School?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-422", "dataset": "conflicts", "query": "In which state is the Haymarket District located?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-423", "dataset": "conflicts", "query": "When was Donald Macdonell born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-424", "dataset": "conflicts", "query": "When did Arthur Middleton die?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-425", "dataset": "conflicts", "query": "What is the state where Judge Day was born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-426", "dataset": "conflicts", "query": "When was the Criterion Theatre built?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-427", "dataset": "conflicts", "query": "When was the South Calgary electoral district created?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-428", "dataset": "conflicts", "query": "What sport is Kevin Jones associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-429", "dataset": "conflicts", "query": "When was Marcus Dods born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-430", "dataset": "conflicts", "query": "What does the abbreviation \"IGY\" stand for?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-431", "dataset": "conflicts", "query": "When was the People's Democratic Movement founded?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-432", "dataset": "conflicts", "query": "What is the genre of \"Collision Course\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-433", "dataset": "conflicts", "query": "What is \"I Love New York\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-434", "dataset": "conflicts", "query": "Who is the artist of the album \"Faithfully\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-435", "dataset": "conflicts", "query": "What is the population of Manvel?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-436", "dataset": "conflicts", "query": "378th refers to which type of unit?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-437", "dataset": "conflicts", "query": "When was the Cardinal of Guise born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-438", "dataset": "conflicts", "query": "What sport is Lee Seung-hoon associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-439", "dataset": "conflicts", "query": "What is the location of the Central Square Historic District?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-440", "dataset": "conflicts", "query": "What is the profession of Nigel Harris?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-441", "dataset": "conflicts", "query": "What is the format of \"Swan Princess\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-442", "dataset": "conflicts", "query": "When was Carl Roth born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-443", "dataset": "conflicts", "query": "What is the genre of \"Foul Play\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-444", "dataset": "conflicts", "query": "What political party was John Harman affiliated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-445", "dataset": "conflicts", "query": "What is the population of West Township?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-446", "dataset": "conflicts", "query": "Where was Deodato primarily active in his career?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-447", "dataset": "conflicts", "query": "When was Bert Smith born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-448", "dataset": "conflicts", "query": "When was the Simeon Smith House built?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-449", "dataset": "conflicts", "query": "When was Harry Harvey born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-450", "dataset": "conflicts", "query": "When was the Museum for the Macedonian Struggle established?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-451", "dataset": "conflicts", "query": "Who was Anna Palaiologina married to?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-452", "dataset": "conflicts", "query": "Who is the director of the film \"Don't Drink the Water\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-453", "dataset": "conflicts", "query": "When were the Gibraltar Barracks established?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-454", "dataset": "conflicts", "query": "What is the population of Moose Lake Township, Minnesota?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-455", "dataset": "conflicts", "query": "What is the population of Boston Township?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-456", "dataset": "conflicts", "query": "Who is the director of \"The Girl on the Train\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-457", "dataset": "conflicts", "query": "When was Patrick Regan born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-458", "dataset": "conflicts", "query": "When did the Administrator general come into power?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-459", "dataset": "conflicts", "query": "Where is the Grist Mill Bridge located?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-460", "dataset": "conflicts", "query": "When was John Lambie born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-461", "dataset": "conflicts", "query": "Where is Verona High School located?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-462", "dataset": "conflicts", "query": "When was Frederick Groves born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-463", "dataset": "conflicts", "query": "What is the length of the New England 200 race?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-464", "dataset": "conflicts", "query": "When did George Horner die?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-465", "dataset": "conflicts", "query": "When was the Small Astronomy Satellite launched?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-466", "dataset": "conflicts", "query": "What is the profession of Peter Jacobs?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-467", "dataset": "conflicts", "query": "When was Princess Xenia born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-468", "dataset": "conflicts", "query": "What type of aircraft was involved in Flight 63?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-469", "dataset": "conflicts", "query": "When is the feast day of Saint Marcellus?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-470", "dataset": "conflicts", "query": "Where is Unity Christian High School located?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-471", "dataset": "conflicts", "query": "When was the People's University established?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-472", "dataset": "conflicts", "query": "When did Shoreditch station open?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-473", "dataset": "conflicts", "query": "What is the median age in Rushford?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-474", "dataset": "conflicts", "query": "When was Scott Fitzgerald born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-475", "dataset": "conflicts", "query": "When was the Sumter County Courthouse built?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-476", "dataset": "conflicts", "query": "When was the Swedish Evangelical Lutheran Church built?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-477", "dataset": "conflicts", "query": "When was the Howard County Courthouse built?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-478", "dataset": "conflicts", "query": "When was Gerhard Meidell Gerhardsen born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-479", "dataset": "conflicts", "query": "When was Walter Price born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-480", "dataset": "conflicts", "query": "What is the population of Kaliganj Upazila according to the 1991 Bangladesh census?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-481", "dataset": "conflicts", "query": "Where is Chesapeake High School located?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-482", "dataset": "conflicts", "query": "Who directed the film adaptation of \"Cry, the Beloved Country\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-483", "dataset": "conflicts", "query": "Who recorded \"The Wonder of You\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-484", "dataset": "conflicts", "query": "Who is the artist of the song \"Shy Boy\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-485", "dataset": "conflicts", "query": "What is the genre of the film \"Bright Lights\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-486", "dataset": "conflicts", "query": "Who is the artist of the album \"Something for Everybody\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-487", "dataset": "conflicts", "query": "When did Sultan Ahmed ascend to the throne?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-488", "dataset": "conflicts", "query": "What sport is Reg Parker associated with?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-489", "dataset": "conflicts", "query": "When and where was George Grimes born?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-490", "dataset": "conflicts", "query": "What is the estimated total population of Moyale?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-491", "dataset": "conflicts", "query": "What was the rank of General Seitz?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-492", "dataset": "conflicts", "query": "When was the Delta Upsilon Fraternity House built?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-493", "dataset": "conflicts", "query": "Who is the main actor in the film \"Let George Do It\"?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-494", "dataset": "conflicts", "query": "When was the Adriatic launched?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-495", "dataset": "conflicts", "query": "How many buildings are included in the Danville Historic District?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-496", "dataset": "conflicts", "query": "Which country does the Supreme Electoral Tribunal belong to?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-497", "dataset": "conflicts", "query": "What is the historical period associated with the John Mason House?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-498", "dataset": "conflicts", "query": "When was the Elks organization founded?", "gold_label": "neutral", "metadata": {}}
+{"sample_id": "conflicts-499", "dataset": "conflicts", "query": "When was Admiral King-Hall born?", "gold_label": "neutral", "metadata": {}}

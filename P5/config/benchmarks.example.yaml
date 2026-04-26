@@ -1,0 +1,11 @@
+# Relative-path benchmark sources for P5 normalization
+benchmarks:
+  faitheval:
+    input: data/raw/faith_eval.jsonl
+    normalized_output: data/processed/faith_eval.normalized.jsonl
+  ambigdocs:
+    input: data/raw/ambig_docs.jsonl
+    normalized_output: data/processed/ambig_docs.normalized.jsonl
+  conflicts:
+    input: data/raw/conflicts.jsonl
+    normalized_output: data/processed/conflicts.normalized.jsonl

@@ -1,0 +1,9 @@
+# Relative-path prediction files for four baseline groups
+# Each JSONL row needs: sample_id, predicted_label
+paths:
+  gold: data/processed/combined_gold.normalized.jsonl
+  vanilla: outputs/preds_vanilla.jsonl
+  reranker: outputs/preds_reranker.jsonl
+  nli: outputs/preds_nli.jsonl
+  full: outputs/preds_full.jsonl
+  report: outputs/baseline_eval.json

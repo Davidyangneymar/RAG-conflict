@@ -1,0 +1,52 @@
+{
+  "record_count": 19998,
+  "min_align_rate": 0.8,
+  "baselines": {
+    "vanilla": {
+      "contradiction_f1": 0.0,
+      "stance_macro_f1": 0.16666666666666666,
+      "abstention_rate": 0.0,
+      "missing_prediction_rate": 0.0,
+      "support": 19998,
+      "alignment_rate": 1.0,
+      "aligned_count": 19998,
+      "missing_count": 0
+    },
+    "reranker": {
+      "contradiction_f1": 0.19258672998285187,
+      "stance_macro_f1": 0.33236124182880505,
+      "abstention_rate": 0.0,
+      "missing_prediction_rate": 0.0,
+      "support": 19998,
+      "alignment_rate": 1.0,
+      "aligned_count": 19998,
+      "missing_count": 0
+    },
+    "nli": {
+      "contradiction_f1": 0.1734134936539746,
+      "stance_macro_f1": 0.22789542456293255,
+      "abstention_rate": 0.0,
+      "missing_prediction_rate": 0.0,
+      "support": 19998,
+      "alignment_rate": 1.0,
+      "aligned_count": 19998,
+      "missing_count": 0
+    },
+    "full": {
+      "contradiction_f1": 0.1734134936539746,
+      "stance_macro_f1": 0.22789542456293255,
+      "abstention_rate": 0.0,
+      "missing_prediction_rate": 0.0,
+      "support": 19998,
+      "alignment_rate": 1.0,
+      "aligned_count": 19998,
+      "missing_count": 0
+    }
+  },
+  "unmatched_sample_ids": {
+    "vanilla": [],
+    "reranker": [],
+    "nli": [],
+    "full": []
+  }
+}

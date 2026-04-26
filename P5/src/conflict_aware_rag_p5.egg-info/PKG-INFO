@@ -1,0 +1,127 @@
+Metadata-Version: 2.4
+Name: conflict-aware-rag-p5
+Version: 0.1.0
+Summary: P5 benchmarking and evaluation toolkit for Conflict-Aware RAG
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0; extra == "dev"
+
+# P5: 数据与评测工作区
+
+本目录用于完成 P5 任务，且不修改 P1/P2/P3 源码。
+
+## 已实现能力
+
+- 统一 benchmark 数据格式（FaithEval / AmbigDocs / CONFLICTS / P1 导出）
+- 生成小样本人工标注模板
+- 四组基线统一评测：`vanilla RAG` / `+reranker` / `+NLI` / `full system`
+- 指标输出：`contradiction-F1`、`stance-macro-F1`、`abstention rate`
+- 提供兼容 P1/P2/P3 的环境构建脚本（Python 3.12）
+
+## 目录
+
+- `src/p5/`: 评测核心逻辑
+- `scripts/setup_env_p123.ps1`: 新建兼容环境
+- `scripts/normalize_benchmarks.py`: 统一 benchmark 格式
+- `scripts/make_annotation_template.py`: 小样本标注模板
+- `scripts/evaluate_baselines.py`: 四基线评测
+- `scripts/run_p1_export_for_p5.py`: 调用 P1 导出契约数据
+
+## 1) 新建兼容环境（P1/P2/P3）
+
+在 `P5/` 下执行：
+
+```powershell
+./scripts/setup_env_p123.ps1
+```
+
+说明：
+- 环境位于 `P5/.venv_p123`
+- 脚本默认安装 P2 依赖、P1 editable、P3 editable、P5 editable
+- 若只想快速建空环境可用：
+
+```powershell
+./scripts/setup_env_p123.ps1 -Lightweight
+```
+
+## 2) 统一 benchmark 数据
+
+```powershell
+.\.venv_p123\Scripts\python.exe scripts/normalize_benchmarks.py --source faitheval --input data/raw/faith_eval.jsonl --output data/processed/faith_eval.normalized.jsonl
+```
+
+`--source` 支持：`faitheval` / `ambigdocs` / `conflicts` / `p1_benchmark`
+
+## 3) 生成小样本标注模板
+
+```powershell
+.\.venv_p123\Scripts\python.exe scripts/make_annotation_template.py --input data/processed/faith_eval.normalized.jsonl --output data/annotation/small_sample_annotations.csv --sample-size 60
+```
+
+## 4) 四组基线评测
+
+输入 JSONL 至少包含：`sample_id`, `predicted_label`
+
+```powershell
+.\.venv_p123\Scripts\python.exe scripts/evaluate_baselines.py \
+  --gold data/processed/combined_gold.normalized.jsonl \
+  --vanilla outputs/preds_vanilla.jsonl \
+  --reranker outputs/preds_reranker.jsonl \
+  --nli outputs/preds_nli.jsonl \
+  --full outputs/preds_full.jsonl \
+  --output outputs/baseline_eval.json
+```
+
+会同时生成：
+- `outputs/baseline_eval.json`
+- `outputs/baseline_eval.md`
+
+## 5) 演示数据快速验证
+
+```powershell
+.\.venv_p123\Scripts\python.exe scripts/evaluate_baselines.py \
+  --gold data/processed/demo_gold.normalized.jsonl \
+  --vanilla outputs/demo_preds_vanilla.jsonl \
+  --reranker outputs/demo_preds_reranker.jsonl \
+  --nli outputs/demo_preds_nli.jsonl \
+  --full outputs/demo_preds_full.jsonl \
+  --output outputs/demo_eval.json
+```
+
+## 6) 调用 P1 导出契约（不改 P1 代码）
+
+```powershell
+.\.venv_p123\Scripts\python.exe scripts/run_p1_export_for_p5.py \
+  --python ./.venv_p123/Scripts/python.exe \
+  --dataset retrieval_json \
+  --input ../P3/data/processed/p3_to_p1_batch_query30.json \
+  --output outputs/p1_benchmark_from_p3.jsonl \
+  --limit 30
+```
+
+## 路径约束
+
+- 本目录所有脚本默认使用相对路径。
+- 若传入自定义路径，也建议保持为相对路径以便跨机器复现。
+
+推荐两种写法（都可复现）：
+
+- 在工作区根目录 `NLP/` 执行：
+
+```powershell
+./P5/.venv_p123/Scripts/python.exe P5/scripts/normalize_benchmarks.py --source faitheval --input data/raw/faith_eval.jsonl --output P5/data/processed/faith_eval.normalized.jsonl
+```
+
+- 在 `P5/` 目录执行：
+
+```powershell
+./.venv_p123/Scripts/python.exe scripts/normalize_benchmarks.py --source faitheval --input ../data/raw/faith_eval.jsonl --output data/processed/faith_eval.normalized.jsonl
+```
+
+## 已知问题
+
+- 在部分 Windows 机器上，`torch` 可能出现 `WinError 1114`（DLL 初始化失败）。
+- `scripts/setup_env_p123.ps1` 已内置自动回退：当默认安装后导入失败，会自动切到可工作的 CPU 组合：
+  `torch==2.3.1`, `torchvision==0.18.1`, `torchaudio==2.3.1`。
+- 若自动回退后仍失败，再检查系统运行时（VC++ Redistributable x64）与显卡/驱动环境。

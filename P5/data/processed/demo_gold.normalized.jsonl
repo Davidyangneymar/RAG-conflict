@@ -1,0 +1,4 @@
+{"sample_id":"s1","dataset":"demo","query":"Claim A","gold_label":"contradiction","metadata":{}}
+{"sample_id":"s2","dataset":"demo","query":"Claim B","gold_label":"entailment","metadata":{}}
+{"sample_id":"s3","dataset":"demo","query":"Claim C","gold_label":"neutral","metadata":{}}
+{"sample_id":"s4","dataset":"demo","query":"Claim D","gold_label":"contradiction","metadata":{}}
