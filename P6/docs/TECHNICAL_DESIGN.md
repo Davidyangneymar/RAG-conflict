@@ -42,6 +42,9 @@
 - `AnswerPlanExchange`
 - `P5FeedbackHook` (Protocol)
 - `DownstreamExporter` (Protocol)
+- `build_p5_feedback_payload`
+- `SimpleP5FeedbackHook`
+- `JsonlDownstreamExporter`
 - `to_exchange_payload`
 
 ---
@@ -168,6 +171,7 @@ flowchart TD
 
 - 标准化交换协议：`AnswerPlanExchange(versioned)`
 - 扩展点协议：`P5FeedbackHook`, `DownstreamExporter`
+- 默认实现：`SimpleP5FeedbackHook`（输出计划级诊断指标）、`JsonlDownstreamExporter`（按 JSONL 落盘）
+- 指标载荷构建：`build_p5_feedback_payload(plan)`（包含策略、拒答、冲突比例、证据簇规模等字段）
 - 非侵入集成：不改变 P2 基础契约，仅新增并行输出通道
 - 版本演进策略：新增字段采用向后兼容方式扩展，不重命名核心键
-

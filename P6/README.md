@@ -43,6 +43,7 @@ print(plan.prompt_bundle.strategy_name)
 ## 与 P5/未来模块的扩展通道
 
 - `to_exchange_payload(plan)`：标准化跨模块交互数据
-- `P5FeedbackHook`：P5 指标/反馈回传接口
-- `DownstreamExporter`：通用下游发布接口
-
+- `build_p5_feedback_payload(plan)`：生成可直接聚合的 P5 反馈指标载荷
+- `SimpleP5FeedbackHook`：默认 P5 反馈回调实现
+- `JsonlDownstreamExporter`：通用 JSONL 下游发布实现
+- `P5FeedbackHook` / `DownstreamExporter`：可替换协议接口

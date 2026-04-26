@@ -232,6 +232,9 @@ P6 可以直接调用：
 P6 暴露标准交换接口（见 `P6/src/p6/extensions.py`）：
 
 - `to_exchange_payload(plan, version="p6.v1")`
+- `build_p5_feedback_payload(plan)`（计划级反馈指标载荷）
+- `SimpleP5FeedbackHook.on_answer_plan(plan) -> Dict[str, Any]`
+- `JsonlDownstreamExporter.export(payload) -> None`
 - `P5FeedbackHook.on_answer_plan(plan) -> Dict[str, Any]`
 - `DownstreamExporter.export(payload) -> None`
 
