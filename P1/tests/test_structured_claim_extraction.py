@@ -25,6 +25,21 @@ class StructuredClaimExtractionTest(unittest.TestCase):
         self.assertIn("Bob", claims[0].object or "")
         self.assertTrue(claims[0].metadata["structured_fields_present"])
 
+    def test_structured_extractor_handles_empty_cleaned_subject(self) -> None:
+        extractor = StructuredClaimExtractor(entity_backend="regex")
+
+        with patch("p1.claim_extraction.extract_entity_candidates", return_value=["These"]):
+            claims = extractor.extract(
+                ChunkInput(
+                    doc_id="doc",
+                    chunk_id="chunk",
+                    text="These were later joined by Cushitic-speaking agro-pastoralists.",
+                )
+            )
+
+        self.assertEqual(len(claims), 1)
+        self.assertEqual(claims[0].relation, "were")
+
     def test_sentence_extractor_infers_negative_polarity(self) -> None:
         claim = SentenceClaimExtractor(entity_backend="regex").extract(
             ChunkInput(doc_id="doc", chunk_id="chunk", text="Alice did not approve the plan.")
