@@ -808,6 +808,11 @@ def _pick_subject_entity(
     if entity_candidates:
         entity_candidates.sort(key=lambda item: (item[0], item[1]))
         chosen = _clean_subject_text(entity_candidates[-1][2])
+        if not chosen:
+            return _pick_subject_from_prefix(
+                _strip_quoted_segments(text[:relation_start]),
+                relation_match,
+            )
         raw_prefix = text[:relation_start]
         prefix_candidate = _pick_titlecase_prefix_subject(_strip_quoted_segments(raw_prefix))
         if prefix_candidate and len(chosen.split()) == 1:
