@@ -1,0 +1,35 @@
+# Local/raw datasets
+data/raw/averitec/
+FEVER Dataset/
+wiki-pages/
+
+# Generated processed artifacts
+data/processed/averitec/
+data/processed/qdrant/
+data/processed/chunks.jsonl
+data/processed/bm25_corpus.json
+data/processed/*.log
+data/processed/*.jsonl
+data/processed/*.json
+
+# AVeriTeC smoke generated heavy/intermediate files
+artifacts/averitec_smoke/*.jsonl
+artifacts/averitec_smoke/*.log
+artifacts/averitec_smoke/p3_to_p1_*.json
+artifacts/p1_local/
+artifacts/*.log
+artifacts/*.jsonl
+
+# Local environments and caches
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.egg-info/
+.DS_Store
+
+# Share/repro bundles are distributed outside GitHub.
+P3_share/
+P3_repro_bundle/
+P3_repro_bundle.zip
+P3_share.zip

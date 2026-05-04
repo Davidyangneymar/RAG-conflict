@@ -6,7 +6,7 @@ This run validates the existing P3 retrieval handoff against the local P1 pipeli
 
 ## Environment / Setup
 
-- P3 workspace: `path/to/project_root`
+- P3 workspace: `path/to/project_root/P3`
 - Existing lightweight virtualenv reused: `.venv`
 - Existing local P1 codebase found at: `path/to/local/P1`
 - For safe local integration, a workspace-local copy was created at `artifacts/p1_local`
@@ -32,12 +32,12 @@ mkdir -p artifacts/p1_eval data/processed
 ```
 
 ```bash
-cp -R "path/to/local/P1" artifacts/p1_local
+cp -R path/to/local/P1 artifacts/p1_local
 ```
 
 ```bash
 .venv/bin/python artifacts/p1_local/scripts/eval_p3_retrieval_hook.py \
-  --input "data/processed/p3_to_p1_batch.json" \
+  --input data/processed/p3_to_p1_batch.json \
   --input-kind retrieval_json \
   --limit 30 \
   --extractor-kind structured \
@@ -49,9 +49,9 @@ cp -R "path/to/local/P1" artifacts/p1_local
 ```bash
 .venv/bin/python artifacts/p1_local/scripts/export_p5_benchmark.py \
   --dataset retrieval_json \
-  --input "data/processed/p3_to_p1_batch.json" \
+  --input data/processed/p3_to_p1_batch.json \
   --limit 30 \
-  --output "artifacts/p5_from_p3.jsonl" \
+  --output artifacts/p5_from_p3.jsonl \
   --preview 5 \
   > artifacts/p5_export.log 2>&1
 ```

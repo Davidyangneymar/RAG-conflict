@@ -12,7 +12,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from src.config import load_retrieval_config
-from src.ingestion.fever_loader import load_fever_claims
+from src.ingestion.loaders import load_claims
 from src.retrieval.pipeline import RetrievalPipeline
 from src.schemas.retrieval import RetrievalQuery
 from src.services.evidence_hygiene import apply_evidence_hygiene
@@ -43,6 +43,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--label", default=None, help="Optional label for single-query export.")
 
     parser.add_argument("--claims-path", default=None, help="Optional FEVER-style claims JSONL path.")
+    parser.add_argument(
+        "--claims-loader",
+        choices=["fever", "averitec_dev", "averitec_dev_smoke"],
+        default="fever",
+        help="Claim loader for --claims-path. Defaults to FEVER for regression compatibility.",
+    )
     parser.add_argument("--limit", type=int, default=None, help="Optional limit for claim batch export.")
     return parser.parse_args()
 
@@ -85,7 +91,8 @@ def main() -> None:
         )
         payload = record.model_dump()
     elif args.claims_path:
-        claims = load_fever_claims(args.claims_path)
+        claims_dataset = "fever" if args.claims_loader == "fever" else "averitec_dev_smoke"
+        claims = load_claims(args.claims_path, loader_type=args.claims_loader, dataset=claims_dataset)
         if args.limit is not None:
             claims = claims[: args.limit]
 
