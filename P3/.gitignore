@@ -6,6 +6,7 @@ wiki-pages/
 # Generated processed artifacts
 data/processed/averitec/
 data/processed/qdrant/
+**/qdrant/
 data/processed/chunks.jsonl
 data/processed/bm25_corpus.json
 data/processed/*.log
@@ -25,6 +26,7 @@ artifacts/*.jsonl
 __pycache__/
 .pytest_cache/
 *.pyc
+*.log
 *.egg-info/
 .DS_Store
 
