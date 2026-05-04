@@ -18,12 +18,6 @@ P3 当前负责：
 - fragmentation / query short-claim diagnostics
 - 本地 retrieval 复现检查
 
-P3 不负责：
-
-- P1 claim extraction / NLI 主逻辑
-- P2 conflict typing
-- P5 benchmark policy
-- final answer generation
 
 ## 2. Current Status
 
