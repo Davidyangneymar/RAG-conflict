@@ -21,7 +21,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--input-path", required=True, help="Path to the JSONL corpus.")
     parser.add_argument(
         "--loader",
-        choices=["generic", "fever_wiki"],
+        choices=["generic", "fever_wiki", "averitec_dev", "averitec_dev_smoke"],
         default="generic",
         help="Loader type to use for the input corpus.",
     )

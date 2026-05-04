@@ -1,5 +1,5 @@
 {
-  "input": "data/examples/p3_to_p1_batch_query30.json",
+  "input": "data/processed/p3_to_p1_batch_query30.json",
   "evaluated_records": 30,
   "avg_input_chunks_per_record": 3.0,
   "avg_claims_per_record": 14.2,

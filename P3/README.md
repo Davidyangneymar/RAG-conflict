@@ -1,67 +1,89 @@
-# Conflict-Aware RAG：P3 检索层
+# Conflict-Aware RAG：P3 Retrieval Layer
 
-## 1. 项目简介
+P3 是 Conflict-Aware RAG 课程项目中的 **检索层（retrieval layer）**。本模块不负责最终回答生成，也不负责 P1/P2/P5 的任务边界；它的核心职责是把输入 claim/query 转换成 citation-ready evidence，并以稳定的 `retrieval_json` 格式交给下游模块。
 
-P3 是 Conflict-Aware RAG 课程项目中的 **检索层（retrieval layer）**。  
-本模块负责：
+当前主线：`chunking v2` 是默认 baseline；`evidence hygiene` 代码保留但默认关闭；P3 -> P1 batch integration 已打通。
+
+## 1. 模块定位
+
+P3 当前负责：
 
 - 文档 ingestion 与索引构建
-- chunking
+- sentence-aware `chunking v2`
 - BM25 / dense / hybrid retrieval
-- reranking
+- retrieve-then-rerank
 - citation-ready evidence 输出
 - `P3 -> P1` handoff 导出
-- 用固定 batch harness 做回归验证与诊断
+- 固定 batch harness 回归验证
+- fragmentation / query short-claim diagnostics
+- 本地 retrieval 复现检查
 
-当前版本的目标是：为 P1 提供更稳定、可引用、可回归的检索证据输入。
+P3 不负责：
 
----
+- P1 claim extraction / NLI 主逻辑
+- P2 conflict typing
+- P5 benchmark policy
+- final answer generation
 
-## 2. 当前状态
+## 2. Current Status
 
-- 当前默认 baseline：`chunking v2`
-- `evidence hygiene` 代码保留，但默认关闭，不作为当前 baseline
-- 已经打通 `P3 -> P1` batch integration
-- 当前固定 30 条回归 harness 上：
-  - cross-source pair coverage = `0.8000`
-  - decisive cross-source NLI coverage = `0.0333`
-- 当前主瓶颈更接近 **query-side short claims / P1 query claim transformation**，而不是继续做纯 retrieval tuning
+- FEVER sample 继续作为 regression baseline / pipeline sanity check。
+- AVeriTeC dev smoke 用于主数据集格式、metadata preservation、handoff compatibility check。
+- Full AVeriTeC evidence collection 当前阶段未使用，也没有加入仓库。
+- 当前 P3 不代表 full AVeriTeC web evidence retrieval benchmark。
+- AVeriTeC dev smoke 的 evidence-like text 来自 dev data 中的 QA answers / justifications，不应和 FEVER regression 指标直接比较。
+- 当前 residual bottleneck 更接近 query-side short claims / P1 query claim transformation，而不是继续做 P3 retrieval tuning。
 
----
+## 3. Dataset Status
 
-## 3. 仓库结构
+| 数据口径 | 当前用途 | 是否作为 baseline | 说明 |
+| --- | --- | --- | --- |
+| FEVER sample | regression baseline / pipeline sanity check | 是 | 用于验证 ingestion、retrieval、P3 -> P1 handoff 是否稳定 |
+| AVeriTeC dev smoke | format / metadata / handoff compatibility check | 否 | 使用 dev JSON 中 QA answers / justifications 构造 small smoke corpus |
+| Full AVeriTeC evidence collection | 未使用 | 否 | 体积过大，当前阶段不下载、不处理、不提交 |
+
+如果后续要做真实 AVeriTeC web evidence retrieval，需要额外准备 `dev_knowledge_store.zip` 或更大的 evidence collection，并重新设计数据 ingestion 规模控制。本仓库当前只提供 smoke adaptation。
+
+## 4. 仓库结构
 
 ```text
-P3_share/
+P3/
 ├── README.md
-├── P3_share_manifest.md
+├── P3_LOCAL_RETRIEVAL_SETUP.md
+├── P3_FINAL_SUMMARY.md
 ├── pyproject.toml
 ├── config/
+│   ├── retrieval.yaml
+│   └── retrieval_averitec_smoke.yaml
 ├── src/
+│   ├── ingestion/
+│   ├── retrieval/
+│   ├── schemas/
+│   ├── services/
+│   ├── app/
+│   └── utils/
 ├── scripts/
 ├── tests/
 ├── data/
 │   └── examples/
 └── artifacts/
-    └── selected_reports/
+    ├── selected_reports/
+    └── averitec_smoke/
 ```
 
-- `src/`：P3 核心代码，包含 ingestion、retrieval、schemas、services、FastAPI 入口等
-- `scripts/`：命令行入口，覆盖 ingest、handoff export、fragmentation 分析、query 诊断
-- `tests/`：轻量回归测试
-- `config/`：当前 baseline 配置
-- `data/examples/`：精简保留的 handoff JSON 样例
-- `artifacts/selected_reports/`：关键对比报告和结构化 summary，用于组内交接和汇报
+- `src/`：核心 Python 模块，包括 ingestion、retrieval、schemas、services 和 FastAPI 入口。
+- `scripts/`：命令行入口，包括 ingest、retrieval、handoff export、diagnostics、readiness check。
+- `tests/`：轻量回归测试和 contract smoke tests。
+- `config/`：FEVER baseline 配置与 AVeriTeC smoke 独立配置。
+- `data/examples/`：小型 handoff JSON 示例，可用于 P1/P2 离线联调。
+- `artifacts/selected_reports/`：精选 markdown/json 报告，用于组内交接和课程汇报。
+- `artifacts/averitec_smoke/`：AVeriTeC dev smoke markdown 报告；大 JSON/log 不应提交。
 
----
+默认不要把 raw dataset、完整 processed 数据、Qdrant index、`.venv`、log 或 cache 上传 GitHub。
 
-## 4. 环境安装
+## 5. 环境安装
 
-建议环境：
-
-- Python `3.11+`
-
-创建虚拟环境并安装依赖：
+建议使用 Python `3.11+`。
 
 ```bash
 python3 -m venv .venv
@@ -69,36 +91,43 @@ source .venv/bin/activate
 pip install -e .[dev]
 ```
 
-运行前需要准备：
+如果只做 P1/P2 离线联调，可以直接使用 `data/examples/` 中的 handoff JSON，不一定需要本地 Qdrant。
 
-- `config/retrieval.yaml`
-- 本地 FEVER / matched wiki 数据
-- 本地 P1 仓库路径（如需跑联调）
+如果要做 live retrieval，需要先准备 corpus 并运行 ingestion。详见 [P3_LOCAL_RETRIEVAL_SETUP.md](P3_LOCAL_RETRIEVAL_SETUP.md)。
 
-说明：
+## 6. 快速开始
 
-- 本公开版不包含原始大数据集、完整 wiki 语料或本地 P1 副本
-- `data/examples/` 仅用于展示 handoff 结构和结果样例
+### 6.1 FEVER baseline ingestion
 
----
+需要手动放置 FEVER sample corpus，例如：
 
-## 5. 快速开始
+```text
+FEVER Dataset/wiki_pages_matched_sample.jsonl
+```
 
-### 5.1 构建索引
+运行：
 
 ```bash
-.venv/bin/python scripts/ingest_corpus.py \
-  --input-path "path/to/wiki_pages_matched_sample.jsonl" \
+python scripts/ingest_corpus.py \
+  --input-path "FEVER Dataset/wiki_pages_matched_sample.jsonl" \
   --loader fever_wiki \
   --dataset fever_wiki_sample \
   --config-path config/retrieval.yaml
 ```
 
-### 5.2 导出 `P3 -> P1` handoff
+检查本地 retrieval 是否 ready：
 
 ```bash
-.venv/bin/python scripts/export_p1_handoff.py \
-  --claims-path "path/to/shared_task_dev_sample.jsonl" \
+python scripts/check_retrieval_ready.py \
+  --config-path config/retrieval.yaml \
+  --corpus-path "FEVER Dataset/wiki_pages_matched_sample.jsonl"
+```
+
+### 6.2 导出 P3 -> P1 handoff
+
+```bash
+python scripts/export_p1_handoff.py \
+  --claims-path "FEVER Dataset/shared_task_dev_sample.jsonl" \
   --top-k 5 \
   --mode hybrid \
   --split dev \
@@ -107,119 +136,166 @@ pip install -e .[dev]
   --output-path data/processed/p3_to_p1_batch_query30.json
 ```
 
-### 5.3 运行 P1 hook / benchmark
+### 6.3 AVeriTeC dev smoke
 
-本分享包不包含 P1 仓库；如需联调，请将下列命令中的 `path/to/local/P1` 替换为你本地的 P1 路径。
+AVeriTeC raw dev 文件不应提交到 GitHub。若本地已有：
 
-```bash
-.venv/bin/python path/to/local/P1/scripts/eval_p3_retrieval_hook.py \
-  --input "data/processed/p3_to_p1_batch_query30.json" \
-  --input-kind retrieval_json \
-  --limit 30 \
-  --extractor-kind structured \
-  --entity-backend auto
+```text
+data/raw/averitec/fever7/dev.json
 ```
 
-```bash
-.venv/bin/python path/to/local/P1/scripts/export_p5_benchmark.py \
-  --dataset retrieval_json \
-  --input "data/processed/p3_to_p1_batch_query30.json" \
-  --limit 30 \
-  --output "artifacts/p5_from_p3_query30.jsonl"
-```
-
-### 5.4 运行诊断脚本
+可运行：
 
 ```bash
-.venv/bin/python scripts/analyze_p1_fragmentation.py \
-  --input artifacts/p5_from_p3_query30.jsonl \
-  --output artifacts/p1_eval/fragmentation_analysis_query30.json
+python scripts/prepare_averitec_smoke.py \
+  --input-path data/raw/averitec/fever7/dev.json \
+  --output-dir data/processed/averitec \
+  --claim-limit 50 \
+  --max-documents 100
 ```
+
+再用独立 smoke config ingestion：
 
 ```bash
-.venv/bin/python scripts/build_query_short_claim_report.py \
-  --regression-benchmark artifacts/p5_from_p3_query30.jsonl \
-  --regression-handoff data/processed/p3_to_p1_batch_query30.json \
-  --diagnostic-benchmark artifacts/p5_from_p3_diag150.jsonl \
-  --diagnostic-handoff data/processed/p3_to_p1_batch_diag150.json \
-  --taxonomy-output artifacts/p1_eval/query_taxonomy_summary.json \
-  --failure-output artifacts/p1_eval/query_failure_attribution.json \
-  --report-output artifacts/p3_query_short_claim_report.md \
-  --config-path config/retrieval.yaml
+python scripts/ingest_corpus.py \
+  --input-path data/processed/averitec/averitec_dev_smoke_corpus.jsonl \
+  --loader generic \
+  --dataset averitec_dev_smoke \
+  --config-path config/retrieval_averitec_smoke.yaml
 ```
 
----
+## 7. Integration Notes
 
-## 6. 关键脚本
+### P3 -> P1
 
-- `scripts/ingest_corpus.py`：构建 chunk、BM25 语料和 Qdrant 本地索引
-- `scripts/export_p1_handoff.py`：导出稳定的 `P3 -> P1` handoff JSON
-- `scripts/run_retrieval.py`：单条 query 检索调试
-- `scripts/eval_retrieval.py`：轻量 retrieval 评估
-- `scripts/analyze_p1_fragmentation.py`：分析 P1 输出中的 broken / short claims
-- `scripts/analyze_p1_query_diagnostics.py`：快速查看 short query claim 与 evidence 关系
-- `scripts/build_query_short_claim_report.py`：生成 query taxonomy、failure attribution 和 markdown 总结报告
+P3 对外正式输出是 `retrieval_json`，不是 Qdrant 本体。
 
----
+handoff schema 固定为：
 
-## 7. 当前实验结论
+- `sample_id`
+- `query`
+- `label`
+- `metadata`
+- `retrieved_chunks`
 
-- `chunking v2` 相比旧版缓解了 chunk boundary damage，已经冻结为当前 baseline
-- `evidence hygiene` 降低了一部分 evidence noise，但没有显著提升 decisive NLI，因此默认关闭
-- 在当前固定 30 条回归 harness 上，query-side family failure 已高于 retrieval-side family
-- 因此，P3 当前更合理的策略是冻结 baseline，并把后续主问题交给 **P1 / query-understanding** 侧继续处理
+`retrieved_chunks[]` 应包含：
 
-建议优先阅读：
+- `chunk_id`
+- `text`
+- `rank`
+- `retrieval_score`
+- `source_url`
+- `source_medium`
+- `metadata`
 
+P1 可以直接使用 P3 example handoff JSON 做离线联调，例如：
+
+- `data/examples/p3_to_p1_batch_query30.json`
+- `data/examples/p3_to_p1_single.json`
+
+如果本地生成了 AVeriTeC smoke handoff，也可以使用：
+
+- `artifacts/averitec_smoke/p3_to_p1_averitec_dev_smoke.json`
+
+但该 JSON 属于本地生成产物，默认不提交 GitHub。
+
+### P3 -> P4
+
+如果 P4 只是做离线 pipeline 联调，可以直接读取 P3 handoff JSON，不需要 Qdrant。
+
+如果 P4 要做 live backend demo，则必须本地跑 P3 retrieval，至少需要：
+
+- corpus
+- ingestion
+- Qdrant collection
+- chunks / BM25 corpus
+- `config/retrieval.yaml` 或 `config/retrieval_averitec_smoke.yaml`
+
+注意：
+
+- Qdrant 服务或本地目录存在，不等于 collection 里已经有数据。
+- 必须先运行 ingestion，生成 chunks、BM25 corpus 和 Qdrant points。
+- 如果修改 embedding backend / model / dim，必须重新 ingest，并建议使用新的 collection name。
+- 不要混用旧 collection 和新 embedding 配置。
+
+### P5
+
+P5 可以基于 P3/P1/P2 的导出结果做评测。P3 可提供：
+
+- `retrieval_json`
+- smoke report
+- query diagnosis report
+- selected summary JSON
+
+不建议 P5 直接依赖 P3 本地 Qdrant 状态，因为 Qdrant 是本地运行产物，不适合作为跨模块 contract。
+
+## 8. 关键脚本
+
+- `scripts/ingest_corpus.py`：构建 chunk、BM25 corpus 和 Qdrant index。
+- `scripts/run_retrieval.py`：单条 query 检索调试。
+- `scripts/export_p1_handoff.py`：导出 P3 -> P1 `retrieval_json`。
+- `scripts/check_retrieval_ready.py`：检查本地 corpus / artifacts / Qdrant collection 是否 ready。
+- `scripts/prepare_averitec_smoke.py`：从 AVeriTeC dev JSON 构造 small smoke corpus/claims。
+- `scripts/analyze_p1_fragmentation.py`：分析 P1 输出中的 broken / short claims。
+- `scripts/analyze_p1_query_diagnostics.py`：诊断 query-side short-claim 和 evidence quality。
+- `scripts/build_query_short_claim_report.py`：生成 query taxonomy / failure attribution 报告。
+
+## 9. 当前实验结论
+
+- `chunking v2` 相比旧版缓解了 chunk boundary damage。
+- `evidence hygiene` 降低了一部分 evidence noise，但未显著提升 decisive NLI，因此默认关闭。
+- query-side family failure 已高于 retrieval-side family。
+- 当前 P3 baseline 建议冻结，后续主要问题更适合交给 P1 / query-understanding 侧继续处理。
+- AVeriTeC dev smoke 证明 P3 能适配主数据集风格的 claim / label / metadata / handoff，但不能代表完整 AVeriTeC web evidence retrieval benchmark。
+
+## 10. 关键产物
+
+推荐优先阅读：
+
+- `P3_FINAL_SUMMARY.md`
+- `P3_LOCAL_RETRIEVAL_SETUP.md`
 - `artifacts/selected_reports/p3_chunking_v2_comparison.md`
 - `artifacts/selected_reports/p3_evidence_hygiene_comparison.md`
 - `artifacts/selected_reports/p3_query_short_claim_report.md`
+- `artifacts/averitec_smoke/p3_averitec_dev_smoke_report.md`
 
----
+## 11. 测试
 
-## 8. 对接说明
-
-### 给 P1 / 组内同学
-
-- P3 当前已经稳定导出 `sample_id / query / metadata / retrieved_chunks` 结构
-- handoff 适配逻辑在 `src/services/handoff_adapter.py`
-- `data/examples/` 中保留了单条与 batch handoff 样例，适合快速看结构
-- 当前最值得继续跟进的不是 retrieval 算法扩展，而是 **query-side short claims / query claim transformation**
-
-### 给需要复现实验的同学
-
-- 本分享包只保留了最小代码、配置、测试和关键报告
-- 如果要重跑完整流程，需要自行准备：
-  - FEVER 样例数据
-  - matched wiki 样例
-  - 本地 P1 仓库
-
----
-
-## 9. 测试
-
-运行全部测试：
+常用轻量测试：
 
 ```bash
-.venv/bin/python -m pytest tests -q
+pytest tests/test_splitter.py -q
+pytest tests/test_handoff_adapter.py -q
+pytest tests/test_retrieval_pipeline.py -q
+pytest tests/test_check_retrieval_ready.py -q
 ```
 
-常用测试：
+部分 end-to-end retrieval / export 命令依赖本地 corpus 和已构建 index。如果缺少数据，请先阅读 `P3_LOCAL_RETRIEVAL_SETUP.md`。
 
-```bash
-.venv/bin/python -m pytest tests/test_splitter.py -q
-.venv/bin/python -m pytest tests/test_retrieval_pipeline.py -q
-.venv/bin/python -m pytest tests/test_handoff_adapter.py -q
-.venv/bin/python -m pytest tests/test_evidence_hygiene.py -q
-.venv/bin/python -m pytest tests/test_query_short_claim_report.py -q
-```
+## 12. 已知限制
 
----
+- 当前数据覆盖有限，FEVER sample 主要用于 regression，不是最终主实验。
+- AVeriTeC dev smoke 不是完整 web evidence retrieval benchmark。
+- 当前没有处理 full AVeriTeC evidence collection。
+- P3 不负责 final conflict typing / answer policy / answer generation。
+- decisive NLI 低的问题不应被包装成“全链路已解决”；当前判断更偏 P1/query-side claim transformation。
 
-## 10. 已知限制
+## 13. GitHub / 分享建议
 
-- 当前公开版不包含原始大数据集、完整 wiki 语料和本地索引
-- 30-record harness 主要用于回归，不等于大规模 benchmark
-- P3 只负责 retrieval layer，不负责最终 conflict typing / answer policy / answer generation
-- 当前 decisive NLI 仍然较低，不能夸大为“全链路已解决”
-- 一些选入的报告是历史实验产物，命令与路径说明已经做了公开版清理，但并不意味着分享包内包含了所有原始依赖
+建议提交：
+
+- code、config、tests、docs
+- 小型 example JSON
+- 小型 markdown reports / summary JSON
+
+不建议提交：
+
+- raw datasets
+- full wiki / AVeriTeC evidence collection
+- `data/processed/` 大文件
+- Qdrant index
+- `.venv`
+- logs / cache
+- zip bundles
+
+如果组员需要本地 live retrieval 复现，优先阅读 `P3_LOCAL_RETRIEVAL_SETUP.md`，或通过组内私发轻量复现包。GitHub 主仓库只保留可解释、可对接、可复现的最小材料。

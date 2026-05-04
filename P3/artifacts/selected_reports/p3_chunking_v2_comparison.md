@@ -25,7 +25,7 @@ python3 -m pytest tests/test_splitter.py -q
   --output-path data/processed/p3_to_p1_batch_v2.json
 
 .venv/bin/python artifacts/p1_local/scripts/eval_p3_retrieval_hook.py \
-  --input "data/processed/p3_to_p1_batch_v2.json" \
+  --input data/processed/p3_to_p1_batch_v2.json \
   --input-kind retrieval_json \
   --limit 30 \
   --extractor-kind structured \
@@ -35,9 +35,9 @@ python3 -m pytest tests/test_splitter.py -q
 
 .venv/bin/python artifacts/p1_local/scripts/export_p5_benchmark.py \
   --dataset retrieval_json \
-  --input "data/processed/p3_to_p1_batch_v2.json" \
+  --input data/processed/p3_to_p1_batch_v2.json \
   --limit 30 \
-  --output "artifacts/p5_from_p3_v2.jsonl" \
+  --output artifacts/p5_from_p3_v2.jsonl \
   --preview 5 \
   > artifacts/p5_export_v2.log 2>&1
 

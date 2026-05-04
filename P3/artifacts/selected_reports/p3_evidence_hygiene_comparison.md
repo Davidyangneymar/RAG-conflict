@@ -20,7 +20,7 @@ Note: the hygiene experiment was run with `enable_evidence_hygiene: true` tempor
   --output-path data/processed/p3_to_p1_batch_hygiene.json
 
 .venv/bin/python artifacts/p1_local/scripts/eval_p3_retrieval_hook.py \
-  --input "data/processed/p3_to_p1_batch_hygiene.json" \
+  --input data/processed/p3_to_p1_batch_hygiene.json \
   --input-kind retrieval_json \
   --limit 30 \
   --extractor-kind structured \
@@ -30,9 +30,9 @@ Note: the hygiene experiment was run with `enable_evidence_hygiene: true` tempor
 
 .venv/bin/python artifacts/p1_local/scripts/export_p5_benchmark.py \
   --dataset retrieval_json \
-  --input "data/processed/p3_to_p1_batch_hygiene.json" \
+  --input data/processed/p3_to_p1_batch_hygiene.json \
   --limit 30 \
-  --output "artifacts/p5_from_p3_hygiene.jsonl" \
+  --output artifacts/p5_from_p3_hygiene.jsonl \
   --preview 5 \
   > artifacts/p5_export_hygiene.log 2>&1
 
