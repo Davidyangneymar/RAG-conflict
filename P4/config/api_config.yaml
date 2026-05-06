@@ -1,0 +1,23 @@
+# P4 API configuration
+server:
+  host: "0.0.0.0"
+  port: 8000
+  reload: true
+
+retrieval:
+  top_k: 5
+  config_path: "P3/config/retrieval.yaml"   # path to P3 retrieval config
+
+p1:
+  # optional P1 overrides
+
+p2:
+  # optional P2 overrides
+
+p6:
+  # optional P6 overrides
+
+abstention:
+  contradiction_ratio_threshold: 0.5
+  low_confidence_ratio_threshold: 0.6
+  avg_confidence_threshold: 0.5

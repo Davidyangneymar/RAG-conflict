@@ -1,0 +1,6 @@
+{
+  "claims": [
+    {"id": "1", "label": "SUPPORTS", "claim": "Vitamin C prevents colds."},
+    {"id": "2", "label": "REFUTES", "claim": "The capital of France is Berlin."}
+  ]
+}
