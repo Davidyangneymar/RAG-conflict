@@ -4,7 +4,7 @@
 # - embedding_model_name: "BAAI/bge-m3"
 # - reranker_model_name: "BAAI/bge-reranker-v2-m3"
 
-embedding_backend: "hash"
+embedding_backend: "sentence-transformers"
 embedding_model_name: "sentence-transformers/all-MiniLM-L6-v2"
 embedding_batch_size: 32
 
@@ -43,7 +43,7 @@ default_mode: "hybrid"
 enable_rerank: true
 enable_diversify: true
 
-fallback_embedding_dim: 256
+fallback_embedding_dim: 384
 allow_model_fallback: true
 
 log_level: "INFO"
