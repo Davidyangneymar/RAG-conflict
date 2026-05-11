@@ -24,6 +24,10 @@ dependencies = [
 dev = [
   "pytest>=8.2.0",
 ]
+bge = [
+  "FlagEmbedding>=1.2.0",
+  "transformers>=4.28.0,<5.0",
+]
 
 [tool.setuptools]
 include-package-data = true
