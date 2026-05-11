@@ -57,6 +57,46 @@ def test_bge_reranker_sorts_by_score():
     assert results[2].rank == 3
 
 
+def test_bge_reranker_can_reorder_candidates():
+    mock_module = _mock_flag_module([0.1, 0.2, 0.95])
+
+    with patch.dict(sys.modules, {"FlagEmbedding": mock_module}):
+        config = RetrievalConfig(reranker_backend="bge")
+        reranker = Reranker(config)
+        results = reranker.rerank("test query", _make_candidates(3), top_k=3)
+
+    assert [result.chunk_id for result in results] == [
+        "doc-2::chunk-0",
+        "doc-1::chunk-0",
+        "doc-0::chunk-0",
+    ]
+    assert results[0].metadata["pre_rerank_rank"] == 3
+    assert results[0].metadata["reranker_backend"] == "bge"
+
+
+def test_none_reranker_preserves_candidate_order():
+    config = RetrievalConfig(reranker_backend="none")
+    reranker = Reranker(config)
+    candidates = _make_candidates(3)
+    candidates[0].score_hybrid = 0.80
+    candidates[1].score_hybrid = 0.70
+    candidates[2].score_hybrid = 0.60
+
+    results = reranker.rerank("test query", candidates, top_k=3)
+
+    assert [result.chunk_id for result in results] == [
+        "doc-0::chunk-0",
+        "doc-1::chunk-0",
+        "doc-2::chunk-0",
+    ]
+    assert [result.rank for result in results] == [1, 2, 3]
+    assert [result.score_hybrid for result in results] == [0.80, 0.70, 0.60]
+    assert all(result.score_rerank is None for result in results)
+    assert all(result.metadata["reranker_backend"] == "none" for result in results)
+    assert all(result.metadata["reranker_model"] is None for result in results)
+    assert all(result.metadata["reranker_backend"] != "bge" for result in results)
+
+
 def test_bge_reranker_top_k_truncation():
     mock_module = _mock_flag_module([0.3, 0.9, 0.6])
 

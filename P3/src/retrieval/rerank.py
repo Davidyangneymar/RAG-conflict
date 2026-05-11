@@ -77,6 +77,20 @@ class Reranker:
         requested_backend = self.config.reranker_backend
         fallback_reason: str | None = None
 
+        if requested_backend == "none":
+            passthrough: list[RetrievedEvidence] = []
+            for idx, candidate in enumerate(candidates[:top_k]):
+                updated = candidate.model_copy(deep=True)
+                updated.rank = idx + 1
+                updated.metadata = {
+                    **updated.metadata,
+                    "pre_rerank_rank": pre_rerank_ranks[idx],
+                    "reranker_backend": "none",
+                    "reranker_model": None,
+                }
+                passthrough.append(updated)
+            return passthrough
+
         if self.config.reranker_backend == "heuristic":
             scores = [lexical_overlap_score(query, c.text) for c in candidates]
         elif self.config.reranker_backend == "bge":

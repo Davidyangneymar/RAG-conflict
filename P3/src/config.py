@@ -17,7 +17,7 @@ class RetrievalConfig(BaseModel):
     embedding_model_name: str = "sentence-transformers/all-MiniLM-L6-v2"
     embedding_batch_size: int = 32
 
-    reranker_backend: Literal["cross_encoder", "heuristic", "bge"] = "cross_encoder"
+    reranker_backend: Literal["cross_encoder", "heuristic", "bge", "none"] = "cross_encoder"
     reranker_model_name: str = "cross-encoder/ms-marco-MiniLM-L-6-v2"
     bge_reranker_model_name: str = "BAAI/bge-reranker-v2-m3"
     bge_reranker_use_fp16: bool = True
