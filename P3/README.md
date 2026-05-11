@@ -1,6 +1,6 @@
 # Conflict-Aware RAG：P3 Retrieval Layer
 
-P3 是 Conflict-Aware RAG 课程项目中的 **检索层（retrieval layer）**。本模块不负责最终回答生成，也不负责 P1/P2/P5 的任务边界；它的核心职责是把输入 claim/query 转换成 citation-ready evidence，并以稳定的 `retrieval_json` 格式交给下游模块。
+P3 是 Conflict-Aware RAG 课程项目中的 **检索层（retrieval layer）**。核心职责是把输入 claim/query 转换成 citation-ready evidence，并以稳定的 `retrieval_json` 格式交给下游模块。
 
 当前主线：`chunking v2` 是默认 baseline；`evidence hygiene` 代码保留但默认关闭；P3 -> P1 batch integration 已打通。
 
@@ -233,7 +233,7 @@ Do not interpret this ablation as final benchmark improvement unless the full ev
 
 ### 6.6 AVeriTeC dev smoke
 
-AVeriTeC raw dev 文件不应提交到 GitHub。若本地已有：
+若本地已有：
 
 ```text
 data/raw/averitec/fever7/dev.json
@@ -477,22 +477,6 @@ pytest tests/test_check_retrieval_ready.py -q
 - P3 不负责 final conflict typing / answer policy / answer generation。
 - decisive NLI 低的问题不应被包装成“全链路已解决”；当前判断更偏 P1/query-side claim transformation。
 
-## 13. GitHub / 分享建议
 
-建议提交：
-
-- code、config、tests、docs
-- 小型 example JSON
-- 小型 markdown reports / summary JSON
-
-不建议提交：
-
-- raw datasets
-- full wiki / AVeriTeC evidence collection
-- `data/processed/` 大文件
-- Qdrant index
-- `.venv`
-- logs / cache
-- zip bundles
 
 如果组员需要本地 live retrieval 复现，优先阅读 `P3_LOCAL_RETRIEVAL_SETUP.md`，或通过组内私发轻量复现包。GitHub 主仓库只保留可解释、可对接、可复现的最小材料。
