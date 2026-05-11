@@ -150,7 +150,30 @@ python scripts/export_p1_handoff.py \
   --output-path data/processed/p3_to_p1_batch_query30.json
 ```
 
-### 6.3 可选 BGE reranker
+### 6.3 Reranker 开关速查
+
+P3 的 reranker 主要通过 config 控制。后续测试时不要改代码，直接切换 `--config-path`。
+
+| 测试目标 | 配置文件 | 行为 | 依赖 |
+| --- | --- | --- | --- |
+| 当前轻量 baseline | `config/retrieval.yaml` | hybrid retrieval 后使用 heuristic rerank | `pip install -e .[dev]` |
+| 不使用 rerank | `config/retrieval_no_rerank.yaml` | 直接导出 hybrid retrieval 顺序 | `pip install -e .[dev]` |
+| 使用 BGE rerank | `config/retrieval_bge_reranker.yaml` | hybrid candidates -> BGE rerank -> export | `pip install -e ".[bge]"` |
+
+单次 CLI 调试也可以用 `--no-rerank` 临时跳过 rerank：
+
+```bash
+python scripts/run_retrieval.py \
+  --config-path config/retrieval_bge_reranker.yaml \
+  --query "Does coffee cause cancer?" \
+  --top-k 5 \
+  --mode hybrid \
+  --no-rerank
+```
+
+注意：正式做 no-rerank vs BGE ablation 时，推荐使用 `config/retrieval_no_rerank.yaml`，因为它会在 metadata 中明确记录 `reranker_backend: "none"`，更容易对比和复现。
+
+### 6.4 可选 BGE reranker
 
 默认 `config/retrieval.yaml` 不启用 BGE。若要验证 BGE reranker，请使用独立配置：
 
@@ -186,7 +209,7 @@ Reranking metadata is preserved for debugging and traceability:
 
 If BGE loading or inference fails and `allow_model_fallback` is enabled, P3 falls back to heuristic reranking and records the fallback reason in metadata. BGE does not train a model, does not replace dense retrieval, and does not build the Qdrant index.
 
-### 6.4 Reranker Ablation: no-rerank vs BGE rerank
+### 6.5 Reranker Ablation: no-rerank vs BGE rerank
 
 We provide two P3 configurations for reranker ablation. The no-rerank baseline directly exports the hybrid retrieval order, while the BGE reranker version applies `BAAI/bge-reranker-v2-m3` to rescore query-passage pairs before exporting `retrieval_json`. Both variants keep the downstream handoff schema unchanged, so P1 and P5 can compare reranking effects without interface changes.
 
@@ -214,7 +237,7 @@ The no-rerank config uses `reranker_backend: "none"` and preserves `score_hybrid
 
 Do not interpret this ablation as final benchmark improvement unless the full evaluation is rerun.
 
-### 6.5 AVeriTeC dev smoke
+### 6.6 AVeriTeC dev smoke
 
 AVeriTeC raw dev 文件不应提交到 GitHub。若本地已有：
 
@@ -295,6 +318,106 @@ P1 可以直接使用 P3 example handoff JSON 做离线联调，例如：
 - 必须先运行 ingestion，生成 chunks、BM25 corpus 和 Qdrant points。
 - 如果修改 embedding backend / model / dim，必须重新 ingest，并建议使用新的 collection name。
 - 不要混用旧 collection 和新 embedding 配置。
+
+P4 live backend 最小接入流程：
+
+1. 在 P3 目录安装依赖。
+
+```bash
+pip install -e .[dev]
+```
+
+如果 P4 要测试 BGE rerank：
+
+```bash
+pip install -e ".[bge]"
+```
+
+2. 放置 corpus，并先建库。
+
+```bash
+python scripts/ingest_corpus.py \
+  --input-path "FEVER Dataset/wiki_pages_matched_sample.jsonl" \
+  --loader fever_wiki \
+  --dataset fever_wiki_sample \
+  --config-path config/retrieval.yaml
+```
+
+3. 启动前检查本地 retrieval 是否 ready。
+
+```bash
+python scripts/check_retrieval_ready.py \
+  --config-path config/retrieval.yaml \
+  --corpus-path "FEVER Dataset/wiki_pages_matched_sample.jsonl" \
+  --sample-query "Fox 2000 Pictures released the film Soul Food."
+```
+
+4. 选择 P4 要调用的 config，并启动 FastAPI。
+
+默认轻量 baseline：
+
+```bash
+RETRIEVAL_CONFIG_PATH=config/retrieval.yaml \
+uvicorn src.app.main:app --host 0.0.0.0 --port 8000
+```
+
+no-rerank ablation：
+
+```bash
+RETRIEVAL_CONFIG_PATH=config/retrieval_no_rerank.yaml \
+uvicorn src.app.main:app --host 0.0.0.0 --port 8000
+```
+
+BGE rerank：
+
+```bash
+RETRIEVAL_CONFIG_PATH=config/retrieval_bge_reranker.yaml \
+uvicorn src.app.main:app --host 0.0.0.0 --port 8000
+```
+
+5. P4 调用接口。
+
+健康检查：
+
+```bash
+curl http://127.0.0.1:8000/health
+```
+
+检索请求：
+
+```bash
+curl -X POST http://127.0.0.1:8000/retrieve \
+  -H "Content-Type: application/json" \
+  -d '{
+    "query": "Fox 2000 Pictures released the film Soul Food.",
+    "top_k": 5,
+    "mode": "hybrid",
+    "use_rerank": true,
+    "use_diversify": true
+  }'
+```
+
+返回值是 `RetrievalResponse`，P4 主要读取：
+
+- `results[].chunk_id`
+- `results[].doc_id`
+- `results[].text`
+- `results[].rank`
+- `results[].score_hybrid`
+- `results[].score_rerank`
+- `results[].source_url`
+- `results[].source_name`
+- `results[].metadata`
+
+如果 P4 只是想临时关闭 rerank，也可以在请求里设：
+
+```json
+{
+  "use_rerank": false
+}
+```
+
+但严格 ablation 建议仍使用 `RETRIEVAL_CONFIG_PATH=config/retrieval_no_rerank.yaml` 启动服务。
 
 ### P5
 
