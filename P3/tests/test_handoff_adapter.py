@@ -112,3 +112,58 @@ def test_p1_handoff_contract_payload_contains_required_fields() -> None:
     assert chunk["source_url"] == "https://en.wikipedia.org/wiki/Soul_Food_(film)"
     assert chunk["metadata"]["title"] == "Soul Food (film)"
     assert chunk["metadata"]["source_doc_id"] == "Soul_Food_-LRB-film-RRB-"
+
+
+def test_p1_handoff_contract_survives_reranker_ablation_metadata() -> None:
+    response = RetrievalResponse(
+        query="Does coffee cause cancer?",
+        mode="hybrid",
+        results=[
+            RetrievedEvidence(
+                query="Does coffee cause cancer?",
+                chunk_id="doc-bge::chunk-0",
+                doc_id="doc-bge",
+                dataset="fever_wiki_sample",
+                source_name="Wikipedia",
+                source_url="https://example.org/bge",
+                title="Coffee",
+                text="Coffee has been linked to reduced cancer risk.",
+                score_hybrid=0.42,
+                score_rerank=0.99,
+                rank=1,
+                metadata={"reranker_backend": "bge", "pre_rerank_rank": 3},
+            ),
+            RetrievedEvidence(
+                query="Does coffee cause cancer?",
+                chunk_id="doc-none::chunk-0",
+                doc_id="doc-none",
+                dataset="fever_wiki_sample",
+                source_name="Wikipedia",
+                source_url="https://example.org/none",
+                title="Coffee baseline",
+                text="Coffee was reviewed by health agencies.",
+                score_hybrid=0.41,
+                rank=2,
+                metadata={"reranker_backend": "none", "pre_rerank_rank": 2},
+            ),
+        ],
+    )
+
+    payload = retrieval_response_to_p1_record(response, sample_id="coffee-1").model_dump()
+
+    assert payload["sample_id"] == "coffee-1"
+    assert payload["query"] == "Does coffee cause cancer?"
+    assert len(payload["retrieved_chunks"]) == 2
+    for chunk in payload["retrieved_chunks"]:
+        assert "chunk_id" in chunk
+        assert "text" in chunk
+        assert "retrieval_score" in chunk
+        assert "source_url" in chunk
+        assert "metadata" in chunk
+        assert "title" in chunk["metadata"]
+        assert "source_doc_id" in chunk["metadata"]
+
+    assert payload["retrieved_chunks"][0]["retrieval_score"] == 0.99
+    assert payload["retrieved_chunks"][1]["retrieval_score"] == 0.41
+    assert payload["retrieved_chunks"][0]["metadata"]["reranker_backend"] == "bge"
+    assert payload["retrieved_chunks"][1]["metadata"]["reranker_backend"] == "none"

@@ -19,6 +19,7 @@ artifacts/averitec_smoke/*.log
 artifacts/averitec_smoke/p3_to_p1_*.json
 artifacts/p1_local/
 artifacts/p1_integration_test/
+artifacts/reranker_ablation/
 artifacts/*.log
 artifacts/*.jsonl
 
